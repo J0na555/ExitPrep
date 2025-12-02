@@ -8,8 +8,12 @@ def test_eduqg():
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
     # Dummy data
-    context = "The mitochondria is the powerhouse of the cell."
-    answer = "mitochondria"
+    context = "The capital city of France is Paris, known for its cultural landmarks and museums."
+    answer = "Paris"
+    context = "The largest planet in our solar system is a gas giant with a prominent Great Red Spot."
+    answer = "Jupiter"
+    context = "The programming language known for its use in web development and created by Brendan Eich is JavaScript."
+    answer = "JavaScript"
 
     input_text = f"<answer> {answer} <context> {context}"
     inputs = tokenizer(input_text, return_tensors="pt")
