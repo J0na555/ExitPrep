@@ -4,7 +4,8 @@ from datetime import timedelta
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
-from sqlalchemy.orm import Session
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models.user import User
 from app.schemas.auth import Token, UserLogin
@@ -15,16 +16,19 @@ from app.utils.database import get_db
 from app.utils.dependencies import get_current_user
 
 
-router = APIRouter(prefix="/auth", tags=["auth"])
+router = APIRouter(tags=["auth"])
 
 
 @router.post("/register", response_model=Token, status_code=status.HTTP_201_CREATED)
-def register(user_data: UserCreate, db: Session = Depends(get_db)) -> Token:
-    existing_user = (
-        db.query(User)
-        .filter((User.email == user_data.email) | (User.username == user_data.username))
-        .first()
+async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)) -> Token:
+    # Check if user exists
+    result = await db.execute(
+        select(User).where(
+            (User.email == user_data.email) | (User.username == user_data.username)
+        )
     )
+    existing_user = result.scalar_one_or_none()
+    
     if existing_user:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -37,8 +41,8 @@ def register(user_data: UserCreate, db: Session = Depends(get_db)) -> Token:
         password_hash=hash_password(user_data.password),
     )
     db.add(db_user)
-    db.commit()
-    db.refresh(db_user)
+    await db.commit()
+    await db.refresh(db_user)
 
     access_token_expires = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
@@ -50,12 +54,16 @@ def register(user_data: UserCreate, db: Session = Depends(get_db)) -> Token:
 
 
 @router.post("/login", response_model=Token)
-def login(
+async def login(
     form_data: OAuth2PasswordRequestForm = Depends(),
-    db: Session = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
 ) -> Token:
     # OAuth2PasswordRequestForm sends `username` field; we treat it as email
-    user = db.query(User).filter(User.email == form_data.username).first()
+    result = await db.execute(
+        select(User).where(User.email == form_data.username)
+    )
+    user = result.scalar_one_or_none()
+    
     if not user or not verify_password(form_data.password, user.password_hash):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -72,6 +80,5 @@ def login(
 
 
 @router.get("/me", response_model=UserResponse)
-def read_me(current_user: User = Depends(get_current_user)) -> UserResponse:
+async def read_me(current_user: User = Depends(get_current_user)) -> UserResponse:
     return UserResponse.model_validate(current_user)
-

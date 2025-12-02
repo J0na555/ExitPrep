@@ -9,9 +9,9 @@ class Base(DeclarativeBase):
 
 
 from . import user  # noqa: F401
-from . import course  # noqa: F401
-from . import chapter  # noqa: F401
-from . import question  # noqa: F401
+from . import course_model  # noqa: F401
+from . import chapter_model  # noqa: F401
+from . import question_model  # noqa: F401
 from . import option  # noqa: F401
 from . import study_attempt  # noqa: F401
 from . import exam_session  # noqa: F401

@@ -1,26 +1,58 @@
 from __future__ import annotations
 
-from typing import Generator
+from typing import AsyncGenerator
 
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, Session
+from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
+from sqlalchemy.orm import declarative_base
 
-from app.models import Base
 from app.utils.config import settings
 
+# Create async engine
+async_engine = create_async_engine(
+    settings.DATABASE_URL,
+    echo=False,  # Set to True for SQL query logging
+    future=True,
+)
 
-engine = create_engine(settings.DATABASE_URL, future=True)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine, class_=Session)
+# Create async session factory
+AsyncSessionLocal = async_sessionmaker(
+    async_engine,
+    class_=AsyncSession,
+    expire_on_commit=False,
+    autocommit=False,
+    autoflush=False,
+)
+
+# Import Base from models to ensure all models are registered
+from app.models import Base  # noqa: E402
+
+# Import all models to ensure they're registered with Base
+from app.models import (  # noqa: E402, F401
+    user,
+    course_model,
+    chapter_model,
+    question_model,
+    option,
+    exam,
+    exam_session,
+    exam_answer,
+    study_attempt,
+)
 
 
-def get_db() -> Generator[Session, None, None]:
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
+async def get_db() -> AsyncGenerator[AsyncSession, None]:
+    """
+    Dependency that yields an async database session.
+    """
+    async with AsyncSessionLocal() as session:
+        try:
+            yield session
+            await session.commit()
+        except Exception:
+            await session.rollback()
+            raise
+        finally:
+            await session.close()
 
 
-__all__ = ["engine", "SessionLocal", "get_db", "Base"]
-
-
+__all__ = ["async_engine", "AsyncSessionLocal", "get_db", "Base"]

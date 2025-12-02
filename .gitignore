@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment variables
+.env
+.flaskenv
+secrets.toml
+*.ini
+
+
+# IDE-specific files (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+
+# OS-specific files
+.DS_Store
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+/logs/
+
+# Testing/coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
