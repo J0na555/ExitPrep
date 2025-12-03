@@ -8,7 +8,7 @@ class Base(DeclarativeBase):
     pass
 
 
-from . import user  # noqa: F401
+from . import user 
 from . import course_model  # noqa: F401
 from . import chapter_model  # noqa: F401
 from . import question_model  # noqa: F401

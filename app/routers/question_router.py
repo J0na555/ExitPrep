@@ -5,7 +5,7 @@ from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
+from typing import Any
 
 from app.models.chapter_model import Chapter
 from app.models.question_model import Question
@@ -20,7 +20,7 @@ router = APIRouter(tags=["questions"])
 @router.post("/", response_model=QuestionRead, status_code=status.HTTP_201_CREATED)
 async def create_question(
     question_data: QuestionCreate,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> QuestionRead:
     """Create a new question inside a chapter."""
@@ -51,7 +51,7 @@ async def create_question(
 @router.get("/chapter/{chapter_id}", response_model=List[QuestionRead])
 async def get_questions_by_chapter_id(
     chapter_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> List[QuestionRead]:
     """Get all questions for a specific chapter."""
@@ -75,7 +75,7 @@ async def get_questions_by_chapter_id(
 @router.get("/{question_id}", response_model=QuestionRead)
 async def get_question_by_id(
     question_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> QuestionRead:
     """Get a question by ID."""
@@ -95,7 +95,7 @@ async def get_question_by_id(
 async def update_question(
     question_id: uuid.UUID,
     question_data: QuestionUpdate,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> QuestionRead:
     """Update a question."""
@@ -141,7 +141,7 @@ async def update_question(
 @router.delete("/{question_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_question(
     question_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> None:
     """Delete a question."""

@@ -5,7 +5,7 @@ from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
+from typing import Any
 
 from app.models.chapter_model import Chapter
 from app.models.course_model import Course
@@ -20,7 +20,7 @@ router = APIRouter(tags=["chapters"])
 @router.post("/", response_model=ChapterRead, status_code=status.HTTP_201_CREATED)
 async def create_chapter(
     chapter_data: ChapterCreate,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> ChapterRead:
     """Create a new chapter inside a course."""
@@ -49,7 +49,7 @@ async def create_chapter(
 @router.get("/course/{course_id}", response_model=List[ChapterRead])
 async def get_chapters_by_course_id(
     course_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> List[ChapterRead]:
     """Get all chapters for a specific course."""
@@ -75,7 +75,7 @@ async def get_chapters_by_course_id(
 @router.get("/{chapter_id}", response_model=ChapterRead)
 async def get_chapter_by_id(
     chapter_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> ChapterRead:
     """Get a chapter by ID."""
@@ -95,7 +95,7 @@ async def get_chapter_by_id(
 async def update_chapter(
     chapter_id: uuid.UUID,
     chapter_data: ChapterUpdate,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> ChapterRead:
     """Update a chapter."""
@@ -137,7 +137,7 @@ async def update_chapter(
 @router.delete("/{chapter_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_chapter(
     chapter_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> None:
     """Delete a chapter."""

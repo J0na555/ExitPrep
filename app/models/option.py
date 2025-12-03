@@ -32,7 +32,6 @@ class Option(Base):
     # relationships
     question: Mapped["Question"] = relationship(
         "Question",
-        back_populates="options",
         foreign_keys=[question_id],
     )
 

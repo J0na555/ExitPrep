@@ -5,7 +5,7 @@ from datetime import timedelta
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
+from typing import Any
 
 from app.models.user import User
 from app.schemas.auth import Token, UserLogin
@@ -20,7 +20,7 @@ router = APIRouter(tags=["auth"])
 
 
 @router.post("/register", response_model=Token, status_code=status.HTTP_201_CREATED)
-async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)) -> Token:
+async def register(user_data: UserCreate, db: Any = Depends(get_db)) -> Token:
     # Check if user exists
     result = await db.execute(
         select(User).where(
@@ -56,7 +56,7 @@ async def register(user_data: UserCreate, db: AsyncSession = Depends(get_db)) ->
 @router.post("/login", response_model=Token)
 async def login(
     form_data: OAuth2PasswordRequestForm = Depends(),
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
 ) -> Token:
     # OAuth2PasswordRequestForm sends `username` field; we treat it as email
     result = await db.execute(

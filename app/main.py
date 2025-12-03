@@ -24,9 +24,15 @@ app.include_router(course_router.router, prefix="/api/courses")
 app.include_router(chapter_router.router, prefix="/api/chapters")
 app.include_router(question_router.router, prefix="/api/questions")
 
+
+@app.get("/", tags=["root"])
+def root():
+    return {"message": "EduGG API is running", "version": "1.0.0"}
+
+
 @app.get("/health", tags=["health"])
 def health_check() -> dict[str, str]:
-    return {"status": "ok"}
+    return {"status": "healthy", "service": "ExitPrep Backend"}
 
 
 __all__ = ["app"]

@@ -5,7 +5,7 @@ from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
-from sqlalchemy.ext.asyncio import AsyncSession
+from typing import Any
 
 from app.models.course_model import Course
 from app.models.user import User
@@ -19,7 +19,7 @@ router = APIRouter(tags=["courses"])
 @router.post("/", response_model=CourseRead, status_code=status.HTTP_201_CREATED)
 async def create_course(
     course_data: CourseCreate,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> CourseRead:
     """Create a new course."""
@@ -35,7 +35,7 @@ async def create_course(
 
 @router.get("/", response_model=List[CourseRead])
 async def get_all_courses(
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> List[CourseRead]:
     """Get all courses."""
@@ -47,7 +47,7 @@ async def get_all_courses(
 @router.get("/{course_id}", response_model=CourseRead)
 async def get_course_by_id(
     course_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> CourseRead:
     """Get a course by ID."""
@@ -67,7 +67,7 @@ async def get_course_by_id(
 async def update_course(
     course_id: uuid.UUID,
     course_data: CourseUpdate,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> CourseRead:
     """Update a course."""
@@ -94,7 +94,7 @@ async def update_course(
 @router.delete("/{course_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_course(
     course_id: uuid.UUID,
-    db: AsyncSession = Depends(get_db),
+    db: Any = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> None:
     """Delete a course."""

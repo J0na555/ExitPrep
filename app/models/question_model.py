@@ -47,6 +47,16 @@ class Question(Base):
 
     # relationships
     chapter: Mapped["Chapter"] = relationship("Chapter", back_populates="questions")
+    study_attempts: Mapped[list["StudyAttempt"]] = relationship(
+        "StudyAttempt",
+        back_populates="question",
+        cascade="all, delete-orphan",
+    )
+    exam_answers: Mapped[list["ExamAnswer"]] = relationship(
+        "ExamAnswer",
+        back_populates="question",
+        cascade="all, delete-orphan",
+    )
 
 
 __all__ = ["Question", "QuestionDifficulty"]
