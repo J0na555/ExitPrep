@@ -1,0 +1,1003 @@
+
+[
+    {
+        "question": "Which one of the following is concerned with the meaning of a sentence in knowledge \nrepresentation?",
+        "choices": [
+            "Structure",
+            "Computational aspect",
+            "Semantics",
+            "Syntax"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is an attack performed by wiretapping a network and illicitly copy files \nand programs?",
+        "choices": [
+            "Interception",
+            "Fabrication",
+            "Interruption",
+            "Modification"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "If a company wants to develop a software for its use, and if the company wants partial functionality to \nbe delivered to end users without unreasonable delay. Which software development process model is \nappropriate for such requirement?",
+        "choices": [
+            "Waterfall",
+            "Incremental",
+            "Spiral",
+            "Evolutionary"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following cannot affect proper functioning of a system?",
+        "choices": [
+            "Improperly placed heater",
+            "Humidity",
+            "Lightning strikes",
+            "UPS(uninterruptible power supply)"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "_______ is the process of selecting appropriate query execution strategy?",
+        "choices": [
+            "Query graph",
+            "Query optimization",
+            "Query tree",
+            "Query processing"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Let KPRIV-A and KPUB-A be private and public keys for Awgichew and KPRIV -M and KPUB-M \nare private and public keys for Meron respectively. If Awgichew would like to send secured message \nto Meron, which one of the following scenario is not correct if they are using asymmetric keys?",
+        "choices": [
+            "Awgichew uses Meron’s private key KPRIV-M to encrypt his plain text",
+            "Awgichew uses his KPUB-A to encrypt his plain text",
+            "Meron can decode the encrypted text using her  KPRIV-M",
+            "Meron can decode the scrambled text using her  KPUB-M"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following agents works by searching and matching the rules defined by percent and \nstored internal state?",
+        "choices": [
+            "Model-based reflex agent",
+            "Goal-based agent",
+            "Simple reflex agent",
+            "Utility based agent"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which symbol is used to write a single line comment in JavaScript?",
+        "choices": [
+            "<?",
+            "<!---------------->",
+            "//",
+            "&&"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is correct about symmetric and asymmetric keys?",
+        "choices": [
+            "Both are authentication methods",
+            "Symmetric key requires the sender and receiver to have a public and private key",
+            "Asymmetric key requires the sender and receiver to have a public and private key",
+            "Both are recovery methods"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "If you want to test individual sub-systems of software, which phase of software testing is appropriate?",
+        "choices": [
+            "Integration testing",
+            "Unit testing",
+            "System testing",
+            "Acceptance testing"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Suppose you are administrating the network. You would like to know list of protocol on use, the \nforeign address and port numbers, the local address and port number and the state of the connection. \nWhich command would you use to accomplish that?",
+        "choices": [
+            "traceroute",
+            "ipconfig",
+            "netstart",
+            "nslookup"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "When we use a hash table data structure, our hash function should map the expected inputs (keys) as \nevenly as possible over its output range(indexes). This property of good hash function is know n \nas______.",
+        "choices": [
+            "Uniformity",
+            "Determinism",
+            "Continuity",
+            "Data normalization"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "In an array implementation of binary heap tree , if a node is stored as index i , then its right child will \nbe stored as index_______",
+        "choices": [
+            "2*i+1",
+            "i/2",
+            "(i+1)/2",
+            "2*i"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is false about sequential and binary searching algorithm?",
+        "choices": [
+            "Binary searching algorithm can work on list of data which is stored in descending order",
+            "Sequential and binary searching algorithm are not equal in terms of memory efficiency",
+            "Sequential searching algorithm can work on sorted and unsorted list of data",
+            "Considering worst case analysis binary searching algorithm is faster than sequential searching on \nsorted data."
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following term refers to the number of symbols composing a string?",
+        "choices": [
+            "Length",
+            "Symbols",
+            "Alphabet",
+            "Word"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "________ is a way of combining analogue or digital signals into one single over a common or shared \nmedium.",
+        "choices": [
+            "Point-to-point",
+            "Broadcasting",
+            "Synchronization",
+            "Multicasting"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which generation’s programming languages are used in Artificial intelligence and Expert systems?",
+        "choices": [
+            "Fifth generation languages",
+            "Second generation languages",
+            "Fourth generation languages",
+            "Third generation languages"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which attribute of INPUT tag defines the number of characters that can be displayed in a text box \nwithout scrolling?",
+        "choices": [
+            "SIZE",
+            "MAXLENGTH",
+            "VALUE",
+            "TYPE"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which characteristics of requirement specify that the requirements should be phrased so that there is \none and only one interpretation for it?",
+        "choices": [
+            "Correct",
+            "Unambiguous",
+            "Feasible",
+            "Verifiable"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which method can be used to divide a browser into smaller sub windows so that each sub window \ndisplaying a different HTML document?",
+        "choices": [
+            "Using paragraphs",
+            "Using frames",
+            "Using images",
+            "Using tables"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is not correct when mapping ER diagrams to relational tables?",
+        "choices": [
+            "Multi-valued attributes are mapped to new tables",
+            "Foreign key are used to map relationships to create relation between tables",
+            "Table names are directly mapped from entity names",
+            "Composite attribute are mapped as it is"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which data update allows data item to be updated the moment it is modified in cache?",
+        "choices": [
+            "In-Place Update",
+            "Immediate update",
+            "Shadow update",
+            "Deferred update"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which mutual exclusion mechanism keeps track of turns to enter the critical region using an integer \nvariable, which is initially-0, and another process waits until it turns to 1?",
+        "choices": [
+            "Lock variable",
+            "Disabling interrupts",
+            "Strict alteration",
+            "Race condition"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "If there are two languages Li = {c, dl and L2 = (e, fgh}, which one of the following is not an element \nof L2 Li?",
+        "choices": [
+            "Fghc",
+            "Ed",
+            "Fghe",
+            "Ec"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Given input Alphabet = (c, d) and a language (L) defined on E as L = {ed. : n > 0). Then, which one \nof the following is not an element of language L?",
+        "choices": [
+            "Ccddd",
+            "Od",
+            "Ccccdddd",
+            "Ccdd"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "______Uses the knowledge of the characteristics of the relational algebra operations and the \nrelationship between the operators to optimize the query?",
+        "choices": [
+            "Database approach",
+            "Heuristic approach",
+            "Deterministic approach",
+            "Hierarchical data model approach"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is correct ordering in language processing system?",
+        "choices": [
+            "Source program ->Preprocessor -> Assembler -> Compiler Linker/Loader -> target machine code",
+            "Source program -> Preprocessor ->Linker/Loader -> Compiler /Assembler ->target machine code",
+            "Source program Compiler -> Assembler -> Preprocessor > Linker/Loader -> target machine code",
+            "Source program _> Preprocessor -> Compiler -> Assembler -> Linker/Loader -> target machine \ncode"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is a wrong coupling of problem and its environment?",
+        "choices": [
+            "Contingency problem -> partially observable, non-deterministic",
+            "Multiple state problem deterministic, partially observable",
+            "Exploration problem -> partially observable, deterministic",
+            "Single state problem-> fully observable, deterministic"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is responsible for controlling the flow of bits between memory and \ncontrollers with no need for a constant intervention from the CPU?",
+        "choices": [
+            "Disk fragmenting",
+            "Memo, manager",
+            "Device controller",
+            "Direct memory access"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "A cryptographic program replaces an alphabet from a text message using its successor alphabet and \ncreates cipher text. Which one best describes the program?",
+        "choices": [
+            "Transliteration",
+            "Translation",
+            "Transformation",
+            "Substitution"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following messaging communication best explains the statement: “Until the \nmessage is received, the sending process is blocked'\"?",
+        "choices": [
+            "Blocking receive",
+            "Non-block receive",
+            "Non-block sending",
+            "Blocking send"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which theory provides mechanisms for classifying combinatorial problems and measuring the \ncomputational resources necessary to solve them?",
+        "choices": [
+            "Computability theory",
+            "Set theory",
+            "Complexity theory",
+            "Automata theory"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is correct first order logic for the statement “There is someone standing at \nthe door and is tall”?",
+        "choices": [
+            "∀x (StandingAt (x; door )",
+            "∀x ( StandingAt (x; door )^ tall(x))",
+            "∃x ( StandingAt (x; door )^ tall(x))",
+            "∃x ( StandingAt (x; door )  -> toll(x))"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "_______is the component of the operating system that is responsible to decide which process to run \nfirst among ready processes.",
+        "choices": [
+            "Memory manager",
+            "Inter process communication",
+            "Disk manager",
+            "Scheduler"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "First design the very high level structure of the system. Then gradually work down to detailed \ndecisions about low-level constructs. Which design approach follows the given strategy?",
+        "choices": [
+            "Bottom-up",
+            "System design",
+            "Top-down",
+            "Hybrid"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is false regarding Exceptions in Java?",
+        "choices": [
+            "We cannot create our own exception classes by extending Exception class",
+            "Exception class describes errors caused by your program and external circumstances",
+            "Runtime Exception class describes programming errors such as bad casting and numeric errors",
+            "All Java exception classes inherit directly or indirectly from Throwable class"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "A traditional phone call is an example of",
+        "choices": [
+            "Packet switching",
+            "Multiplexing",
+            "Broadcasting",
+            "Circuit switching"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following is false about style sheets?",
+        "choices": [
+            "Style sheets increase accessibility",
+            "Style sheets creates consistent appearance",
+            "Style sheets make it easy to maintain HTML pages",
+            "Style sheets do not reduce web page file size"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following is not correct about logic design?",
+        "choices": [
+            "It consider a particular DBMS",
+            "Normalization is undertaken in logical phase",
+            "It is based on specific data model",
+            "It is independent from physical considerations"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following is an attack detection mechanism?",
+        "choices": [
+            "Physical control",
+            "Audit log",
+            "Password",
+            "Encryption"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which SQL command would you use if you want to specify constraints to be applied on tuples?",
+        "choices": [
+            "GRANT",
+            "SELECT",
+            "REVOKE",
+            "CHECK"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which data management approach allows application programs to define and manage their own data?",
+        "choices": [
+            "Manual approach",
+            "Database approach",
+            "Hierarchical approach",
+            "Traditional file based approach"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the output of the following C++ fragment code?\n   int  p, q, n;\n        p = q = n = 8;\n        p + = n;\n        p / = q;\n       cout<<p;",
+        "choices": [
+            "16",
+            "2",
+            "24",
+            "1"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which database constraints are specified in the data definition language?",
+        "choices": [
+            "Implicit or inherent model based constraints",
+            "Semantic constraints",
+            "Application based constraints",
+            "Schema based constraints"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is a communication pathway connecting transmitting signals in binary \ndigits between two or more devices?",
+        "choices": [
+            "Memory",
+            "Register",
+            "CPU",
+            "Bus"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following sorting algorithm requires large memory space to sort data?",
+        "choices": [
+            "Insertion sort",
+            "Selection sort",
+            "Merge sort",
+            "Quick sort"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "In which phase of the two phase locking protocol can a transaction obtain locks?",
+        "choices": [
+            "Release phase",
+            "Roll back phase",
+            "Shrinking phase",
+            "Growing phase"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following is not the task of lexical analyzer?",
+        "choices": [
+            "Group characters into lexemes",
+            "Output a sequence of tokens",
+            "Read the input characters",
+            "Build syntax tree"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following best describes for a program that seems friendly and legitimate but \ncontains hidden malicious codes and harms a system?",
+        "choices": [
+            "Trojan",
+            "Malware",
+            "Virus",
+            "Worm"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Look at the following fragment code :\nint a = 6;\nint b = 5;\n\nwhile(a>b)\n{\nCout<<”computer science program”<<endl;\n}\nWhich algorithm property is not satisfied by the above C++ code algorithm?",
+        "choices": [
+            "Sequential",
+            "Feasibility",
+            "Finiteness",
+            "Definiteness"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Assume you are searching for information and typed the domain name: www.mysearchexample.com \non your browser, having an IP address 192.108.110.1. Since internet communication is based on an IP \naddress, the domain name has to be translated to its corresponding IP address. Which of the following \nis responsible for the translation?",
+        "choices": [
+            "DNS",
+            "SMTP",
+            "FTP",
+            "DHCP"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which program puts together the entire executable object files into memory for execution or running?",
+        "choices": [
+            "Editor",
+            "Debugger",
+            "Linker",
+            "Loader"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Machine language is grouped under__________ generation of programming language.",
+        "choices": [
+            "2nd generation language",
+            "3rd generation language",
+            "4th generation language",
+            "1st generation language"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following is not problem if concurrency is not controlled properly?",
+        "choices": [
+            "Lost update problem",
+            "Consistent database",
+            "Incorrect summary",
+            "Dirty read"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is false about the role of parser in compiling process?",
+        "choices": [
+            "Parser builds the parse tree",
+            "Parser attempts to correct or recover few errors",
+            "Parser cannot perform  context free syntax analysis",
+            "Parser produces appropriate error messages"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "A malicious program that once installed on your machine can collect all keystrokes including \nusername, password, emails, credit card numbers and other sensitive information is:",
+        "choices": [
+            "Rootkit",
+            "Worms",
+            "Key logger",
+            "Trojan"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which memory is characterized by the need for periodic change in order to maintain data storage?",
+        "choices": [
+            "Static RAM",
+            "Dynamic RAM",
+            "Disk",
+            "Tape"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is not correct?",
+        "choices": [
+            "A rational agent know the result of its action, but unrealistic",
+            "Rational agent take action but not 100% sure of success",
+            "Rational agent act to achieve utmost success based on information",
+            "An omniscience agent takes actions for 100% sure of success"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What should compilers of high level programming languages do to evaluate expressions?",
+        "choices": [
+            "Convert infix notation to postfix notation",
+            "Convert postfix notation to prefix notation",
+            "Evaluate infix notation to prefix notation",
+            "Convert postfix to infix notation"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "________ finds the shortest path to the goal based on cost.",
+        "choices": [
+            "Depth first search",
+            "Iterative deepening",
+            "Uniform cost search",
+            "Breath first search"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is not correct about magnetic disk?",
+        "choices": [
+            "Its minimum block is a sector",
+            "Its head is stationary during read/write",
+            "Its data is organized in tracks",
+            "It needs continuous power to keep bit contents"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is not correct about networking models?",
+        "choices": [
+            "TCP/IP model is a protocol model",
+            "A reference model has no implementation specification",
+            "A network designer can use either of TCP/IP or OSL, or both",
+            "Open system interconnection (OSI) is a protocol model"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What will be the out of the following JavaScript statement? Math.abs(-9)",
+        "choices": [
+            "9",
+            "-9",
+            "1",
+            "0"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is not correct about IPv4?",
+        "choices": [
+            "IT uses 128-bits",
+            "It has shortages of address space",
+            "It is characterized by slow routing and memory intensive",
+            "It uses 32-bits"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one is true about the following JavaScript statement? Document.bgcolor",
+        "choices": [
+            "bgcolor is method",
+            "document is property",
+            "bgcolor is property",
+            "document is method"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is not an example of divide and conquer algorithm?",
+        "choices": [
+            "Quick sort",
+            "Binary searching",
+            "Merge sort",
+            "Heap sort"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which data structure is the most appropriate for sharing a printer in a network environment?",
+        "choices": [
+            "Stack",
+            "Binary search tree",
+            "Full binary tree",
+            "Queue"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Assuming there is a rectangle object, what getArea, getPerimeter can represent?",
+        "choices": [
+            "Attribute",
+            "Property",
+            "Data field",
+            "Behavior"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is false about abstract classes and abstract methods?",
+        "choices": [
+            "We can create instances of abstract classes using the new operator",
+            "Implementation of abstract methods is provided by the subclasses",
+            "A class that contains abstract methods must be defined as abstract",
+            "Abstract methods are defined without implementation in the superclass"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Look at the following PHP line:\n \n      $list = array(“outside” = > “red”,\n       “inside” = > “brown”,\n        “top” = > “black”,\n        “under” = > “blue”);\n \nWhat is the index of data value black?",
+        "choices": [
+            "Brown",
+            "Outside",
+            "Under",
+            "Top"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which operator is used to create an array?",
+        "choices": [
+            "new",
+            "declare",
+            "static",
+            "construct"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the output of the following C++ fragment code?\n    a:\n        cout<<”Graduating      “;\n        goto b;\n    c:\n        cout<<” Year           “;\n        goto a;\n    b:\n       cout<<”fourth            “;",
+        "choices": [
+            "Graduating Year      Fourth",
+            "Graduating Fourth       Year",
+            "Year  Fourth      Graduating",
+            "Graduating Fourth        Year"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the output of the following java fragment code?\n    For (int i = 2; i < = 11; I = I + 2)  \n        {\n             if(i%4 = = 0)\n   system.out.print(i*i) +  “  “);\n        }",
+        "choices": [
+            "16 64 100 8 4",
+            "4 16 36 64 100",
+            "16 64 4 8 64",
+            "4 8 16 64 4"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is not transmission impairments?",
+        "choices": [
+            "Synchronization",
+            "Crosstalk",
+            "Impulse",
+            "Distortion"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Look at the following fragment code:\nstruct car {\n        char car_model[25];\n        float price;\n};\ncar  *c1;\nWhich one of the following is correct C++ statement?",
+        "choices": [
+            "Cout<<c1<<price;",
+            "Cin>>c1.car_model;",
+            "C1.price = 150000;",
+            "Cout<<c1 -> car_mode;"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is false about client-side scripting?",
+        "choices": [
+            "Script languages are not full-featured",
+            "Script languages can access client’s hardware",
+            "Script languages have limited capabilities",
+            "Script languages are embedded as plain text, and interpreted by applications"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is true about Queue data structure?",
+        "choices": [
+            "Queue data structure applies first come first served policy",
+            "Queue data structure uses last in first out rule",
+            "Queue data structure does not have efficient basic operations",
+            "Queue data structure cannot be implemented using linked list"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following is not correct about IP address and DHCP",
+        "choices": [
+            "An IP leased by the DHCP for a host is permanent",
+            "DHCP assures connectivity ever users move from location to location",
+            "The IP address are chosen from a predetermined range of address",
+            "DHCP allows a host to acquire an IP address automatically"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is not a condition for two operations in a schedule to be said to conflict?",
+        "choices": [
+            "If they access the same item X",
+            "If they belong to the same transactions",
+            "If Write_item (X) is at least one of the operations",
+            "If they belong to different transactions"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "In case of any shut down during transaction before commit which of the following statement is done \nautomatically?",
+        "choices": [
+            "View",
+            "Commit",
+            "Rollback",
+            "Flashback"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following commands is not used for removing (or deleting) a relation forms the \nSQL database?",
+        "choices": [
+            "Delete",
+            "Drop",
+            "Remove",
+            "UPDATE"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "A system is in a ______ state if there exists a set of transactions such that every transaction in the set \nis waiting for another transaction in the set.",
+        "choices": [
+            "Idle",
+            "Waiting",
+            "Deadlock",
+            "Ready"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is a Functional Requirement?",
+        "choices": [
+            "specifies the tasks the program must complete",
+            "specifies the tasks the program should not complete",
+            "specifies the tasks the program must not work",
+            "All of the mentioned"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "_________ is a software development life cycle model that is chosen if the development team has \nless experience on similar projects.",
+        "choices": [
+            "Iterative Enhancement Model",
+            "RAD",
+            "Spiral",
+            "Waterfall"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "In which step of SDLC actual programming of software code is done?",
+        "choices": [
+            "Development and Documentation",
+            "Maintenance and Evaluation",
+            "Design",
+            "Analysis"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Software Debugging is known as _________________",
+        "choices": [
+            "identifying the task to be computerized",
+            "creating program code",
+            "creating the algorithm",
+            "finding and correcting errors in the program code"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "_____________ is a probabilistic algorithm where a data packet is sent by the router to any one of its \nneighbors randomly.",
+        "choices": [
+            "Adaptive routing algorithm",
+            "Flooding routing algorithm",
+            "Random walks routing algorithm",
+            "Distributed routing algorithm"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which network address translation protocol solves the task of address resolution using port number?",
+        "choices": [
+            "Network Address Translation",
+            "Port Address Translation",
+            "Dynamic Address Translation",
+            "Static address translation"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "_____________ is responsible for converting the higher level protocol addresses to physical Network \nAddresses.",
+        "choices": [
+            "Address Resolution Protocol (ARP)",
+            "Reverse Address Resolution Protocol (RARP)",
+            "Bootstrap Protocol (BOOTP)",
+            "Internet Control Message Protocol (ICMP)"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Given the network address of 172.16.0.0/19, which of the following is correct?",
+        "choices": [
+            "It provides 8 subnets, 32 IP addresses each",
+            "It provides 8 subnets, 8,190 hosts each",
+            "It provides 8 subnets, 30 hosts each",
+            "It provides 8 subnets, 2,046 IP addresses each"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "A network device that provides the physical interface between computer and cabling is known \nas________.",
+        "choices": [
+            "Switch",
+            "Router",
+            "NIC",
+            "Repeater"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following is not the function of DHCP server?",
+        "choices": [
+            "It grants an IP address when receives a request from a client.",
+            "It maintains the information about client configuration parameters.",
+            "It maintains a database of available IP addresses.",
+            "It grants an IP address when sender request from a client."
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following is not true?",
+        "choices": [
+            "kernel is the program that constitutes the central core of the operating system",
+            "kernel is the first part of operating system to load into memory during booting",
+            "kernel is made of various modules which cannot be loaded in running operating system",
+            "kernel remains in the memory during the entire computer session"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following circuits requires memory to store the state of the output?",
+        "choices": [
+            "Combinational circuit",
+            "Sequential circuits",
+            "Logical circuit",
+            "Physical circuit"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "From the following grammars, which describes the lexical syntax?",
+        "choices": [
+            "Lexical Grammar",
+            "Context-free Grammar",
+            "Syntactic Grammar",
+            "Regular Grammar"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is not a Functional Requirement?",
+        "choices": [
+            "specifies the tasks the program must complete",
+            "specifies the tasks the program should not complete",
+            "specifies the tasks the program must not work",
+            "doesn’t specifies the tasks the program must not work"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "_________ is a software development life cycle model that is chosen if the development team has \nless experience on similar projects.",
+        "choices": [
+            "Iterative Enhancement Model",
+            "RAD",
+            "Spiral",
+            "Waterfall"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "In which step of SDLC actual programming of software code is done?",
+        "choices": [
+            "Development and Documentation",
+            "Maintenance and Evaluation",
+            "Design",
+            "Analysis"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Software Debugging is known as _________________",
+        "choices": [
+            "identifying the task to be computerized",
+            "creating program code",
+            "creating the algorithm",
+            "finding and correcting errors in the program code"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which of the following is the understanding of software product limitations, learning system \nrelated problems or changes to be done in existing systems beforehand, identifying and addressing the \nimpact of project on organization and personnel etc.?",
+        "choices": [
+            "Software Design",
+            "Feasibility Study",
+            "Requirement Gathering",
+            "System Analysis"
+        ],
+        "answer": "B"
+    }
+]

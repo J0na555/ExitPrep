@@ -1,0 +1,1169 @@
+
+[
+    {
+        "question": "What are the values of A, B, C and D after executing the following C++ code fragment? \n A = 5, B = 9; \n C = ++A – B; \n D = C + B––; \n cout<<A<<B<<C<<D;",
+        "choices": [
+            "A. 5, 9, -4, 0",
+            "B. 6, 8, -3, 6",
+            "C. 6, 9, -3, 5",
+            "D. 8, 6, -3,6"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What will be the value of count and sum if a user provides 7.2 as the value of x in the \nbelow given C++ code?  \nfloat sum = 3; \n  float count = 0; \n  if (x < 6.0) \n   sum = sum + x; \n  count = (count += 1)* sum;",
+        "choices": [
+            "A. 0, 10.2",
+            "B. 10.2, 10.2",
+            "C. 0, 3    ",
+            "D. None of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "How many times the message “Hello” will be displayed on the screen if the vlues of j = 2, \nk = 5, m= 6, and n = 9? \nwhile (j < k){ \n   while (m < n){ \n      cout<<\"Hello\"; \n      m = m + 1; \n   } \n   j = j + 1; \n}",
+        "choices": [
+            "A. 0",
+            "B. 6  ",
+            "C. 3  ",
+            "D. 9  "
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Consider the below given C++ code and answer the below question.  \nint x = 3; \nint num[5] = {4, 12,5,7}; \nint *t, *v; \nt = &x; \nv = num+2; \n\n*(v+4) = *t; \nWhat does a statement cout<<*t; prints?  ",
+        "choices": [
+            "A. The address of x",
+            "B. 3",
+            "C. 7",
+            "D. None of the above"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What will be the output of the code below? \nstruct Person { \n int age; \n string name; \n}; \nint main() { \n  Person p1{25, “Sami”}; \n  Person p2 = p1; \n p2.age = 30; \n cout<<p1.age << “ “<<p2.age<<endl; \n return 0; \n}",
+        "choices": [
+            "A. 25 25",
+            "B. 25 30",
+            "C. 30 30",
+            "D. Compilation error",
+            "E. None of the above"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What will be the output of the below given code? \nenum Months { \n    Jan=1, Feb, Mar, Apr, \n    May, Jun, Jul, Aug, \n    Sep, Oct, Nov, Dec \n}; \nint main(){ \n    Months mon; \n    for(mon = Jan; mon < Dec; mon = (Months)(mon+1)) \n        mon = (Months)(mon + 1); \n    cout<<mon<<” “; \n    return 0; \n}",
+        "choices": [
+            "A. Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec",
+            "B. 1 2 3 4 5 6 7 8 9 10 11 12",
+            "C. 12",
+            "D. 13",
+            "E. None of the above"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Given that the file output stream variable, named fileout, has been defined and opened \nfor output, which of the following will return the current position of the file pointer?",
+        "choices": [
+            "A. fileout.tellg()",
+            "B. fileout.tellp()",
+            "C. fileout.seekg()",
+            "D. fileout.seekp()",
+            "E. None of the above"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary purpose of concurrency control protocols?",
+        "choices": [
+            "A. To increase transaction speed",
+            "B. To guarantee serializability",
+            "C. To reduce data redundancy",
+            "D. To enhance data security"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "In the context of concurrency control, what is a deadlock?",
+        "choices": [
+            "A. A situation where two or more transactions are waiting for each other to release locks",
+            "B. A situation where a transaction is unable to acquire a lock because of it is busy nature",
+            "C. A situation where a transaction is rolled back due to a conflict executions occurred",
+            "D. A situation where a transaction is committed successfully but rolled back"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "If A1 wants to grant A2 the privilege to insert and delete rows in the EMPLOYEE and \nDEPARTMENT relations without allowing A2 to propagate these privileges, what \ncommand should A1 issue?",
+        "choices": [
+            "A. GRANT INSERT, DELETE ON EMPLOYEE, DEPARTMENT TO A2 WITH GRANT \nOPTION.",
+            "B. GRANT INSERT, DELETE ON EMPLOYEE, DEPARTMENT TO A2;",
+            "C. GRANT SELECT ON EMPLOYEE, DEPARTMENT TO A2 WITH REVOKE OPTION;",
+            "D. GRANT UPDATE ON EMPLOYEE, DEPARTMENT TO A2 WITH ALLOW OPTION;"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following statements about database recovery strategies is correct?",
+        "choices": [
+            "A. The \"Force\" strategy simplifies recovery by ensuring that all cache updates a re \nimmediately flushed to disk when a transaction commits.",
+            "B. The \"No -Steal\" strategy allows cache to be flushed before transaction commits, \nreducing memory needs but leading to complex recovery.",
+            "C. The \"Steal\" strategy maintains data integrity by ensuring that cache cannot be \nflushed before transaction commit.",
+            "D. The \"No -Force\" strategy reduces I/O cost by allowing updated pages of a \ncommitted transaction to remain in the buffer when another transaction needs to \nupdate them."
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the impact of larger data item size (coarse granularity) on concurrency?",
+        "choices": [
+            "A. It increases the degree of concurrency permitted",
+            "B. It eliminates the need for locks",
+            "C. It reduces the degree of concurrency permitted",
+            "D. It has no impact on concurrency"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What must be obtained before performing a deletion operation on an existing data item?",
+        "choices": [
+            "A. Shared lock",
+            "B. Intention lock",
+            "C. Write lock",
+            "D. Read lock"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which type of backup copies only the data that has changed since the last backup?",
+        "choices": [
+            "A. Full Backup",
+            "B. Incremental Backup",
+            "C. Differential Backup",
+            "D. Snapshot Backup"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary purpose of database recovery?",
+        "choices": [
+            "A. To increase transaction speed and performance",
+            "B. To reduce data redundancy and save storage",
+            "C. To enhance data security and prevent failure  ",
+            "D. To bring the database into the last consistent state"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the primary notion of Role-Based Access Control (RBAC)?",
+        "choices": [
+            "A. Permissions are associated with individual users, and roles created per user",
+            "B. Permissions are associated with roles, and users are assigned to appropriate roles.",
+            "C. Permissions are granted based on user requests and administrative approvals",
+            "D. Permissions are automatically assigned by the system for each user  "
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which principle of data integrity states that all data must be recorded at the time an action \nis performed, not retroactively?",
+        "choices": [
+            "A. Contemporaneous",
+            "B. Attributable",
+            "C. Legible",
+            "D. Original"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "If the owner account A revokes the privilege granted to B, what happens to the privileges \nthat B propagated based on that privilege?",
+        "choices": [
+            "A. They remain active.",
+            "B. They are automatically revoked by the system.",
+            "C. They are transferred to another account.",
+            "D. They are converted to read-only privileges."
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "In nested transactions, what is the purpose of using savepoints?",
+        "choices": [
+            "A. To encrypt data during transmission",
+            "B. To create roll back points in case of error",
+            "C. To compress data to save storage space",
+            "D. To duplicate data for backup purposes"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature is unique to object-oriented databases compared to relational databases?  ",
+        "choices": [
+            "A. Use SQL for data querying.  ",
+            "B. Ability to handle large amounts of data.  ",
+            "C. Storing data in objects and classes.  ",
+            "D. Organizing data into rows and columns."
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is a key advantage of relational databases over object-oriented databases?  ",
+        "choices": [
+            "A. Simple and widespread SQL use.  ",
+            "B. Compatibility with NoSQL.  ",
+            "C. Supports complex data types.  ",
+            "D. Handles hierarchical data."
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following will work if you want to create a table which looks like the \nfollowing? \n \n12 -9 8 \n7 14 \n \n-32 -1 0 \n \n",
+        "choices": [
+            "A. double[][] table = {12, -9, 8, 7, 14, -32, -1, 0};",
+            "B. double[][] table = {{12, -9, 8}, {7,14,0}, {-32,-1,0}};",
+            "C. double[][] table = {{12,-9,8}{7,14}{-32,-1,0}};",
+            "D. double[][] table = { {12, -9, 8},{7, 14},{-32, -1, 0} };"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which of the following is a good candidate to be static?",
+        "choices": [
+            "A. The PI field of a circle class",
+            "B. A method that displays the salary of an Employee class",
+            "C. A method that calculates the hypotenuse of a right-angle triangle class",
+            "D. A name field of a Student class",
+            "E. All except B  "
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Here is the general syntax for method definition:  \naccessModifier returnType methodName(parameterList ){ \n   Java statements \n \n   return returnValue; \n} \nWhat is true for the accessModifier?  ",
+        "choices": [
+            "A. It must always be private or public.",
+            "B. It can be omitted, but if not omitted it must be private or public.",
+            "C. It can be omitted, but if not omitted there are several choices, including private and \npublic",
+            "D. The access modifier must agree with the type of the return value.",
+            "E. All of the above"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the output of the following Java code? \nclass FinalExam{ \n int num1; \n public FinalExam() { \n  num1 = 4; \n } \n void display() { \n  System.out.println(num1); \n } \n} \nclass Final1 extends FinalExam{ \n int num=3; \n public Final1() { \n  this(5); \n  num1 = num; \n } \n public Final1(int num) { \n\n  this.num = num * num; \n } \n} \npublic class Main{ \n public static void main(String[] args){ \n  Final1 f = new final1(); \n  f.display(); \n } \n}",
+        "choices": [
+            "A. 4",
+            "B. 25",
+            "C. 12",
+            "D. 20"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is important to implement dynamic Polymorphism?  ",
+        "choices": [
+            "A. Polymorphic variable",
+            "B. Method overriding",
+            "C. Inheritance",
+            "D. All of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What must a non-abstract child do about an abstract method in its parent class?  ",
+        "choices": [
+            "A. A child must override an abstract method inherited from its parent by defining a \nmethod with the same signature and same return type",
+            "B. A child must define an additional method similar to the one inherited from its parent \nby defining a method with the same signature and different return type.",
+            "C. A child must not define any method with the same signature as the parent's abstract \nmethod.",
+            "D. A non -abstract child must define an abstract method with the same signature and \nsame return type as the parent's abstract method.",
+            "E. All of the above"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is true?",
+        "choices": [
+            "A. A child class can extend a parent or implement an interface, but not do both.",
+            "B. A child class can extend just one parent and can implement just one interface.",
+            "C. A child class can extend just one parent and can implement zero or more interfaces.",
+            "D. A child class can extend zero or more parents, and can implement zero or more \ninterfaces."
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following best describes the relationship between CPU involvement in \nprogrammed I/O, interrupt-driven I/O, and direct memory access (DMA)?",
+        "choices": [
+            "A. Programmed I/O wastes CPU cycles, interrupt-driven I/O allows the CPU to \nperform other tasks until an interrupt occurs, and DMA minimizes CPU \ninvolvement.",
+            "B. Programmed I/O and interrupt-driven I/O use the same CPU time, and DMA \nadds extra CPU overhead.",
+            "C. Interrupt-driven I/O wastes more CPU time than programmed I/O, and DMA \nwastes the most.",
+            "D. All three methods require identical CPU effort during data transfer."
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "A peripheral device uses memory-mapped I/O in a system. Which statement is true about \nmemory-mapped I/O vs. port-mapped I/O?",
+        "choices": [
+            "A. load/store instructions, whereas port-mapped I/O uses separate I/O instructions \nand address space.",
+            "B. Memory-mapped I/O uses the same address space as regular memory and uses \nstandard ",
+            "C. Port-mapped I/O uses the general memory space and ordinary instructions, \nwhile memory- mapped I/O requires special I/O instructions.",
+            "D. In memory-mapped I/O, I/O devices have a separate “I/O pin” on the bus, which \nis not needed in port-mapped I/O.",
+            "E. Memory-mapped I/O cannot use DMA transfers, while port-mapped I/O can."
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which technique allows an I/O device to transfer a block of data to memory without \ncontinuous CPU intervention?",
+        "choices": [
+            "A. Programmed I/O with busy-waiting",
+            "B. Interrupt-driven I/O",
+            "C. Direct Memory Access (DMA)",
+            "D. Polling in a loop"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which statement about RISC versus CISC architectures is generally true?",
+        "choices": [
+            "A. RISC has many complex instructions; CISC has few simple instructions.",
+            "B. RISC executes one instruction per cycle; CISC executes one instruction per clock \ncycle.",
+            "C. RISC uses a fixed instruction length and simple decoding, while CISC has variable-\nlength instructions and more addressing modes.",
+            "D. RISC requires microcode; CISC does not."
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the main purpose of cache memory in the computer hardware structure?",
+        "choices": [
+            "A. To permanently store user files.",
+            "B. To buffer data transfers to a printer.",
+            "C. To provide faster access to frequently used data between CPU and main memory.",
+            "D. To store BIOS settings."
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the correct sequence of micro-operations for the fetch phase of an instruction \ncycle?",
+        "choices": [
+            "A. PC → MAR, Read; MDR → IR; PC ← PC + 1.",
+            "B. PC → IR, PC ← PC + 1; IR → MAR.",
+            "C. IR → MDR, MDR → PC; MAR ← PC + 1.",
+            "D. MAR → PC; PC → IR; MDR ← PC + 1."
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "In an arithmetic instruction like ADD R1, R2, R3, which registers and operations are \ninvolved?",
+        "choices": [
+            "A. R2 ← R1 + R3 is performed by the Control Unit.",
+            "B. R1 ← R2 + R3 is performed by the ALU using R2 and R3 as inputs and storing result \nin R1.",
+            "C. Memory is read from address R1 and R2, then written to R3.",
+            "D. The instruction is moved to stack memory."
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the maximum number of IP addresses that can be assigned to hosts on a local \nsubnet that uses the 255.255.255.224 subnet mask?",
+        "choices": [
+            "A. 14      ",
+            "B. 15",
+            "C. 30",
+            "D. 62"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is incorrect about Physical Layer?",
+        "choices": [
+            "A. It interacts with the transmission media, the physical part of the network that \nconnects network components together.",
+            "B. It decides on the number of logical channels for transporting data coming from \ndifferent sources.",
+            "C. It creates a signal that represents this stream of bits.",
+            "D. It decides on the directions of data flow.",
+            "E. None of the Above"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Among the given alternatives which one of the following task is not done by data link \nlayer?",
+        "choices": [
+            "A. Framing                         ",
+            "B. Flow control  ",
+            "C. Channel coding",
+            "D. Error control             ",
+            "E. None of the Above     "
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following is valid IP host address given the network id 191.254.0.0 while \nusing 11 bits for subnetting?",
+        "choices": [
+            "A. 191.254.0.32                         ",
+            "B.  191.254.1.29",
+            "C.  191.254.1.64",
+            "D. 191.254.0.96                          "
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Among the following what kind of transmission medium is most appropriate to carry data \nin a computer network that is exposed to electrical interferences?",
+        "choices": [
+            "A.  Unshielded Twisted Pair cable",
+            "B. Optical Fiber cable",
+            "C. Coaxial cable",
+            "D. Microwave",
+            "E. Copper Cable"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is not true about class C",
+        "choices": [
+            "A. Starting with 110 and 21 network number",
+            "B. Three bytes define the netid and one byte defines the hosted",
+            "C. probably too small for many organizations",
+            "D. Two bytes define the netid and two bytes define the hostid",
+            "E. None"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Addis Ababa university has been assigned the class B network address 165.87.0.0 . The \norganization needs to divide the network in to eight subnets. what subnet mask should be applied \nto the network  to provide the most  hosts per subnet?",
+        "choices": [
+            "A. 255.255.192.0                           ",
+            "B.  255.255.224.0        ",
+            "C. 255.255.240.0                           ",
+            "D. 255.255.248.0     "
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is an Abstract Data Type (ADT)?  ",
+        "choices": [
+            "A. A physical implementation of a data structure in memory  ",
+            "B.  A mathematical model for data types defined by their behavior and operations  ",
+            "C.  A programming language-specific data type",
+            "D. A hardware-based data storage mechanism"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Inserting an item into the stack when stack is not full is called ____________operation.and \ndeletion of an item from the stack when the stack is not empty is called---------------------------",
+        "choices": [
+            "A. Push,pop",
+            "B. Pop,push",
+            "C. Insert delete",
+            "D. Delete,insert"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "-------------------- is a pile in which items are added at one end and removed from the other end",
+        "choices": [
+            "A. Stack",
+            "B. Queue",
+            "C. List",
+            "D. None of the above"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the time complexity of the following code snippet? \nfor (int i = 0; i < n; i++) {  \n   for (int j = 0; j < n; j++) {        \n      // Constant time operation   \n  }}",
+        "choices": [
+            "A. O(n)",
+            "B.  O(n log n)",
+            "C.  O(n²)",
+            "D.  O(n³)"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the minimum number of nodes in a complete binary tree if the height of the tree is 3?",
+        "choices": [
+            "A. 12",
+            "B. 9",
+            "C. 8",
+            "D. 13"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "For the expression (7-(4*5))+(9/3) which of the following is its post fix representation?",
+        "choices": [
+            "A. *745-93/+",
+            "B. 93/+745*-",
+            "C. 745*-93/+",
+            "D. 74*+593/-"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following is true?",
+        "choices": [
+            "A. A graph may contain no edges and many vertices",
+            "B. A graph may contain many edges and one vertex",
+            "C. A graph may contain no edges and no vertices",
+            "D. A graph may contain no vertices and many edges"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What will the following JavaScript function will return? \n[1,2,3].map(num=>{ \nif(um%2===0) \nreturn; \nreturn num*2; \n});",
+        "choices": [
+            "A. [2, undefined, 6]",
+            "B. [2, , 6]",
+            "C. [2, undefined, undefined]",
+            "D. [undefined, undefined, undefined]"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What does the following PHP code snippet will do? \n$stmt=$coon->prepare(“SELECT * FROM users WHERE id=?”); \n$stmt->bind_param(“I”, $id); \n$stmt ->execute();  \n",
+        "choices": [
+            "A. Execute a static query",
+            "B. Fetch all users",
+            "C. Prevet SQL injection",
+            "D. It Will cause an error"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the difference between visibility: hidden and display: none?",
+        "choices": [
+            "A. Both remove the element from the document flow",
+            "B. visibility: hidden hides the element and removes its space",
+            "C. display: none hides the element but keeps its space",
+            "D. visibility: hidden hides the element but keeps is space;",
+            "E. display: none removes it entirely"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following MySQLi function is used to prevent XSS(Cross-Site Scripting)?",
+        "choices": [
+            "A. mysqli_real_escape_string()",
+            "B. htmlspecialchars()",
+            "C. mysqli_escape_string()  ",
+            "D. xss_escape()"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "One of the following is statements is true about let, const and var?",
+        "choices": [
+            "A. let and are function scoped",
+            "B. const can be reassigned",
+            "C. var is block scoped",
+            "D. let is block scoped, var is function scoped"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "One of the following selectors has the highest specificity?",
+        "choices": [
+            "A. .menu  .item",
+            "B. #header  .menu",
+            "C. div span",
+            "D. ul>li"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "One of the following is an attribute of the <form> element which prevents a form from being \nvalidated when submitted?",
+        "choices": [
+            "A. novalidate",
+            "B. no-validate",
+            "C. validate= “false”",
+            "D. skip-validation"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is not true about deadlocks?  ",
+        "choices": [
+            "A. Deadlocks can be provably avoided by defining a global resource acquisition \norder.  ",
+            "B. Deadlocks can ONLY occur if there is a circular wait for resources.  ",
+            "C. Strict priority schedulers use priority donation to prevent deadlocks.  ",
+            "D. A program in a safe state can eventually deadlock.  ",
+            "E.  None of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Among the following which one of the following decribes correctly about a \"race \ncondition\"?",
+        "choices": [
+            "A. A situation where multiple processes access shared resources concurrently in an \nunsafe manner",
+            "B.  A situation where processes run on different CPUs",
+            "C. A situation where two processes share the same memory space",
+            "D. A situation where processes are in a deadlock"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following statements is incorrect statement about device controller?",
+        "choices": [
+            "A. Works like an interface between a device and a device driver.  ",
+            "B. Performs error correction if necessary",
+            "C.  An interface to convert serial bit stream to block of bytes",
+            "D. software modules that can be plugged into an OS to handle a particular device",
+            "E. None of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Logical memory is broken into blocks of the same size called _______. ",
+        "choices": [
+            "A. Pages",
+            "B. Frames",
+            "C. Page table",
+            "D. Segmentation   ",
+            "E. none  "
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following scheduling algorithms is non-preemptive?",
+        "choices": [
+            "A.  Round Robin",
+            "B. SJF",
+            "C. FCFS",
+            "D. Priority Scheduling (preemptive)"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the main advantage of using the Round Robin (RR) scheduling \nalgorithm?",
+        "choices": [
+            "A. It provides fair allocation of CPU time to all processes  ",
+            "B. It gives higher priority to CPU-bound processes",
+            "C. It minimizes the average waiting time for processes",
+            "D.   It reduces the number of context switches"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What does the term \"swapping\" refer to in the context of memory \nmanagement?",
+        "choices": [
+            "A. Moving data from the cache to main memory",
+            "B. Moving entire processes between main memory and secondary storage",
+            "C. Shuffling virtual memory pages to reduce page faults",
+            "D. Dynamically resizing memory partitions based on demand"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the main goal of Software Engineering?",
+        "choices": [
+            "A. To create software as fast as possible",
+            "B. To write code without documentation",
+            "C. To develop software that is reliable, maintainable, and efficient",
+            "D. To avoid using any standard development process"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following best describes a software process model?",
+        "choices": [
+            "A. A tool used for debugging code",
+            "B. A set of activities and associated results that produce a software product",
+            "C. A process that always execute in the same way in all software project",
+            "D. A programming model used for web applications"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which software development model is best suited for projects with well-understood \nrequirements?",
+        "choices": [
+            "A.  Waterfall model  ",
+            "B.  Agile Model",
+            "C. Spiral Model",
+            "D. Incremental Model"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following model best represents instructor?",
+        "choices": [
+            "A. Class",
+            "B. Object",
+            "C. Use case",
+            "D. Actor"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which of the following best models the grade report?",
+        "choices": [
+            "A. Entity class",
+            "B. Boundary class",
+            "C. Control Class",
+            "D. Entity object"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is possible use case?",
+        "choices": [
+            "A. Grade report",
+            "B. Instructor",
+            "C. Portal",
+            "D. Generate grade"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "A system design should be done based on …",
+        "choices": [
+            "A. As-is scenario",
+            "B. Visionary scenario",
+            "C. Control class",
+            "D. As-is use case"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is true about components?",
+        "choices": [
+            "A. They are deployable product to deliver the service of a subsystem",
+            "B. Cannot be reused from previous system",
+            "C. Should always be purchased from one of the commercially-of-the-shelf \n(COTS) components.",
+            "D. The are useful for fast development but does not facilitate modularity."
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "When designing a system, what is the role of non-functional requirements (NFRs)?",
+        "choices": [
+            "A. They define services of the software",
+            "B. They specify programming languages to be used",
+            "C. They describe how the system performs under various conditions",
+            "D. They are not considered in the design phase"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following violates the essential characteristics of a valid algorithm?",
+        "choices": [
+            "A. Produces a result after a finite number of steps",
+            "B. Accepts zero or more inputs",
+            "C. Allows for subjective interpretation of steps",
+            "D. Has clearly defined operations"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Why do we analyze algorithms?",
+        "choices": [
+            "A. To check syntax errors",
+            "B. To prove correctness and argue for efficiency  ",
+            "C. To reduce the lines of code necessary",
+            "D. To determine the behavior of an algorithm"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the RAM model used for in algorithm analysis?",
+        "choices": [
+            "A. Describing distributed computing",
+            "B. Estimating hardware costs",
+            "C. Modeling memory hierarchy and latency  ",
+            "D. Defining fundamental operations of a computer"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the major limitation of the Master Theorem?",
+        "choices": [
+            "A. It cannot be applied if subproblems are of significantly different sizes",
+            "B. It cannot handle recursion trees with a depth greater than log n",
+            "C. It assumes the input size is always a power of two",
+            "D. It gives only best-case complexity, not worst-case"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which edge type in DFS traversal indicates a cycle in a graph?",
+        "choices": [
+            "A. Forward edge",
+            "B. Tree edge",
+            "C. Back edge",
+            "D. Cross edge"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which condition makes a problem suitable for dynamic programming?",
+        "choices": [
+            "A. It involves making the best choice at each step based solely on local information",
+            "B. It can be decomposed into subproblems that recur and share optimal substructure",
+            "C. It can be modeled using a recursion tree where only the leftmost path is considered",
+            "D. It can be divided into independent subproblems with a simple combination step"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following best explains how greedy algorithms operate?",
+        "choices": [
+            "A. They prioritize minimum recursion depth over all other criteria",
+            "B. They explore all combinations before selecting an optimal solution",
+            "C. They choose the best local option in the hope of finding a global optimum",
+            "D. They break problems into overlapping subproblems and reuse solutions"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is a rule-based system in the context of expert systems?",
+        "choices": [
+            "A. A system that applies a set of pre-defined rules to infer conclusions  ",
+            "B. A system where data is automatically processed",
+            "C. A system that generates rules from data automatically",
+            "D. A system with no predefined knowledge"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the time complexity of the Minimax algorithm without pruning, for a game tree \nof depth d and branching factor b?",
+        "choices": [
+            "A. O(b + d)",
+            "B. O(b^d)",
+            "C. O(d^b)",
+            "D. O(b * d)"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is an example of a simple reflex agent?",
+        "choices": [
+            "A. A self-driving car planning a route",
+            "B. A chatbot giving intelligent replies",
+            "C. A thermostat turning on the heater when temperature is low",
+            "D. A robot learning from experience"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which search algorithm is guaranteed to find the optimal solution, if one exists, given \nuniform step costs?",
+        "choices": [
+            "A. Breadth-First Search",
+            "B. Depth-First Search",
+            "C. Hill Climbing",
+            "D. Random Search"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "AI, a problem can be solved by searching when:",
+        "choices": [
+            "A. The solution is hardcoded",
+            "B. The path to the goal is unknown and must be discovered",
+            "C. The system has complete information",
+            "D. The solution is provided by the user"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "In robotic exploration, which of the following search methods is typically preferred?",
+        "choices": [
+            "A. Depth-First Search",
+            "B.  Blind Search",
+            "C. A* Search",
+            "D. Hill Climbing"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What does the following FOL sentence mean: ∃x (Dog(x) ∧ Barks(x))?",
+        "choices": [
+            "A. All dogs bark",
+            "B. No dogs bark",
+            "C. Some dogs don’t bark",
+            "D. There is at least one dog that barks"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the primary concern in data center management?",
+        "choices": [
+            "A. Designing websites for optimal performance  ",
+            "B. Managing power, cooling, and fire safety",
+            "C. Ensuring maximum social media engagement  ",
+            "D. Monitoring internal network traffic"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a key principle of system administration?",
+        "choices": [
+            "A. Installing multiple software on a server",
+            "B. Keeping systems outdated for stability  ",
+            "C. Automating repetitive tasks",
+            "D. Using manual backup methods"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the first step in the bootstrapping process of an OS?",
+        "choices": [
+            "A. Loading the OS kernel into memory",
+            "B. Initializing multi-user operations",
+            "C. Configuring network interfaces  ",
+            "D. Executing system daemons"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary function of a shell in UNIX/Linux?",
+        "choices": [
+            "A. Managing system hardware resources  ",
+            "B. Serving as a graphical interface for the OS  ",
+            "C. Interpreting and executing user commands",
+            "D. Connecting remote servers via FTP"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "When does page fault occur?",
+        "choices": [
+            "A. The page is present in memory.",
+            "B. The deadlock occurs.",
+            "C. The page does not present in memory.",
+            "D. The buffering occurs."
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "If the default gateway is configured incorrectly on a host, what is the impact on \ncommunications?",
+        "choices": [
+            "A. The host is unable to communicate with hosts on remote networks.",
+            "B. The host is unable to communicate on the local network.",
+            "C. The host is unable to communicate with hosts on both the local and remote",
+            "D. networks.",
+            "E. The host cannot get an IP address from the DHCP server."
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary purpose of log rotation in system administration?",
+        "choices": [
+            "A. To delete all logs automatically after a fixed time periods  ",
+            "B. To increase system performance by disabling logging features",
+            "C. To Prevents storage overflow and keeps records organized",
+            "D. To randomly rename log files without archiving"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "When will an input be accepted by a Turing Machine?",
+        "choices": [
+            "A. If it reaches any state and has no possible move for an input symbol",
+            "B. If the machine consumes all the input symbols in one of the states",
+            "C. If the machine halts in a final state",
+            "D. If the machine enters into an infinite loop"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following could be modeled using Turing Machine?",
+        "choices": [
+            "A. Non-Recursively Enumerable Languages",
+            "B. Non-Deterministic Finite Automata",
+            "C. Push Down Automata",
+            "D. Deterministic Finite Automata"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is an incorrect statement?",
+        "choices": [
+            "A. All recursive languages are recursively enumerable",
+            "B. All recognizable languages are decidable",
+            "C. All recursively enumerable languages are recursive",
+            "D. Decidable problems can’t be modeled by a Turing Machine"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which one of the following statements is correct?",
+        "choices": [
+            "A. Nondeterministic FSA have memory",
+            "B. Turing Machine have an infinite memory",
+            "C. Deterministic FSA have memory",
+            "D. Push-down Automata have unrestricted memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "When can we say two grammars are equivalent?",
+        "choices": [
+            "A. When the languages represented by both grammars are the same",
+            "B. When the language derived from one of the grammars become the subset of \nthe other",
+            "C. When the alphabets of the two grammars are the same",
+            "D. When a single string is member of the language represented by both grammars"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which one of the following is a regular language?",
+        "choices": [
+            "A. Strings whose length is a sequence of prime numbers  ",
+            "B. Strings with substring wwr in between",
+            "C. Palindrome strings",
+            "D. Strings with even number of Zero’s"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the notation used to describe the sequence of states of a given automata for a given \ninput?",
+        "choices": [
+            "A. Automaton  ",
+            "B. Instantaneous description",
+            "C. Computation  ",
+            "D. Transition function"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which type of firewall is considered most secure but potentially slower?",
+        "choices": [
+            "A. Packet-filtering",
+            "B. Proxy firewall",
+            "C. Stateful inspection",
+            "D. NAT firewall"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which access control model is based on the user’s identity?",
+        "choices": [
+            "A. Mandatory Access Control (MAC)",
+            "B. Role-Based Access Control (RBAC)",
+            "C. Discretionary Access Control (DAC)",
+            "D. Rule-Based Access Control"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "A brute-force attack in cryptography tries to:",
+        "choices": [
+            "A. Guess the encryption key by trying all possible combinations",
+            "B. Guess the encryption algorithm",
+            "C. Overload the CPU",
+            "D. Crack passwords by social engineering"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following uses the same key for both encryption and decryption?",
+        "choices": [
+            "A. Public-key cryptography",
+            "B. Asymmetric encryption",
+            "C. Symmetric encryption",
+            "D. Hashing"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of these can help mitigate the risk of Cross-Site Scripting (XSS)?",
+        "choices": [
+            "A. Disabling cookies",
+            "B. Sanitizing user input",
+            "C. Compressing data",
+            "D. Using weak encryption"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a common software vulnerability ?",
+        "choices": [
+            "A. SQL injection",
+            "B. Firewall misconfiguration",
+            "C. IP spoofing",
+            "D. Packet sniffing"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which is an example of multi-factor authentication in network security?",
+        "choices": [
+            "a. Password and CAPTCHA",
+            "b. Password and username",
+            "c. Password and fingerprint",
+            "d. Security question"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "In a grammar with productions A → aB | bA | bBa , B → bB | cA | b ; which terminal will \nbelong to the first of B?",
+        "choices": [
+            "A. a",
+            "B. b",
+            "C. c",
+            "D. B and C"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which action of the bottom-up parsing moves terminals from input buffer to the \nstack?",
+        "choices": [
+            "A. Shift  ",
+            "B. Accept  ",
+            "C. Reduce  ",
+            "D. augment"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the name of a grammar in which all attributes of the grammar symbols are \nsynthesized attributes and some form of inherited attributes?",
+        "choices": [
+            "A. S-attributed grammar",
+            "B. L-attributed grammar",
+            "C. M-attributed grammar",
+            "D. None"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which attribute’s value is computed from the values of attributes at the children of \nthat node in the parse tree?",
+        "choices": [
+            "A. Inherited attributes",
+            "B. Dependency attributes",
+            "C. Synthesized attributes",
+            "D. None"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which one of the following is used to determine a serious of characters as a token?",
+        "choices": [
+            "A. Lexeme  ",
+            "B. Alphabet  ",
+            "C. Grammar",
+            "D. None"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the other name given to the bottom-up parsing?",
+        "choices": [
+            "A. Shift-reduce parsing",
+            "B. Predictive parsing",
+            "C. Recursive descent parsing",
+            "D. Non-recursive parsing"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What we call a grammar that produces more than one parse tree for a particular \nstring?",
+        "choices": [
+            "A. Regular  ",
+            "B. Ambiguous  ",
+            "C. Unambiguous  ",
+            "D. Non-regular"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which one of the following is not an approach for parsing?",
+        "choices": [
+            "A. Top-down approach",
+            "B. Bottom-up approach",
+            "C. Left-to-right approach",
+            "D. None"
+        ],
+        "answer": "C"
+    }
+]

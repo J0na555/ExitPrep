@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import sys
 from importlib import import_module
 from pathlib import Path
 from typing import Any, Dict, List
@@ -27,8 +28,25 @@ from typing import Any, Dict, List
 from sqlalchemy import select
 
 
-# Import models explicitly from their modules to match project layout
-from app.models.question_model import Question, QuestionDifficulty, QuestionSource
+REPO_ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(REPO_ROOT))
+
+# Workaround: Import question.py before __init__.py imports question_model
+# We temporarily prevent question_model from being imported by mocking it in sys.modules
+import sys
+import types
+
+# Create a dummy module for question_model to prevent the real one from loading
+dummy_question_model = types.ModuleType("app.models.question_model")
+sys.modules["app.models.question_model"] = dummy_question_model
+
+# Now import question.py - it will register the questions table
+from app.models.question import Question, QuestionDifficulty, QuestionSource
+
+# Remove the dummy so other imports work normally
+del sys.modules["app.models.question_model"]
+
+# Import other models normally
 from app.models.course_model import Course
 from app.models.option import Option
 
@@ -64,18 +82,17 @@ async def load_json_file(path: Path) -> List[Dict[str, Any]]:
 
 
 async def get_or_create_course(session: Any, course_name: str) -> Course:
-    """Retrieve a Course by name, creating it if it doesn't exist.
+    """Retrieve a Course by title, creating it if it doesn't exist.
 
     Returns the Course instance (may be newly added but not necessarily committed).
     """
-    result = await session.execute(select(Course).where(Course.name == course_name))
+    result = await session.execute(select(Course).where(Course.title == course_name))
     course = result.scalar_one_or_none()
     if course:
         return course
 
-    course = Course(name=course_name)
+    course = Course(title=course_name)
     session.add(course)
-    # Flush so the instance gets a primary key without committing
     await session.flush()
     return course
 
@@ -117,7 +134,6 @@ async def process_file(path: Path, async_session_maker: Any) -> None:
         return
 
     async with async_session_maker() as session:
-        # We will commit per-file for safety
         async with session.begin():
             for idx, item in enumerate(data, start=1):
                 try:
@@ -130,7 +146,6 @@ async def process_file(path: Path, async_session_maker: Any) -> None:
                 question_text = item["question_text"].strip()
                 options = item["options"]
 
-                # Check for existing question (by exact text)
                 existing = await session.execute(
                     select(Question).where(Question.question_text == question_text)
                 )
@@ -139,10 +154,8 @@ async def process_file(path: Path, async_session_maker: Any) -> None:
                     print(f"  Skipped existing question: '{question_text[:60]}'")
                     continue
 
-                # Ensure course exists
                 course = await get_or_create_course(session, course_name)
 
-                # Create question; set default difficulty/source
                 question = Question(
                     course_id=course.id,
                     question_text=question_text,
@@ -150,27 +163,22 @@ async def process_file(path: Path, async_session_maker: Any) -> None:
                     source=QuestionSource.generated,
                 )
                 session.add(question)
-                # Attach options via relationship for cascade save
                 for opt in options:
                     option = Option(option_text=opt["text"], is_correct=opt["is_correct"])
                     question.options.append(option)
 
-                # Flush so Option ids are available and FKs bound
                 await session.flush()
 
-                # If any option marked correct, set correct_option_id
                 correct_opt = next((o for o in question.options if o.is_correct), None)
                 if correct_opt is not None:
                     question.correct_option_id = correct_opt.id
 
-                print(f"  Inserted question: '{question_text[:60]}' (course: {course.name})")
+                print(f"  Inserted question: '{question_text[:60]}' (course: {course.title})")
 
-        # session.begin() will commit here
 
 
 async def main() -> None:
     """Main entry point: find JSON files and process them sequentially."""
-    # Resolve the data folder relative to this script: app/ai/data/processed_questions
     ai_dir = Path(__file__).resolve().parents[1]
     input_dir = ai_dir / "data" / "processed_questions"
 
@@ -188,12 +196,11 @@ async def main() -> None:
     for path in json_files:
         try:
             await process_file(path, async_session_maker)
-        except Exception as exc:  # top-level per-file safety
+        except Exception as exc: 
             print(f"Error processing {path.name}: {exc}")
 
     print("Ingestion complete")
 
 
 if __name__ == "__main__":
-    # Run the async main when invoked as a script
     asyncio.run(main())

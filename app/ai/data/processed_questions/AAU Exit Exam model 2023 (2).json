@@ -1,0 +1,503 @@
+
+[
+    {
+        "question": "How many times is the phrase ″In the loop″ printed when the following code is executed?\n1. int i, j=8;\n2. for(i=0; i<j; i++, j--)\n3. {\n4. if(i%2!=0) continue;     \n5. cout << \"In the loop \" << endl;\n6. }",
+        "choices": ["20", "10", "3", "2"],
+        "answer": ""
+    },
+    {
+        "question": "What is the output of the following code snippet?\n1. int main ()\n2. {\n   int a= 5, x = 1, y = 0, z = 4;  \n    a = (x && y) || ++z;  \n    std::cout<<z<<endl<<a;  \n    return 0;\n}",
+        "choices": ["5\n1", "5\n2", "4\n1", "4\n2"],
+        "answer": ""
+    },
+    {
+        "question": "______ is a function that invokes itself?",
+        "choices": ["Recursive function", "Inline function", "Built in function", "User defined function"],
+        "answer": ""
+    },
+    {
+        "question": "Which control flow statement is represented by the flowchart shown in the figure below?",
+        "choices": ["while loop", "do…while loop", "if…else statement", "for loop"],
+        "answer": ""
+    },
+    {
+        "question": "What is the output of the following code snippet?\n1. double ph=15.3;\n2. if(ph<0 || ph>15)\n3. {\n     cout<< “Invalid PH value. ”;\n4. }\n5. if(ph<=6.5)\n  cout<< “Acidic”;\n6. else if(ph>6.5 && ph<7.5)\n  cout<< “Neutral”;\n7. else\n  cout<< “Alkaline”;",
+        "choices": ["Invalid PH Value", "Neutral", "Alkaline", "Invalid PH Value. Alkaline"],
+        "answer": ""
+    },
+    {
+        "question": "What will be the result after executing the following program?\n1. int func (int a, int b) {\n2. a *= 5;\n3. b +=5;\n4. return (a + b);\n5. }\n\n6. void main() {\n7. int x = 9, y = 3;\n8. cout << \"Result = \" <<func(x, y)<<\", \"<<x<<\", \"<<y<<endl;\n9. }",
+        "choices": ["12, 9, 3", "50, 9, 3", "53, 9, 3", "53, 45, 8"],
+        "answer": ""
+    },
+    {
+        "question": "What do arrays do?",
+        "choices": ["Hold address of a single value", "Hold one value", "Hold values of the same type under a single name", "Hold addresses of values under a single name"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following statement best describe relational data model?",
+        "choices": ["It is a database model that allows multiple records to be linked to the same owner file.", "It structures data in a tree like structure using parent to child relationship.", "It is a database model to manage data as tuples grouped into relations", "It is a model that use concepts such as entities, attributes, and relationships", "Describe how data is stored in the computer, representing information such as record structures, record ordering, and access paths."],
+        "answer": ""
+    },
+    {
+        "question": "Consider the following record of an employee database and answer the question that follows\nEmployee\nEmp_ID First_Name Last_Name Salary  Department\n101 Lula Getachew 35,000 Accounting \n102 Natnael Abera 18,000 IT\n103 Henok Teshome 45,000 Accounting \n104 Selamawit Tadesse 120,000 IT \n105 Solomon Nigusse 32,000 Sales \nDepartment \nDept_Nam\ne\nManager \nAccountin\ng \n101\nIT 102\nSales 105\nWhich of the following constraint will violate when a data base administrator try to \nexecute the following SQL statement?\n               INSERT INTO Department (Dept_Name, Manager) VALUES (null, 107);",
+        "choices": ["Domain constraint", "Key constraint", "Entity Integrity constraint", "Referential Integrity constraint"],
+        "answer": ""
+    },
+    {
+        "question": "Consider a relation R (A,B,C,D) with set of functional dependencies F={C�D,C�B,B�C).\nWhich of the following statement is true about R?",
+        "choices": ["The relation R is in second normal form", "The relation R is in third normal form", "The candidate key for R is BC", "The relation R is in second normal form", "None"],
+        "answer": ""
+    },
+    {
+        "question": "Which schema of the three-schema Architecture describe the structure of the whole \ndatabase?",
+        "choices": ["Internal schema", "Conceptual schema", "External schema", "schema"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is the disadvantage of a database approach?",
+        "choices": ["Data consistency", "Sharing of data", "Improved data integrity", "Increased concurrency", "Enforcement of standards", "Complexity", "None"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is a correct statement about relation? (Choose all that applies)",
+        "choices": ["Values of each columns is a repeating group/array", "Values in a column can be from different domain", "A relation is in the 1NF", "Two rows in a relational table can be identical", "The sequence of columns and rows is insignificant", "None"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following statement is correct about executing the following SQL query on \nthe employee database given in question 2? (Choose all that applies)",
+        "choices": ["the query will execute successfully and will obtain all departments with an average salary higher than 35,000", "the query will not execute because Department attribute in Group by statement was not included in the select statement list", "the query will not execute because we can’t include aggregate function in the where statement", "the query will execute successfully and will obtain employees of all departments with an average salary higher than 35,000"],
+        "answer": ""
+    },
+    {
+        "question": "In which database security measure is aggregate data are accessible to users by hiding \ndetails from users:",
+        "choices": ["Inference control", "Access control", "Integrity control", "Encryption", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following query optimization technique used to modify the internal \nrepresentation of query?",
+        "choices": ["Systematically estimation", "Semantic query optimization", "Cost Estimation", "Heuristic rules", "A and C"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is not true about locks?",
+        "choices": ["Locks with large granularity are easier for the DBMS to administer.", "Locks with small granularity cause more conflicts.", "Locks with large granularity produce fewer details for the DBMS to track.", "Locks may have a table-level granularity.", "Locks may have a database-level granularity."],
+        "answer": ""
+    },
+    {
+        "question": "For every transaction T participating in the schedule, if all the operations of T are \nexecuted consecutively in the schedule. The schedule is",
+        "choices": ["Cascaded schedule", "Serial schedule", "Cascadeless schedule", "Recoverable schedule", "None"],
+        "answer": ""
+    },
+    {
+        "question": "A transaction property state about changes applied to the database by a committed \ntransaction must persist in the database?",
+        "choices": ["Isolation", "Durability or permanency", "Atomicity", "Consistency preservation", "None"],
+        "answer": ""
+    },
+    {
+        "question": "If a transaction does not modify the database until it has committed, it is said to use the \n___________ technique.",
+        "choices": ["Undo", "Late-modification", "Immediate-modification", "Deferred-modification"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following is false?",
+        "choices": ["In object-oriented database, data are stored as collections of rows and tables", "In relational database, data are perceived by users as tables", "Object oriented database allows object identification and communication", "Object oriented database allows reusability of objects", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is correct about software product in the context of software \nengineering?",
+        "choices": ["Software product refers any software created to meet the client’s requirements.", "Software product includes design nd test documentation.", "Software product includes requirement specifications, and user manuals.", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "One of the followings is type of requirements associated with quality features of a \nsoftware.",
+        "choices": ["Business requirements", "Functional requirements", "Non-functional requirements", "User requirements"],
+        "answer": ""
+    },
+    {
+        "question": "A type of requirement that describes why the software project is needed and used to \ndefine the objective of the software is                      .",
+        "choices": ["Business requirements", "Functional requirements", "Non-functional requirements", "User requirements"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is used to model the functionality of software?",
+        "choices": ["Use case diagram", "Class diagram", "E-R diagram", "Deployment diagram"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following refers to the deployment platform?",
+        "choices": ["Use case", "Tier", "Layer", "Component"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following process model is not suitable to accommodate changes?",
+        "choices": ["Waterfall", "Scrum", "RAD", "Agile"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following aims to find errors?",
+        "choices": ["Requirement Analysis", "Design", "Testing", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following will work if you want to create a table which looks like the \nfollowing?\n12 -9 8\n7 14\n-32 -1 0",
+        "choices": ["double[][] table = {12, -9, 8, 7, 14, -32, -1, 0};", "double[][] table = {{12, -9, 8}, {7,14,0}, {-32,-1,0}};", "double[][] table = {{12,-9,8}{7,14}{-32,-1,0}};", "double[][] table = { {12, -9, 8},{7, 14},{-32, -1, 0} };"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is a good candidate to be static?",
+        "choices": ["The PI field of a circle class", "A method that displays the salary of an Employee class", "A method that calculates the hypotenuse of a right-angle triangle class", "A name field of a Student class", "All except B"],
+        "answer": ""
+    },
+    {
+        "question": "Here is the general syntax for method definition: \naccessModifier returnType methodName(parameterList ){\n  Java statements\n  return returnValue;\n}\nWhat is true for the accessModifier?",
+        "choices": ["It must always be private or public.", "It can be omitted, but if not omitted it must be private or public.", "It can be omitted, but if not omitted there are several choices, including private and public", "The access modifier must agree with the type of the return value.", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "What is the output of the following Java code?\nclass FinalExam{\nint num1;\npublic FinalExam() {\nnum1 = 4;\n}\nvoid display() {\nSystem.out.println(num1);\n}\n}\nclass Final1 extends FinalExam{\nint num=3;\npublic Final1() {\nthis(5);\nnum1 = num;\n}\npublic Final1(int num) {\nthis.num = num * num;\n}\n}\npublic class Main{\npublic static void main(String[] args){\nFinal1 f = new final1();\nf.display();\n}\n}",
+        "choices": ["4", "25", "12", "20"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following is important to implement dynamic Polymorphism?",
+        "choices": ["Polymorphic variable", "Method overriding", "Inheritance", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "What must a non-abstract child do about an abstract method in its parent class?",
+        "choices": ["A child must override an abstract method inherited from its parent by defining a method with the same signature and same return type", "A child must define an additional method similar to the one inherited from its parent by defining a method with the same signature and different return type.", "A child must not define any method with the same signature as the parent's abstract method.", "A non-abstract child must define an abstract method with the same signature and same return type as the parent's abstract method.", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is true?",
+        "choices": ["A child class can extend a parent or implement an interface, but not do both.", "A child class can extend just one parent and can implement just one interface.", "A child class can extend just one parent and can implement zero or more interfaces.", "A child class can extend zero or more parents, and can implement zero or more interfaces."],
+        "answer": ""
+    },
+    {
+        "question": "In computers, subtraction is carried out generally by____.",
+        "choices": ["1's complement method", "2's complement method", "signed magnitude method", "BCD subtraction method"],
+        "answer": ""
+    },
+    {
+        "question": "Pick the different",
+        "choices": ["Decoder", "Encoder", "Multiplexer", "Shift Register"],
+        "answer": ""
+    },
+    {
+        "question": "An operation performed on the contents of a register is known as",
+        "choices": ["Instruction code", "Micro-operation", "Accumulator", "Register"],
+        "answer": ""
+    },
+    {
+        "question": "Which one is true about RISC computers?",
+        "choices": ["RISC are with few numbers of registers when compared to CISC", "RISC use complex and efficient machine instructions when compared to CISC", "RISC is with hardwired control unit with pipelining processing", "RISC uses extensive addressing capabilities for memory operations", "None"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is not a basic element within the microprocessor?",
+        "choices": ["Microcontroller", "Arithmetic logic unit (ALU)", "Register array", "Control unit"],
+        "answer": ""
+    },
+    {
+        "question": "Which method bypasses the CPU for certain types of data transfer?",
+        "choices": ["Software interrupts", "Interrupt-driven I/O", "Polled I/O", "Direct memory access (DMA)"],
+        "answer": ""
+    },
+    {
+        "question": "Which bus is bidirectional?",
+        "choices": ["Address bus", "Control bus", "Data bus", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Error detection, Error Correction and Flow Control tasks are performed on which layers of \nthe OSI reference model ___________________? (Choose all that applies)",
+        "choices": ["Application", "Presentation", "Network", "Transport", "Session", "Data link", "Physical"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following statement(s) is/are WRONG? (Choose all that applies)",
+        "choices": ["Internet/Network layer is responsible for routing", "Physical address can be assigned by the network administrator.", "Physical layer is concerned with specifying the characteristics of the transmission medium, the nature of the signals and the data rate.", "Transport layer provides only unreliable data transmission.", "Network layer is responsible for host to host communication.", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following Medium Access Control protocols is supported by WLAN \n(802.11)?",
+        "choices": ["ALOHA", "CSMA/CA", "Token Passing", "FDMA", "CSMA"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following network devices operates on all the layers of the OSI reference \nmodel_______________?",
+        "choices": ["Hub", "Switch", "Router", "Gateway", "Bridge"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is an IP address that can be assigned for a host in your LAN?",
+        "choices": ["127.0.0.0", "9.0.0.1", "192.168.1.256", "172.16.1.27", "All of the above", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following statement(s) is/are correct? (Choose all that applies)",
+        "choices": ["Circuit Switching and Virtual Packet Switching methods reserve the required resources for the duration of the session during communication between end systems", "Circuit switching technique uses store and forward method.", "In message switching technique, it is not required to create a dedicated path.", "In circuit switching techniques, resources are allocated on demand.", "Packet switching is used mainly for data transmission as the delay is not uniform."],
+        "answer": ""
+    },
+    {
+        "question": "Which information is not correct about the IP address 172.16.35.72/27?",
+        "choices": ["172.16.35.64 is one of the subnet addresses.", "The default mask for the network is 255.255.0.0.", "It is Class B address.", "The number of bits used for the host address is 5.", "The broadcast address of the second subnet is 172.16.35.255"],
+        "answer": ""
+    },
+    {
+        "question": "Consider an implementation of unsorted singly linked list with a start pointer only.  \nGiven the representation, which of the following operation can be implemented in O(1) \ntime?",
+        "choices": ["Insertion at the front of the linked list", "Insertion at the end of the linked list", "Deletion of the front node of the linked list", "Deletion of the last node of the linked list", "A & C"],
+        "answer": ""
+    },
+    {
+        "question": "Given the following C++ function, what is the Big O of code?\nint function( int n ) \n{\n    int a,n;\n    cout<< “Enter a positive integer \\n”;\n    \n    for ( int i = 1; i < n; i *= 2 ) \n                     a = i;\n     return 0;\n}",
+        "choices": ["nlogn", "n 2", "logn", "n"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following data structure is more appropriate to represent a heap tree?",
+        "choices": ["Two dimensional array", "Doubly linked list", "Linear array", "Single linked list"],
+        "answer": ""
+    },
+    {
+        "question": "Linear search is highly inefficient compare to binary search when dealing with_____?",
+        "choices": ["Small, unsorted arrays", "Large, sorted arrays", "Small, sorted arrays", "Large, unsorted arrays"],
+        "answer": ""
+    },
+    {
+        "question": "Implementing stack, the elements after pop(); push(9); are:",
+        "choices": ["9, 11, 13, 15, 17, 19", "13, 15, 17, 19, 21, 9", "11, 13, 15, 17, 19, 9", "9, 13, 15, 17, 19, 21"],
+        "answer": ""
+    },
+    {
+        "question": "Implementing queue, the elements after dequeue(); and enqueu(9); are:",
+        "choices": ["9, 11, 13, 15, 17, 19", "13, 15, 17, 19, 21, 9", "11, 13, 15, 17, 19, 9", "Queue overflow"],
+        "answer": ""
+    },
+    {
+        "question": "Implementing circular queue, the elements after dequeue(); and enqueue(9); are:",
+        "choices": ["9, 11, 13, 15, 17, 19", "13, 15, 17, 19, 21, 9", "11, 13, 15, 17, 19, 9", "9, 13, 15, 17, 19, 21"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following is false?",
+        "choices": ["A web browser is a software that runs on a server", "A user agent renders resources for a user to view", "A website is a collection of resources in various forms", "A web page is the basic unit of information storage on the www"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following is false about HTTP protocol?",
+        "choices": ["It is a stateless protocol", "An HTTP message body can be empty", "It is a protocol used for communication between a web browser and a web server", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following is the correct syntax for document type declaration in \nHTML5?",
+        "choices": ["<doctype html>", "<!doctype html>", "</doctype html>", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "In HTML, how do we create a link to another site?",
+        "choices": ["<a href=\"http://www.somedomain.com\">click here</a>", "<a url=\"http://www.somedomain.com\">click here</a>", "<a link=\"http://www.somedomain.com\">click here</a>", "<a \"http://www.somedomain.com\">click here</a>"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following form attribute is used to assign the server side script file that \nprocesses the form data?",
+        "choices": ["method", "action", "target", "autocomplete"],
+        "answer": ""
+    },
+    {
+        "question": "What would be the output of the following javascript code?\n    <script type=\"text/javascript\">\n       x=4+\"4\";\n       document.write(x);\n     </script>",
+        "choices": ["44", "8", "4", "The code contains an error"],
+        "answer": ""
+    },
+    {
+        "question": "What will be the output of the following PHP code?\n <?php\n    $color = \"maroon\";\n $var = $color[2];\n echo \"$var\";\n  ?>",
+        "choices": ["a", "Error", "var", "r"],
+        "answer": ""
+    },
+    {
+        "question": "In PHP, which function initiates a session?",
+        "choices": ["start()", "s_start()", "session_start()", "session_str()"],
+        "answer": ""
+    },
+    {
+        "question": "In php, which one of the following is a super global varible?",
+        "choices": ["$_GET", "$_POST", "$_SERVER", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "One is not the goal of I/O software",
+        "choices": ["Buffering", "Device independence", "Uniform naming", "Error handling", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Hardware device that maps physical address to logical address is",
+        "choices": ["MMU", "IRQ", "DMA", "Cache", "Relocation Register"],
+        "answer": ""
+    },
+    {
+        "question": "In terms of speed and storage utilization,",
+        "choices": ["First fit algorithm is better", "Best fit algorithm is better", "Worst fit algorithm is better", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Assuming process execution time is known in advance, for which of the following algorithm(s) \ncan the maximum wait time for a given process be computed at the time the job is submitted?",
+        "choices": ["Shortest job first", "Shortest remaining time", "Priority based", "Round Robin", "All of the above"],
+        "answer": ""
+    },
+    {
+        "question": "One is not a problem caused by concurrency of processes",
+        "choices": ["Race condition", "Starvation", "Deadlock", "Mutual exclusion", "None"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following methods can be used to recover deadlock",
+        "choices": ["Kill the process", "Rollback", "Non-preempt the resource", "Lock the process"],
+        "answer": ""
+    },
+    {
+        "question": "One deadlock prevention method says, “if a process must wait for a needed resource, it drops \nall of its previously held resources and tries to acquire all resources gain.” These attacks",
+        "choices": ["Circular wait condition", "No preemption conditions", "Mutual exclusion condition", "Hold and wait condition", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "The data structure used in the standard implementation of Breadth First Search is_____?",
+        "choices": ["Stack", "Array", "Linked List", "Queue"],
+        "answer": ""
+    },
+    {
+        "question": "The data structure used in the standard implementation of Depth First Search is_____?",
+        "choices": ["Stack", "Array", "Linked List", "Queue"],
+        "answer": ""
+    },
+    {
+        "question": "Recursion is a method in which the solution of a problem depends on ____________.",
+        "choices": ["Larger instances of different problems", "Larger instances of the same problem", "Smaller instances of the same problem", "Smaller instances of different problems"],
+        "answer": ""
+    },
+    {
+        "question": "In recursion, the condition for which the function will stop calling itself is __________.",
+        "choices": ["Best case", "Worst case", "Base case", "There is no such condition"],
+        "answer": ""
+    },
+    {
+        "question": "If an optimal solution can be created for a problem by constructing optimal solutions for \nits subproblems, the problem possesses ____________ property.",
+        "choices": ["Overlapping subproblems", "Optimal substructure", "Memoization", "Greedy"],
+        "answer": ""
+    },
+    {
+        "question": "If a problem can be broken into subproblems that are reused several times, the problem \npossesses ____________ property.",
+        "choices": ["Overlapping subproblems", "Optimal substructure", "Memoization", "Greedy"],
+        "answer": ""
+    },
+    {
+        "question": "If a problem can be solved by combining optimal solutions to non-overlapping problems, \nthe strategy is called _____________.",
+        "choices": ["Dynamic programming", "Greedy", "Divide and conquer", "Recursion"],
+        "answer": ""
+    },
+    {
+        "question": "Among the following which kind of algorithm is used in the Game tree to make decisions \nof win/Lose?",
+        "choices": ["Depth First Search", "Breadth First Search Algorithm", "Heuristic Search Algorithm", "Min/Max Algorithm", "Greedy Search Algorithm"],
+        "answer": ""
+    },
+    {
+        "question": "Agents’ behavior can be best described by ____________",
+        "choices": ["Perception sequence", "Agent function", "Sensors and Actuators", "Environment in which agent \nis performing"],
+        "answer": ""
+    },
+    {
+        "question": "Which type of agent deals with happy and unhappy states?",
+        "choices": ["Simple reflex agent", "Model based agent", "Utility based agent", "Learning agent"],
+        "answer": ""
+    },
+    {
+        "question": "What is the purpose of “Agent” in Artificial Intelligence?",
+        "choices": ["Mapping of goal sequence to an action", "Work without the direct interference of the people", "Mapping of environment sequence to an action", "Mapping of precept sequence to an action"],
+        "answer": ""
+    },
+    {
+        "question": "Which of the following is also called as exploratory learning?",
+        "choices": ["Supervised learning", "Active learning", "Unsupervised learning", "Reinforcement learning", "None of the Above"],
+        "answer": ""
+    },
+    {
+        "question": "Suppose the predicate F(x, y, t) is used to represent the statement that person x can fool \nperson y at time t. which one of the statements below expresses best the meaning of the \nformula ∀x∃y∃t(¬F(x, y, t))?",
+        "choices": ["Everyone can fool some person at some time", "Everyone cannot fool some person all the time", "No one can fool some person at some time", "No one can fool everyone all the time"],
+        "answer": ""
+    },
+    {
+        "question": "What one is the main challenge/s of NLP?",
+        "choices": ["Handling Tokenization", "Handling Ambiguity of Sentences", "Handling POS-Tagging", "Handling Semantics of Sentences", "All of the mentioned"],
+        "answer": ""
+    },
+    {
+        "question": "Based on the predefined policy of Network management, controlling access to the \nnetwork is the task of",
+        "choices": ["Fault Management", "Performance Management", "Security Management", "Configuration Management", "None"],
+        "answer": ""
+    },
+    {
+        "question": "A Unix utility which used for checking and repairing file system inconsistencies.",
+        "choices": ["init", "halt", "inittab", "fsck"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following authentication procedures is bounded to user’s body?",
+        "choices": ["One-factor authentication", "Two-factor authentication", "Three-factor authentication", "Forth-factor authentication"],
+        "answer": ""
+    },
+    {
+        "question": "A PC obtains its IP address from a DHCP server. If the PC is taken off the network for \nrepair, what happens to the IP address configuration?",
+        "choices": ["The configuration is permanent and nothing changes.", "The address lease is automatically renewed until the PC is returned.", "The address is returned to the pool for reuse when the lease expires", "The configuration is held by the server to be reissued when the PC is returned.", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "Which command in Microsoft Windows will allow you to verify your IP address, subnet \nmask, default gateway, and MAC address?",
+        "choices": ["C:\\>ipconfig", "C:\\>ipstatus", "C:\\>ipconfig /all", "C:\\>ping", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "A system that monitors traffic into and out of a network and automatically alerts \npersonnel when suspicious traffic patterns occur, indicating a possible unauthorized \nintrusion attempt is called a (n) __________________.",
+        "choices": ["IDS", "Firewall", "Router", "Anti-Virus Software", "None of the above"],
+        "answer": ""
+    },
+    {
+        "question": "You are the administrator of an active directory domain. A user complains to you that he \nis unable to change his password. No other users have this issue. What is the most likely \ncause of the problem?",
+        "choices": ["Insufficient login credentials", "He is a member of the Administrators group", "He is not a member of the domain", "The property “User cannot change password” has been enabled when it was created"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following languages over alphabet {0, 1} is described by the regular \nexpression (0+1)*0(0+1)*0(0+1)*",
+        "choices": ["Strings with substring 00", "Strings with at least two 0’s", "Strings with at most two 0’s", "Strings with postfix 1."],
+        "answer": ""
+    },
+    {
+        "question": "Transition function in FSA maps which pair?",
+        "choices": ["Q and Σ to Σ", "Q and Q to Σ", "Σ and Σ to Q", "Q and Σ to Q"],
+        "answer": ""
+    },
+    {
+        "question": "A grammar has the following productions: \nA → aB | bA | bBa\nB → bB | cA | b\nWhich one of the following strings is in the language generated by the grammar?",
+        "choices": ["abbcabbcbbbcbbaca", "bcbbbcabbcbaa", "acbcbbbbcaba", "bbbbcbabbbcab"],
+        "answer": ""
+    },
+    {
+        "question": "When we can say two grammars are equivalent?",
+        "choices": ["When the languages represented by both grammars are the same", "When the language derived from one of the grammars become the subset of the other", "When the alphabets of the two grammars are the same", "When a single string is member of the language represented by both grammars"],
+        "answer": ""
+    },
+    {
+        "question": "If L1 and L2 are two regular languages, which one of the following is true",
+        "choices": ["L 1U L2 is a regular language only if empty string is not a member", "L 1* is the same with L2* and are both regular languages", "L 1L2 is also a regular language", "L 1R is a regular language and is equivalent to L1"],
+        "answer": ""
+    },
+    {
+        "question": "Let G = {N, T, P, S} be a grammar where:\n       N={S, A}, T={ 0, 1}, S={S}   and  P = {S� 11S | 0A | 1A, A� 0 | 1 | 0S}.\nWhich one of the following is a sentential form?",
+        "choices": ["111011110S", "11111101", "0000111001AS", "00001110A"],
+        "answer": ""
+    },
+    {
+        "question": "Which one of the following properties of a graph represents the derivation steps performed \nto generate a valid string?",
+        "choices": ["Root of the graph", "Degree of the vertex", "Path of a vertex from the root", "Parent vertex"],
+        "answer": ""
+    }
+]
