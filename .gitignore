@@ -55,3 +55,4 @@ htmlcov/
 .nox/
 .coverage
 .coverage.*
+.env
