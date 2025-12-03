@@ -33,7 +33,8 @@ MANIFEST
 secrets.toml
 *.ini
 
-
+/backend/.env
+/backend/env
 # IDE-specific files (VS Code, PyCharm, etc.)
 .vscode/
 .idea/
