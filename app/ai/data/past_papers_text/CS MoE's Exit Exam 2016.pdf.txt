@@ -1,0 +1,820 @@
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+1 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+ Prepare for Exit Exam! Join our Telegram Channel for all 
+Département @ExitExamPrep  
+2016 January MOE Computer science department Exit Exam 
+1. Which one of the following is concerned with the meaning of a sentence in knowledge 
+representation? 
+A. Structure 
+B. Computational aspect 
+C. Semantics  
+D. Syntax 
+ANSWER: C 
+2. Which one of the following is an attack performed by wiretapping a network and illicitly copy files 
+and programs? 
+A. Interception 
+B. Fabrication 
+C. Interruption 
+D. Modification 
+ANSWER: A 
+3. If a company wants to develop a software for its use, and if the company wants partial functionality to 
+be delivered to end users without unreasonable delay. Which software development process model is 
+appropriate for such requirement? 
+A. Waterfall 
+B. Incremental 
+C. Spiral 
+D. Evolutionary 
+ANSWER: B 
+4. Which one of the following cannot affect proper functioning of a system? 
+A. Improperly placed heater 
+B. Humidity 
+C. Lightning strikes  
+D. UPS(uninterruptible power supply) 
+ANSWER: D 
+5. _______ is the process of selecting appropriate query execution strategy? 
+
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+2 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+A. Query graph 
+B. Query optimization 
+C. Query tree 
+D. Query processing 
+ANSWER: B 
+ 
+6. Let KPRIV-A and KPUB-A be private and public keys for Awgichew and KPRIV -M and KPUB-M 
+are private and public keys for Meron respectively. If Awgichew would like to send secured message 
+to Meron, which one of the following scenario is not correct if they are using asymmetric keys? 
+A. Awgichew uses Meron’s private key KPRIV-M to encrypt his plain text 
+B. Awgichew uses his KPUB-A to encrypt his plain text 
+C. Meron can decode the encrypted text using her  KPRIV-M 
+D. Meron can decode the scrambled text using her  KPUB-M 
+ANSWER: B 
+7. Which one of the following agents works by searching and matching the rules defined by percent and 
+stored internal state? 
+A. Model-based reflex agent 
+B. Goal-based agent 
+C. Simple reflex agent 
+D. Utility based agent 
+ANSWER: A 
+8. Which symbol is used to write a single line comment in JavaScript? 
+A. <? 
+B. <!----------------> 
+C. // 
+D. && 
+ANSWER: C 
+9. Which one of the following is correct about symmetric and asymmetric keys? 
+A. Both are authentication methods 
+B. Symmetric key requires the sender and receiver to have a public and private key 
+C. Asymmetric key requires the sender and receiver to have a public and private key 
+D. Both are recovery methods 
+ANSWER: C 
+10. If you want to test individual sub-systems of software, which phase of software testing is appropriate? 
+A. Integration testing 
+B. Unit testing 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+3 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+C. System testing 
+D. Acceptance testing 
+ANSWER: B 
+11. Suppose you are administrating the network. You would like to know list of protocol on use, the 
+foreign address and port numbers, the local address and port number and the state of the connection. 
+Which command would you use to accomplish that? 
+A. traceroute 
+B. ipconfig 
+C. netstart 
+D. nslookup 
+ANSWER: C 
+12. When we use a hash table data structure, our hash function should map the expected inputs (keys) as 
+evenly as possible over its output range(indexes). This property of good hash function is know n 
+as______. 
+A. Uniformity 
+B. Determinism 
+C. Continuity 
+D. Data normalization 
+ANSWER: A 
+13. In an array implementation of binary heap tree , if a node is stored as index i , then its right child will 
+be stored as index_______ 
+A. 2*i+1 
+B. i/2 
+C. (i+1)/2 
+D. 2*i 
+ANSWER: A 
+14. Which one of the following is false about sequential and binary searching algorithm? 
+A. Binary searching algorithm can work on list of data which is stored in descending order 
+B. Sequential and binary searching algorithm are not equal in terms of memory efficiency 
+C. Sequential searching algorithm can work on sorted and unsorted list of data 
+D. Considering worst case analysis binary searching algorithm is faster than sequential searching on 
+sorted data. 
+ANSWER: C 
+15. Which of the following term refers to the number of symbols composing a string? 
+A. Length 
+B. Symbols 
+C. Alphabet 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+4 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+D. Word 
+ANSWER: C 
+16. ________ is a way of combining analogue or digital signals into one single over a common or shared 
+medium. 
+A. Point-to-point 
+B. Broadcasting 
+C. Synchronization  
+D. Multicasting 
+ANSWER: D 
+17. Which generation’s programming languages are used in Artificial intelligence and Expert systems? 
+A. Fifth generation languages 
+B. Second generation languages 
+C. Fourth generation languages 
+D. Third generation languages 
+ANSWER: A 
+18. Which attribute of INPUT tag defines the number of characters that can be displayed in a text box 
+without scrolling? 
+A. SIZE 
+B. MAXLENGTH 
+C. VALUE 
+D. TYPE 
+ANSWER: B 
+19. Which characteristics of requirement specify that the requirements should be phrased so that there is 
+one and only one interpretation for it? 
+A. Correct 
+B. Unambiguous 
+C. Feasible 
+D. Verifiable 
+ANSWER: B 
+20. Which method can be used to divide a browser into smaller sub windows so that each sub window 
+displaying a different HTML document? 
+A. Using paragraphs 
+B. Using frames 
+C. Using images 
+D. Using tables 
+ANSWER: B 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+5 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+21. Which one of the following is not correct when mapping ER diagrams to relational tables? 
+A. Multi-valued attributes are mapped to new tables 
+B. Foreign key are used to map relationships to create relation between tables 
+C. Table names are directly mapped from entity names 
+D. Composite attribute are mapped as it is  
+ANSWER: C 
+ 
+22. Which data update allows data item to be updated the moment it is modified in cache? 
+A. In-Place Update 
+B. Immediate update 
+C. Shadow update 
+D. Deferred update  
+ANSWER: B 
+23. Which mutual exclusion mechanism keeps track of turns to enter the critical region using an integer 
+variable, which is initially-0, and another process waits until it turns to 1? 
+A. Lock variable 
+B. Disabling interrupts 
+C. Strict alteration 
+D. Race condition 
+ANSWER: A 
+24. If there are two languages Li = {c, dl and L2 = (e, fgh}, which one of the following is not an element 
+of L2 Li? 
+A. Fghc 
+B. Ed 
+C. Fghe 
+D. Ec 
+ANSWER: B 
+25. Given input Alphabet = (c, d) and a language (L) defined on E as L = {ed. : n > 0). Then, which one 
+of the following is not an element of language L? 
+A. Ccddd 
+B. Od 
+C. Ccccdddd 
+D. Ccdd 
+ANSWER: B 
+26. ______Uses the knowledge of the characteristics of the relational algebra operations and the 
+relationship between the operators to optimize the query? 
+A. Database approach 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+6 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+B. Heuristic approach 
+C. Deterministic approach 
+D. Hierarchical data model approach 
+ANSWER: A 
+27. Which one of the following is correct ordering in language processing system? 
+A. Source program ->Preprocessor -> Assembler -> Compiler Linker/Loader -> target machine code 
+B. Source program -> Preprocessor ->Linker/Loader -> Compiler /Assembler ->target machine code 
+C. Source program Compiler -> Assembler -> Preprocessor > Linker/Loader -> target machine code 
+D. Source program _> Preprocessor -> Compiler -> Assembler -> Linker/Loader -> target machine 
+code 
+ANSWER: A 
+28. Which one of the following is a wrong coupling of problem and its environment? 
+A. Contingency problem -> partially observable, non-deterministic 
+B. Multiple state problem deterministic, partially observable 
+C. Exploration problem -> partially observable, deterministic 
+D. Single state problem-> fully observable, deterministic 
+ANSWER: B 
+29. Which one of the following is responsible for controlling the flow of bits between memory and 
+controllers with no need for a constant intervention from the CPU? 
+A. Disk fragmenting 
+B. Memo, manager 
+C. Device controller 
+D. Direct memory access 
+ANSWER: D 
+30. A cryptographic program replaces an alphabet from a text message using its successor alphabet and 
+creates cipher text. Which one best describes the program? 
+A. Transliteration 
+B. Translation 
+C. Transformation 
+D. Substitution 
+ANSWER: D 
+31. Which one of the following messaging communication best explains the statement: “Until the 
+message is received, the sending process is blocked'"? 
+A. Blocking receive 
+B. Non-block receive 
+C. Non-block sending 
+D. Blocking send 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+7 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+ANSWER: D 
+32. Which theory provides mechanisms for classifying combinatorial problems and measuring the 
+computational resources necessary to solve them? 
+A. Computability theory 
+B. Set theory 
+C. Complexity theory 
+D. Automata theory 
+ANSWER: C 
+33. Which one of the following is correct first order logic for the statement “There is someone standing at 
+the door and is tall”? 
+A. ∀x (StandingAt (x; door ) 
+B. ∀x ( StandingAt (x; door )^ tall(x)) 
+C. ∃x ( StandingAt (x; door )^ tall(x)) 
+D. ∃x ( StandingAt (x; door )  -> toll(x)) 
+ANSWER: D 
+34.   _______is the component of the operating system that is responsible to decide which process to run 
+first among ready processes. 
+A. Memory manager 
+B. Inter process communication 
+C. Disk manager 
+D. Scheduler 
+      ANSWER: D 
+35. First design the very high level structure of the system. Then gradually work down to detailed 
+decisions about low-level constructs. Which design approach follows the given strategy? 
+A. Bottom-up 
+B. System design 
+C. Top-down 
+D. Hybrid 
+ANSWER: C 
+36. Which one of the following is false regarding Exceptions in Java? 
+A. We cannot create our own exception classes by extending Exception class 
+B. Exception class describes errors caused by your program and external circumstances 
+C. Runtime Exception class describes programming errors such as bad casting and numeric errors 
+D. All Java exception classes inherit directly or indirectly from Throwable class 
+ANSWER: A 
+37. A traditional phone call is an example of  
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+8 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+A. Packet switching 
+B. Multiplexing  
+C. Broadcasting 
+D. Circuit switching 
+ANSWER: D 
+38. Which one of the following is false about style sheets? 
+A. Style sheets increase accessibility 
+B. Style sheets creates consistent appearance 
+C. Style sheets make it easy to maintain HTML pages 
+D. Style sheets do not reduce web page file size 
+ANSWER: D 
+39. Which one of the following is not correct about logic design? 
+A. It consider a particular DBMS 
+B. Normalization is undertaken in logical phase 
+C. It is based on specific data model 
+D. It is independent from physical considerations 
+ANSWER: D 
+40. Which one of the following is an attack detection mechanism? 
+A. Physical control 
+B. Audit log 
+C. Password 
+D. Encryption  
+ANSWER: B 
+41. Which SQL command would you use if you want to specify constraints to be applied on tuples? 
+A. GRANT 
+B. SELECT 
+C. REVOKE 
+D. CHECK 
+ANSWER: D 
+42. Which data management approach allows application programs to define and manage their own data? 
+A. Manual approach 
+B. Database approach 
+C. Hierarchical approach 
+D. Traditional file based approach 
+ANSWER: B 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+9 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+43. What is the output of the following C++ fragment code? 
+   int  p, q, n; 
+        p = q = n = 8; 
+        p + = n; 
+        p / = q; 
+       cout<<p; 
+A. 16 
+B. 2 
+C. 24 
+D. 1 
+ANSWER: A 
+44. Which database constraints are specified in the data definition language? 
+A. Implicit or inherent model based constraints 
+B. Semantic constraints 
+C. Application based constraints 
+D. Schema based constraints 
+ANSWER: A 
+45. Which one of the following is a communication pathway connecting transmitting signals in binary 
+digits between two or more devices? 
+A. Memory 
+B. Register 
+C. CPU 
+D. Bus  
+ANSWER: D 
+46. Which one of the following sorting algorithm requires large memory space to sort data? 
+A. Insertion sort 
+B. Selection sort 
+C. Merge sort 
+D. Quick sort 
+ANSWER: C 
+47. In which phase of the two phase locking protocol can a transaction obtain locks? 
+A. Release phase 
+B. Roll back phase  
+C. Shrinking phase 
+D. Growing phase 
+ANSWER: D 
+48. Which one of the following is not the task of lexical analyzer? 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+10 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+A. Group characters into lexemes 
+B. Output a sequence of tokens 
+C. Read the input characters 
+D. Build syntax tree 
+ANSWER: A 
+49. Which one of the following best describes for a program that seems friendly and legitimate but 
+contains hidden malicious codes and harms a system? 
+A. Trojan 
+B. Malware 
+C. Virus 
+D. Worm 
+ANSWER: A 
+ 
+50. Look at the following fragment code : 
+int a = 6; 
+int b = 5; 
+ 
+while(a>b) 
+{ 
+Cout<<”computer science program”<<endl; 
+} 
+Which algorithm property is not satisfied by the above C++ code algorithm? 
+A. Sequential 
+B. Feasibility 
+C. Finiteness 
+D. Definiteness  
+ANSWER: C 
+51. Assume you are searching for information and typed the domain name: www.mysearchexample.com 
+on your browser, having an IP address 192.108.110.1. Since internet communication is based on an IP 
+address, the domain name has to be translated to its corresponding IP address. Which of the following 
+is responsible for the translation? 
+A. DNS 
+B. SMTP 
+C. FTP 
+D. DHCP 
+ANSWER: A 
+52. Which program puts together the entire executable object files into memory for execution or running? 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+11 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+A. Editor 
+B. Debugger 
+C. Linker 
+D. Loader 
+ANSWER: C 
+53. Machine language is grouped under__________ generation of programming language. 
+A. 2nd generation language 
+B. 3rd generation language 
+C. 4th generation language 
+D. 1st generation language 
+ANSWER: D 
+54. Which one of the following is not problem if concurrency is not controlled properly?  
+A. Lost update problem 
+B. Consistent database 
+C. Incorrect summary 
+D. Dirty read 
+ANSWER: B 
+55. Which one of the following is false about the role of parser in compiling process? 
+A. Parser builds the parse tree  
+B. Parser attempts to correct or recover few errors  
+C. Parser cannot perform  context free syntax analysis  
+D. Parser produces appropriate error messages 
+ANSWER: C 
+56. A malicious program that once installed on your machine can collect all keystrokes including 
+username, password, emails, credit card numbers and other sensitive information is:  
+A. Rootkit 
+B. Worms 
+C. Key logger 
+D. Trojan  
+ANSWER: C 
+57. Which memory is characterized by the need for periodic change in order to maintain data storage? 
+A. Static RAM 
+B. Dynamic RAM 
+C. Disk 
+D. Tape  
+ANSWER: B 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+12 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+58. Which one of the following is not correct? 
+A. A rational agent know the result of its action, but unrealistic 
+B. Rational agent take action but not 100% sure of success 
+C. Rational agent act to achieve utmost success based on information 
+D. An omniscience agent takes actions for 100% sure of success 
+ANSWER: D 
+59. What should compilers of high level programming languages do to evaluate expressions? 
+A. Convert infix notation to postfix notation 
+B. Convert postfix notation to prefix notation 
+C. Evaluate infix notation to prefix notation 
+D. Convert postfix to infix notation     
+ANSWER: A 
+ 
+60. ________ finds the shortest path to the goal based on cost. 
+A. Depth first search 
+B. Iterative deepening 
+C. Uniform cost search  
+D. Breath first search 
+ANSWER: C 
+61. Which one of the following is not correct about magnetic disk? 
+A. Its minimum block is a sector 
+B. Its head is stationary during read/write 
+C. Its data is organized in tracks 
+D. It needs continuous power to keep bit contents  
+ANSWER: A 
+62. Which one of the following is not correct about networking models? 
+A. TCP/IP model is a protocol model 
+B. A reference model has no implementation specification  
+C. A network designer can use either of TCP/IP or OSL, or both 
+D. Open system interconnection (OSI) is a protocol model 
+ANSWER: B 
+63. What will be the out of the following JavaScript statement? Math.abs(-9) 
+A. 9 
+B. -9 
+C. 1 
+D. 0 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+13 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+ANSWER: A 
+64. Which one of the following is not correct about IPv4? 
+A. IT uses 128-bits 
+B. It has shortages of address space 
+C. It is characterized by slow routing and memory intensive  
+D. It uses 32-bits 
+ANSWER: A 
+65. Which one is true about the following JavaScript statement? Document.bgcolor 
+A. bgcolor is method 
+B. document is property 
+C. bgcolor is property   
+D. document is method 
+ANSWER: C 
+66. Which one of the following is not an example of divide and conquer algorithm? 
+A. Quick sort 
+B. Binary searching 
+C. Merge sort 
+D. Heap sort 
+ANSWER: D 
+67. Which data structure is the most appropriate for sharing a printer in a network environment? 
+A. Stack 
+B. Binary search tree 
+C. Full binary tree 
+D. Queue 
+ANSWER: D 
+68. Assuming there is a rectangle object, what getArea, getPerimeter can represent? 
+A. Attribute 
+B. Property  
+C. Data field 
+D. Behavior 
+ANSWER: A 
+69. Which one of the following is false about abstract classes and abstract methods? 
+A. We can create instances of abstract classes using the new operator 
+B. Implementation of abstract methods is provided by the subclasses 
+C. A class that contains abstract methods must be defined as abstract 
+D. Abstract methods are defined without implementation in the superclass 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+14 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+ANSWER: D 
+70. Look at the following PHP line: 
+ 
+      $list = array(“outside” = > “red”, 
+       “inside” = > “brown”,  
+        “top” = > “black”, 
+        “under” = > “blue”); 
+ 
+What is the index of data value black? 
+A. Brown  
+B. Outside 
+C. Under 
+D. Top 
+ANSWER: D 
+ 
+71. Which operator is used to create an array? 
+A. new 
+B. declare 
+C. static 
+D. construct  
+ANSWER: A 
+72. What is the output of the following C++ fragment code? 
+    a:   
+        cout<<”Graduating      “; 
+        goto b; 
+    c:  
+        cout<<” Year           “; 
+        goto a; 
+    b: 
+       cout<<”fourth            “; 
+ 
+A. Graduating Year      Fourth 
+B. Graduating Fourth       Year 
+C. Year  Fourth      Graduating 
+D. Graduating Fourth        Year 
+ANSWER: A 
+73. What is the output of the following java fragment code? 
+    For (int i = 2; i < = 11; I = I + 2)  
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+15 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+        { 
+             if(i%4 = = 0) 
+   system.out.print(i*i) +  “  “); 
+        }    
+A. 16 64 100 8 4 
+B. 4 16 36 64 100 
+C. 16 64 4 8 64  
+D. 4 8 16 64 4 
+ANSWER: B 
+74. Which one of the following is not transmission impairments? 
+A. Synchronization 
+B. Crosstalk 
+C. Impulse 
+D. Distortion 
+ANSWER: A 
+ 
+75. Look at the following fragment code: 
+struct car { 
+        char car_model[25]; 
+        float price; 
+}; 
+car  *c1; 
+Which one of the following is correct C++ statement? 
+A. Cout<<c1<<price; 
+B. Cin>>c1.car_model; 
+C. C1.price = 150000; 
+D. Cout<<c1 -> car_mode; 
+ANSWER: C 
+76. Which one of the following is false about client-side scripting? 
+A. Script languages are not full-featured 
+B. Script languages can access client’s hardware 
+C. Script languages have limited capabilities  
+D. Script languages are embedded as plain text, and interpreted by applications 
+ANSWER: B 
+77. Which one of the following is true about Queue data structure? 
+A. Queue data structure applies first come first served policy 
+B. Queue data structure uses last in first out rule 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+16 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+C. Queue data structure does not have efficient basic operations 
+D. Queue data structure cannot be implemented using linked list 
+ANSWER: D 
+78. Which one of the following is not correct about IP address and DHCP 
+A. An IP leased by the DHCP for a host is permanent 
+B. DHCP assures connectivity ever users move from location to location 
+C. The IP address are chosen from a predetermined range of address 
+D. DHCP allows a host to acquire an IP address automatically 
+ANSWER: A 
+79. Which one of the following is not a condition for two operations in a schedule to be said to conflict? 
+A. If they access the same item X 
+B. If they belong to the same transactions  
+C. If Write_item (X) is at least one of the operations  
+D. If they belong to different transactions  
+ANSWER: D 
+ 
+80.  In case of any shut down during transaction before commit which of the following statement is done 
+automatically? 
+A. View 
+B. Commit 
+C. Rollback 
+D. Flashback 
+ANSWER: C 
+81.  Which one of the following commands is not used for removing (or deleting) a relation forms the 
+SQL database? 
+A. Delete 
+B. Drop 
+C. Remove 
+D. UPDATE 
+ANSWER: D 
+82.  A system is in a ______ state if there exists a set of transactions such that every transaction in the set 
+is waiting for another transaction in the set. 
+A. Idle 
+B. Waiting 
+C. Deadlock 
+D. Ready 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+17 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+ANSWER: C 
+83. What is a Functional Requirement? 
+A. specifies the tasks the program must complete 
+B. specifies the tasks the program should not complete 
+C. specifies the tasks the program must not work 
+D. All of the mentioned 
+ANSWER: D 
+84.  _________ is a software development life cycle model that is chosen if the development team has 
+less experience on similar projects. 
+A. Iterative Enhancement Model 
+B. RAD 
+C. Spiral 
+D. Waterfall 
+ANSWER: D 
+85. In which step of SDLC actual programming of software code is done? 
+A. Development and Documentation 
+B. Maintenance and Evaluation 
+C. Design 
+D. Analysis 
+ANSWER: A 
+86.   Software Debugging is known as _________________ 
+A. identifying the task to be computerized 
+B. creating program code 
+C. creating the algorithm 
+D. finding and correcting errors in the program code 
+ANSWER: D 
+87.  _____________ is a probabilistic algorithm where a data packet is sent by the router to any one of its 
+neighbors randomly. 
+A. Adaptive routing algorithm 
+B. Flooding routing algorithm 
+C. Random walks routing algorithm 
+D. Distributed routing algorithm 
+ANSWER: C 
+88. Which network address translation protocol solves the task of address resolution using port number? 
+A. Network Address Translation 
+B. Port Address Translation 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+18 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+C. Dynamic Address Translation 
+D. Static address translation 
+ANSWER: B 
+89. _____________ is responsible for converting the higher level protocol addresses to physical Network 
+Addresses. 
+A. Address Resolution Protocol (ARP)  
+B. Reverse Address Resolution Protocol (RARP)  
+C. Bootstrap Protocol (BOOTP)  
+D. Internet Control Message Protocol (ICMP) 
+ANSWER: A 
+90. Given the network address of 172.16.0.0/19, which of the following is correct? 
+A. It provides 8 subnets, 32 IP addresses each 
+B. It provides 8 subnets, 8,190 hosts each 
+C. It provides 8 subnets, 30 hosts each 
+D. It provides 8 subnets, 2,046 IP addresses each 
+ANSWER: A 
+91. A network device that provides the physical interface between computer and cabling is known 
+as________. 
+A. Switch 
+B. Router 
+C. NIC 
+D. Repeater 
+ANSWER: C 
+92. Which of the following is not the function of DHCP server? 
+A. It grants an IP address when receives a request from a client. 
+B. It maintains the information about client configuration parameters. 
+C. It maintains a database of available IP addresses. 
+D. It grants an IP address when sender request from a client. 
+ANSWER: D 
+93. Which one of the following is not true? 
+A. kernel is the program that constitutes the central core of the operating system  
+B. kernel is the first part of operating system to load into memory during booting 
+C. kernel is made of various modules which cannot be loaded in running operating system 
+D. kernel remains in the memory during the entire computer session 
+ANSWER: C 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+19 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+94. Which one of the following circuits requires memory to store the state of the output? 
+A. Combinational circuit 
+B. Sequential circuits  
+C. Logical circuit  
+D. Physical circuit  
+     ANSWER: B 
+95. From the following grammars, which describes the lexical syntax? 
+A. Lexical Grammar 
+B. Context-free Grammar 
+C. Syntactic Grammar 
+D. Regular Grammar 
+ANSWER: B 
+ 
+96. What is not a Functional Requirement? 
+A. specifies the tasks the program must complete 
+B. specifies the tasks the program should not complete 
+C. specifies the tasks the program must not work 
+D. doesn’t specifies the tasks the program must not work 
+ANSWER:  D 
+97.  _________ is a software development life cycle model that is chosen if the development team has 
+less experience on similar projects. 
+A. Iterative Enhancement Model 
+B. RAD 
+C. Spiral 
+D. Waterfall 
+ANSWER:  D 
+98. In which step of SDLC actual programming of software code is done? 
+A. Development and Documentation 
+B. Maintenance and Evaluation 
+C. Design 
+D. Analysis 
+ANSWER:  A 
+99. Software Debugging is known as _________________ 
+
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+20 
+Prepare for Exit Exam! Join our Telegram Channel for all Department 
+@ExitExamPrep  
+A. identifying the task to be computerized  
+B. creating program code 
+C. creating the algorithm 
+D. finding and correcting errors in the program code 
+ 
+ANSWER:  D 
+ 
+100. Which of the following is the understanding of software product limitations, learning system 
+related problems or changes to be done in existing systems beforehand, identifying and addressing the 
+impact of project on organization and personnel etc.? 
+A. Software Design  
+B. Feasibility Study  
+C. Requirement Gathering  
+D. System Analysis 
+ANSWER: B 
+ 
+ 

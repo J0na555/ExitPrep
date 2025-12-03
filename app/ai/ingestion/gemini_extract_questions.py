@@ -1,5 +1,12 @@
 import os
+import sys
 import json
+from pathlib import Path
+
+# Ensure the repository root (backend/) is on sys.path so `import app...`
+# works when running this script directly (e.g. `python app/ai/ingestion/gemini_extract_questions.py`).
+REPO_ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(REPO_ROOT))
 
 from app.ai.clients.gemini_client import ask_gemini
 

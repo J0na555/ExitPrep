@@ -103,10 +103,11 @@ def main() -> None:
     layout described in the task. If you run the script from elsewhere,
     the paths below are still absolute (based on the script's location).
     """
-    # Resolve base directory as two levels up from this script (app/ai/scripts)
+    # Resolve base directory as two levels up from this script (backend/app)
     base_dir = Path(__file__).resolve().parents[2]
-    input_dir = base_dir / "data" / "past_papers_raw"
-    output_dir = base_dir / "data" / "past_papers_text"
+    # The AI data folder lives at backend/app/ai/data
+    input_dir = base_dir / "ai" / "data" / "past_papers_raw"
+    output_dir = base_dir / "ai" / "data" / "past_papers_text"
 
     # If you want to run the script from a different working directory,
     # you can replace the two lines above with explicit paths.

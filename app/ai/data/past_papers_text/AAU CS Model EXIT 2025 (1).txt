@@ -1,0 +1,816 @@
+Addis Ababa University 
+Department of Computer Science 
+Model EXIT Exam 2025 
+Computer Programming 
+1. What are the values of A, B, C and D after executing the following C++ code fragment? 
+ A = 5, B = 9; 
+ C = ++A – B; 
+ D = C + B––; 
+ cout<<A<<B<<C<<D; 
+A. 5, 9, -4, 0 
+B. 6, 8, -3, 6 
+C. 6, 9, -3, 5 
+D. 8, 6, -3,6 
+2. What will be the value of count and sum if a user provides 7.2 as the value of x in the 
+below given C++ code?  
+float sum = 3; 
+  float count = 0; 
+  if (x < 6.0) 
+   sum = sum + x; 
+  count = (count += 1)* sum; 
+A. 0, 10.2 
+B. 10.2, 10.2 
+C. 0, 3    
+D. None of the above 
+3. How many times the message “Hello” will be displayed on the screen if the vlues of j = 2, 
+k = 5, m= 6, and n = 9? 
+while (j < k){ 
+   while (m < n){ 
+      cout<<"Hello"; 
+      m = m + 1; 
+   } 
+   j = j + 1; 
+} 
+A. 0 
+B. 6  
+C. 3  
+D. 9  
+4. Consider the below given C++ code and answer the below question.  
+int x = 3; 
+int num[5] = {4, 12,5,7}; 
+int *t, *v; 
+t = &x; 
+v = num+2; 
+
+*(v+4) = *t; 
+What does a statement cout<<*t; prints?  
+A. The address of x 
+B. 3 
+C. 7 
+D. None of the above 
+5. What will be the output of the code below? 
+struct Person { 
+ int age; 
+ string name; 
+}; 
+int main() { 
+  Person p1{25, “Sami”}; 
+  Person p2 = p1; 
+ p2.age = 30; 
+ cout<<p1.age << “ “<<p2.age<<endl; 
+ return 0; 
+} 
+A. 25 25 
+B. 25 30 
+C. 30 30 
+D. Compilation error 
+E. None of the above 
+6. What will be the output of the below given code? 
+enum Months { 
+    Jan=1, Feb, Mar, Apr, 
+    May, Jun, Jul, Aug, 
+    Sep, Oct, Nov, Dec 
+}; 
+int main(){ 
+    Months mon; 
+    for(mon = Jan; mon < Dec; mon = (Months)(mon+1)) 
+        mon = (Months)(mon + 1); 
+    cout<<mon<<” “; 
+    return 0; 
+} 
+A. Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec 
+B. 1 2 3 4 5 6 7 8 9 10 11 12 
+C. 12 
+D. 13 
+E. None of the above 
+ 
+ 
+
+7.  Given that the file output stream variable, named fileout, has been defined and opened 
+for output, which of the following will return the current position of the file pointer? 
+A. fileout.tellg() 
+B. fileout.tellp() 
+C. fileout.seekg() 
+D. fileout.seekp() 
+E. None of the above 
+Database Systems[1] 
+8. What is the primary purpose of concurrency control protocols? 
+ 
+A. To increase transaction speed 
+B. To guarantee serializability 
+C. To reduce data redundancy 
+D. To enhance data security 
+9. In the context of concurrency control, what is a deadlock? 
+A. A situation where two or more transactions are waiting for each other to release locks 
+B. A situation where a transaction is unable to acquire a lock because of it is busy nature 
+C. A situation where a transaction is rolled back due to a conflict executions occurred 
+D. A situation where a transaction is committed successfully but rolled back  
+10. If A1 wants to grant A2 the privilege to insert and delete rows in the EMPLOYEE and 
+DEPARTMENT relations without allowing A2 to propagate these privileges, what 
+command should A1 issue? 
+A. GRANT INSERT, DELETE ON EMPLOYEE, DEPARTMENT TO A2 WITH GRANT 
+OPTION. 
+B. GRANT INSERT, DELETE ON EMPLOYEE, DEPARTMENT TO A2; 
+C. GRANT SELECT ON EMPLOYEE, DEPARTMENT TO A2 WITH REVOKE OPTION; 
+D. GRANT UPDATE ON EMPLOYEE, DEPARTMENT TO A2 WITH ALLOW OPTION; 
+11. Which of the following statements about database recovery strategies is correct? 
+A. The "Force" strategy simplifies recovery by ensuring that all cache updates a re 
+immediately flushed to disk when a transaction commits. 
+B. The "No -Steal" strategy allows cache to be flushed before transaction commits, 
+reducing memory needs but leading to complex recovery. 
+C. The "Steal" strategy maintains data integrity by ensuring that cache cannot be 
+flushed before transaction commit. 
+D. The "No -Force" strategy reduces I/O cost by allowing updated pages of a 
+committed transaction to remain in the buffer when another transaction needs to 
+update them. 
+12. What is the impact of larger data item size (coarse granularity) on concurrency? 
+A. It increases the degree of concurrency permitted 
+B. It eliminates the need for locks 
+C. It reduces the degree of concurrency permitted 
+D. It has no impact on concurrency 
+13. What must be obtained before performing a deletion operation on an existing data item? 
+A. Shared lock 
+B. Intention lock 
+C. Write lock 
+D. Read lock 
+ 
+
+14. Which type of backup copies only the data that has changed since the last backup? 
+A. Full Backup 
+B. Incremental Backup 
+C. Differential Backup 
+D. Snapshot Backup 
+15. What is the primary purpose of database recovery? 
+A. To increase transaction speed and performance 
+B. To reduce data redundancy and save storage 
+C. To enhance data security and prevent failure  
+D. To bring the database into the last consistent state 
+16. What is the primary notion of Role-Based Access Control (RBAC)? 
+A. Permissions are associated with individual users, and roles created per user 
+B. Permissions are associated with roles, and users are assigned to appropriate roles. 
+C. Permissions are granted based on user requests and administrative approvals 
+D. Permissions are automatically assigned by the system for each user  
+17. Which principle of data integrity states that all data must be recorded at the time an action 
+is performed, not retroactively? 
+A. Contemporaneous 
+B. Attributable 
+C. Legible 
+D. Original 
+18. If the owner account A revokes the privilege granted to B, what happens to the privileges 
+that B propagated based on that privilege? 
+A. They remain active. 
+B. They are automatically revoked by the system. 
+C. They are transferred to another account. 
+D. They are converted to read-only privileges. 
+19. In nested transactions, what is the purpose of using savepoints? 
+A. To encrypt data during transmission 
+B. To create roll back points in case of error 
+C. To compress data to save storage space 
+D. To duplicate data for backup purposes 
+ 
+20. Which feature is unique to object-oriented databases compared to relational databases?  
+A. Use SQL for data querying.  
+B. Ability to handle large amounts of data.  
+C. Storing data in objects and classes.  
+D. Organizing data into rows and columns. 
+21. What is a key advantage of relational databases over object-oriented databases?  
+A. Simple and widespread SQL use.  
+B. Compatibility with NoSQL.  
+C. Supports complex data types.  
+D. Handles hierarchical data. 
+ 
+ 
+ 
+ 
+ 
+
+Object Oriented Programming 
+22. Which of the following will work if you want to create a table which looks like the 
+following? 
+ 
+12 -9 8 
+7 14 
+ 
+-32 -1 0 
+ 
+ 
+A. double[][] table = {12, -9, 8, 7, 14, -32, -1, 0}; 
+B. double[][] table = {{12, -9, 8}, {7,14,0}, {-32,-1,0}}; 
+C. double[][] table = {{12,-9,8}{7,14}{-32,-1,0}}; 
+D. double[][] table = { {12, -9, 8},{7, 14},{-32, -1, 0} }; 
+23. Which of the following is a good candidate to be static? 
+A. The PI field of a circle class 
+B. A method that displays the salary of an Employee class 
+C. A method that calculates the hypotenuse of a right-angle triangle class 
+D. A name field of a Student class 
+E. All except B  
+24. Here is the general syntax for method definition:  
+accessModifier returnType methodName(parameterList ){ 
+   Java statements 
+ 
+   return returnValue; 
+} 
+What is true for the accessModifier?  
+A. It must always be private or public. 
+B. It can be omitted, but if not omitted it must be private or public. 
+C. It can be omitted, but if not omitted there are several choices, including private and 
+public 
+D. The access modifier must agree with the type of the return value. 
+E. All of the above 
+25. What is the output of the following Java code? 
+class FinalExam{ 
+ int num1; 
+ public FinalExam() { 
+  num1 = 4; 
+ } 
+ void display() { 
+  System.out.println(num1); 
+ } 
+} 
+class Final1 extends FinalExam{ 
+ int num=3; 
+ public Final1() { 
+  this(5); 
+  num1 = num; 
+ } 
+ public Final1(int num) { 
+
+  this.num = num * num; 
+ } 
+} 
+public class Main{ 
+ public static void main(String[] args){ 
+  Final1 f = new final1(); 
+  f.display(); 
+ } 
+} 
+A. 4 
+B. 25 
+C. 12 
+D. 20 
+26. Which one of the following is important to implement dynamic Polymorphism?  
+A. Polymorphic variable 
+B. Method overriding 
+C. Inheritance 
+D. All of the above 
+27. What must a non-abstract child do about an abstract method in its parent class?  
+A. A child must override an abstract method inherited from its parent by defining a 
+method with the same signature and same return type 
+B. A child must define an additional method similar to the one inherited from its parent 
+by defining a method with the same signature and different return type. 
+C. A child must not define any method with the same signature as the parent's abstract 
+method. 
+D. A non -abstract child must define an abstract method with the same signature and 
+same return type as the parent's abstract method. 
+E. All of the above 
+28. Which of the following is true? 
+A. A child class can extend a parent or implement an interface, but not do both. 
+B. A child class can extend just one parent and can implement just one interface. 
+C. A child class can extend just one parent and can implement zero or more interfaces. 
+D. A child class can extend zero or more parents, and can implement zero or more 
+interfaces. 
+Computer organization and Architecture 
+29. Which of the following best describes the relationship between CPU involvement in 
+programmed I/O, interrupt-driven I/O, and direct memory access (DMA)? 
+A. Programmed I/O wastes CPU cycles, interrupt-driven I/O allows the CPU to 
+perform other tasks until an interrupt occurs, and DMA minimizes CPU 
+involvement. 
+B. Programmed I/O and interrupt-driven I/O use the same CPU time, and DMA 
+adds extra CPU overhead. 
+C. Interrupt-driven I/O wastes more CPU time than programmed I/O, and DMA 
+wastes the most. 
+D. All three methods require identical CPU effort during data transfer. 
+ 
+
+30. A peripheral device uses memory-mapped I/O in a system. Which statement is true about 
+memory-mapped I/O vs. port-mapped I/O? 
+A. load/store instructions, whereas port-mapped I/O uses separate I/O instructions 
+and address space. 
+B. Memory-mapped I/O uses the same address space as regular memory and uses 
+standard 
+C. Port-mapped I/O uses the general memory space and ordinary instructions, 
+while memory- mapped I/O requires special I/O instructions. 
+D. In memory-mapped I/O, I/O devices have a separate “I/O pin” on the bus, which 
+is not needed in port-mapped I/O. 
+E. Memory-mapped I/O cannot use DMA transfers, while port-mapped I/O can. 
+31. Which technique allows an I/O device to transfer a block of data to memory without 
+continuous CPU intervention? 
+A. Programmed I/O with busy-waiting 
+B. Interrupt-driven I/O 
+C. Direct Memory Access (DMA) 
+D. Polling in a loop 
+32. Which statement about RISC versus CISC architectures is generally true? 
+A. RISC has many complex instructions; CISC has few simple instructions. 
+B. RISC executes one instruction per cycle; CISC executes one instruction per clock 
+cycle. 
+C. RISC uses a fixed instruction length and simple decoding, while CISC has variable-
+length instructions and more addressing modes. 
+D. RISC requires microcode; CISC does not. 
+33. What is the main purpose of cache memory in the computer hardware structure? 
+A. To permanently store user files. 
+B. To buffer data transfers to a printer. 
+C. To provide faster access to frequently used data between CPU and main memory. 
+D. To store BIOS settings. 
+Correct Answer: C 
+34. What is the correct sequence of micro-operations for the fetch phase of an instruction 
+cycle? 
+A. PC → MAR, Read; MDR → IR; PC ← PC + 1. 
+B. PC → IR, PC ← PC + 1; IR → MAR. 
+C. IR → MDR, MDR → PC; MAR ← PC + 1. 
+D. MAR → PC; PC → IR; MDR ← PC + 1. 
+35. In an arithmetic instruction like ADD R1, R2, R3, which registers and operations are 
+involved? 
+A. R2 ← R1 + R3 is performed by the Control Unit. 
+B. R1 ← R2 + R3 is performed by the ALU using R2 and R3 as inputs and storing result 
+in R1. 
+C. Memory is read from address R1 and R2, then written to R3. 
+D. The instruction is moved to stack memory. 
+
+Data Communication and Computer Networking 
+36. What is the maximum number of IP addresses that can be assigned to hosts on a local 
+subnet that uses the 255.255.255.224 subnet mask? 
+A. 14      
+B. 15 
+C. 30 
+D. 62 
+37. Which one of the following is incorrect about Physical Layer? 
+A. It interacts with the transmission media, the physical part of the network that 
+connects network components together. 
+B. It decides on the number of logical channels for transporting data coming from 
+different sources. 
+C. It creates a signal that represents this stream of bits. 
+D. It decides on the directions of data flow. 
+E. None of the Above 
+38. Among the given alternatives which one of the following task is not done by data link 
+layer? 
+A. Framing                         
+B. Flow control  
+C. Channel coding 
+D. Error control             
+E. None of the Above     
+39. Which of the following is valid IP host address given the network id 191.254.0.0 while 
+using 11 bits for subnetting? 
+A. 191.254.0.32                         
+B.  191.254.1.29 
+C.  191.254.1.64 
+D. 191.254.0.96                          
+40. Among the following what kind of transmission medium is most appropriate to carry data 
+in a computer network that is exposed to electrical interferences? 
+A.  Unshielded Twisted Pair cable 
+B. Optical Fiber cable 
+C. Coaxial cable 
+D. Microwave 
+E. Copper Cable 
+41. Which one of the following is not true about class C 
+A. Starting with 110 and 21 network number 
+B. Three bytes define the netid and one byte defines the hosted 
+C. probably too small for many organizations 
+D. Two bytes define the netid and two bytes define the hostid 
+E. None 
+ 
+
+42. Addis Ababa university has been assigned the class B network address 165.87.0.0 . The 
+organization needs to divide the network in to eight subnets. what subnet mask should be applied 
+to the network  to provide the most  hosts per subnet? 
+A. 255.255.192.0                           
+B.  255.255.224.0        
+C. 255.255.240.0                           
+D. 255.255.248.0     
+Data Structures and Algorithm 
+43. What is an Abstract Data Type (ADT)?  
+A. A physical implementation of a data structure in memory  
+B.  A mathematical model for data types defined by their behavior and operations  
+C.  A programming language-specific data type 
+D. A hardware-based data storage mechanism 
+44. Inserting an item into the stack when stack is not full is called ____________operation.and 
+deletion of an item from the stack when the stack is not empty is called--------------------------- 
+A. Push,pop 
+B. Pop,push 
+C. Insert delete 
+D. Delete,insert 
+45.  -------------------- is a pile in which items are added at one end and removed from the other end 
+A. Stack 
+B. Queue 
+C. List 
+D. None of the above 
+46. What is the time complexity of the following code snippet? 
+for (int i = 0; i < n; i++) {  
+   for (int j = 0; j < n; j++) {        
+      // Constant time operation   
+  }} 
+A. O(n) 
+B.  O(n log n) 
+C.  O(n²) 
+D.  O(n³) 
+47. What is the minimum number of nodes in a complete binary tree if the height of the tree is 3? 
+A. 12 
+B. 9 
+C. 8 
+D. 13 
+48. For the expression (7-(4*5))+(9/3) which of the following is its post fix representation? 
+A. *745-93/+ 
+B. 93/+745*- 
+C. 745*-93/+ 
+D. 74*+593/- 
+49. Which of the following is true? 
+A. A graph may contain no edges and many vertices 
+B. A graph may contain many edges and one vertex 
+C. A graph may contain no edges and no vertices 
+D. A graph may contain no vertices and many edges 
+
+Web programming 
+50. What will the following JavaScript function will return? 
+[1,2,3].map(num=>{ 
+if(um%2===0) 
+return; 
+return num*2; 
+}); 
+A. [2, undefined, 6] 
+B. [2, , 6] 
+C. [2, undefined, undefined] 
+D. [undefined, undefined, undefined] 
+51. What does the following PHP code snippet will do? 
+$stmt=$coon->prepare(“SELECT * FROM users WHERE id=?”); 
+$stmt->bind_param(“I”, $id); 
+$stmt ->execute();  
+ 
+A. Execute a static query 
+B. Fetch all users 
+C. Prevet SQL injection 
+D. It Will cause an error 
+52. What is the difference between visibility: hidden and display: none? 
+A. Both remove the element from the document flow 
+B. visibility: hidden hides the element and removes its space 
+C. display: none hides the element but keeps its space 
+D. visibility: hidden hides the element but keeps is space; 
+E. display: none removes it entirely 
+53. Which one of the following MySQLi function is used to prevent XSS(Cross-Site Scripting)? 
+A. mysqli_real_escape_string() 
+B. htmlspecialchars() 
+C. mysqli_escape_string()  
+D. xss_escape() 
+54. One of the following is statements is true about let, const and var? 
+A. let and are function scoped 
+B. const can be reassigned 
+C. var is block scoped 
+D. let is block scoped, var is function scoped 
+55. One of the following selectors has the highest specificity? 
+A. .menu  .item 
+B. #header  .menu 
+C. div span 
+D. ul>li 
+56. One of the following is an attribute of the <form> element which prevents a form from being 
+validated when submitted? 
+A. novalidate 
+B. no-validate 
+C. validate= “false” 
+D. skip-validation 
+
+Operating system 
+57. Which of the following is not true about deadlocks?  
+A. Deadlocks can be provably avoided by defining a global resource acquisition 
+order.  
+B. Deadlocks can ONLY occur if there is a circular wait for resources.  
+C. Strict priority schedulers use priority donation to prevent deadlocks.  
+D. A program in a safe state can eventually deadlock.  
+E.  None of the above 
+58. Among the following which one of the following decribes correctly about a "race 
+condition"? 
+A. A situation where multiple processes access shared resources concurrently in an 
+unsafe manner 
+B.  A situation where processes run on different CPUs 
+C. A situation where two processes share the same memory space 
+D. A situation where processes are in a deadlock 
+59. Which one of the following statements is incorrect statement about device controller? 
+A. Works like an interface between a device and a device driver.  
+B. Performs error correction if necessary 
+C.  An interface to convert serial bit stream to block of bytes 
+D. software modules that can be plugged into an OS to handle a particular device 
+E. None of the above 
+60. Logical memory is broken into blocks of the same size called _______. 
+A. Pages 
+B. Frames 
+C. Page table 
+D. Segmentation   
+E. none  
+61. Which of the following scheduling algorithms is non-preemptive? 
+A.  Round Robin 
+B. SJF 
+C. FCFS 
+D. Priority Scheduling (preemptive) 
+62. What is the main advantage of using the Round Robin (RR) scheduling 
+algorithm? 
+A. It provides fair allocation of CPU time to all processes  
+B. It gives higher priority to CPU-bound processes 
+C. It minimizes the average waiting time for processes 
+D.   It reduces the number of context switches 
+63. What does the term "swapping" refer to in the context of memory 
+management? 
+A. Moving data from the cache to main memory 
+B. Moving entire processes between main memory and secondary storage 
+C. Shuffling virtual memory pages to reduce page faults 
+D. Dynamically resizing memory partitions based on demand 
+ 
+
+Software Engineering 
+64. What is the main goal of Software Engineering? 
+A. To create software as fast as possible 
+B. To write code without documentation 
+C. To develop software that is reliable, maintainable, and efficient 
+D. To avoid using any standard development process 
+65. Which of the following best describes a software process model? 
+A. A tool used for debugging code 
+B. A set of activities and associated results that produce a software product 
+C. A process that always execute in the same way in all software project 
+D. A programming model used for web applications 
+66. Which software development model is best suited for projects with well-understood 
+requirements? 
+A.  Waterfall model  
+B.  Agile Model 
+C. Spiral Model 
+D. Incremental Model 
+Given the following statement that is documented to describe a system, answer the following 
+three questions. 
+System Description: In a college portal system, instructors are expected to generate grade and 
+then print the grade report so that they can sign on it and submit to the registrar. 
+67. Which of the following model best represents instructor? 
+A. Class 
+B. Object 
+C. Use case 
+D. Actor 
+68. Which of the following best models the grade report? 
+A. Entity class 
+B. Boundary class 
+C. Control Class 
+D. Entity object 
+69. Which of the following is possible use case? 
+A. Grade report 
+B. Instructor 
+C. Portal 
+D. Generate grade 
+70. A system design should be done based on … 
+A. As-is scenario 
+B. Visionary scenario 
+C. Control class 
+D. As-is use case 
+71. Which of the following is true about components? 
+A. They are deployable product to deliver the service of a subsystem 
+B. Cannot be reused from previous system 
+C. Should always be purchased from one of the commercially-of-the-shelf 
+(COTS) components. 
+D. The are useful for fast development but does not facilitate modularity. 
+
+72. When designing a system, what is the role of non-functional requirements (NFRs)? 
+A. They define services of the software 
+B. They specify programming languages to be used 
+C. They describe how the system performs under various conditions 
+D. They are not considered in the design phase 
+ 
+Design and analysis of algorithm 
+73. Which of the following violates the essential characteristics of a valid algorithm? 
+A. Produces a result after a finite number of steps 
+B. Accepts zero or more inputs 
+C. Allows for subjective interpretation of steps 
+D. Has clearly defined operations 
+74. Why do we analyze algorithms? 
+A. To check syntax errors 
+B. To prove correctness and argue for efficiency  
+C. To reduce the lines of code necessary 
+D. To determine the behavior of an algorithm 
+75. What is the RAM model used for in algorithm analysis? 
+A. Describing distributed computing 
+B. Estimating hardware costs 
+C. Modeling memory hierarchy and latency  
+D. Defining fundamental operations of a computer 
+76. What is the major limitation of the Master Theorem? 
+A. It cannot be applied if subproblems are of significantly different sizes 
+B. It cannot handle recursion trees with a depth greater than log n 
+C. It assumes the input size is always a power of two 
+D. It gives only best-case complexity, not worst-case 
+77. Which edge type in DFS traversal indicates a cycle in a graph? 
+A. Forward edge 
+B. Tree edge 
+C. Back edge 
+D. Cross edge 
+78. Which condition makes a problem suitable for dynamic programming? 
+A. It involves making the best choice at each step based solely on local information 
+B. It can be decomposed into subproblems that recur and share optimal substructure 
+C. It can be modeled using a recursion tree where only the leftmost path is considered 
+D. It can be divided into independent subproblems with a simple combination step 
+79. Which of the following best explains how greedy algorithms operate? 
+A. They prioritize minimum recursion depth over all other criteria 
+B. They explore all combinations before selecting an optimal solution 
+C. They choose the best local option in the hope of finding a global optimum 
+D. They break problems into overlapping subproblems and reuse solutions 
+Introduction to Artificial Intelligence 
+80. What is a rule-based system in the context of expert systems? 
+A. A system that applies a set of pre-defined rules to infer conclusions  
+B. A system where data is automatically processed 
+C. A system that generates rules from data automatically 
+D. A system with no predefined knowledge 
+ 
+
+81. What is the time complexity of the Minimax algorithm without pruning, for a game tree 
+of depth d and branching factor b? 
+A. O(b + d) 
+B. O(b^d) 
+C. O(d^b) 
+D. O(b * d) 
+82. Which of the following is an example of a simple reflex agent? 
+A. A self-driving car planning a route 
+B. A chatbot giving intelligent replies 
+C. A thermostat turning on the heater when temperature is low 
+D. A robot learning from experience 
+83. Which search algorithm is guaranteed to find the optimal solution, if one exists, given 
+uniform step costs? 
+A. Breadth-First Search 
+B. Depth-First Search 
+C. Hill Climbing 
+D. Random Search 
+84. AI, a problem can be solved by searching when: 
+A. The solution is hardcoded 
+B. The path to the goal is unknown and must be discovered 
+C. The system has complete information 
+D. The solution is provided by the user 
+85. In robotic exploration, which of the following search methods is typically preferred? 
+A. Depth-First Search 
+B.  Blind Search 
+C. A* Search 
+D. Hill Climbing 
+86. What does the following FOL sentence mean: ∃x (Dog(x) ∧ Barks(x))? 
+A. All dogs bark 
+B. No dogs bark 
+C. Some dogs don’t bark 
+D. There is at least one dog that barks 
+ 
+Network and System Administration 
+87. What is the primary concern in data center management? 
+A. Designing websites for optimal performance  
+B. Managing power, cooling, and fire safety 
+C. Ensuring maximum social media engagement  
+D. Monitoring internal network traffic 
+88. Which of the following is a key principle of system administration? 
+A. Installing multiple software on a server 
+B. Keeping systems outdated for stability  
+C. Automating repetitive tasks 
+D. Using manual backup methods 
+ 
+ 
+
+89. What is the first step in the bootstrapping process of an OS? 
+A. Loading the OS kernel into memory 
+B. Initializing multi-user operations 
+C. Configuring network interfaces  
+D. Executing system daemons 
+90. What is the primary function of a shell in UNIX/Linux? 
+A. Managing system hardware resources  
+B. Serving as a graphical interface for the OS  
+C. Interpreting and executing user commands 
+D. Connecting remote servers via FTP 
+91. When does page fault occur? 
+A. The page is present in memory. 
+B. The deadlock occurs. 
+C. The page does not present in memory. 
+D. The buffering occurs. 
+92. If the default gateway is configured incorrectly on a host, what is the impact on 
+communications? 
+A. The host is unable to communicate with hosts on remote networks. 
+B. The host is unable to communicate on the local network. 
+C. The host is unable to communicate with hosts on both the local and remote 
+D. networks. 
+E. The host cannot get an IP address from the DHCP server. 
+93. What is the primary purpose of log rotation in system administration? 
+A. To delete all logs automatically after a fixed time periods  
+B. To increase system performance by disabling logging features 
+C. To Prevents storage overflow and keeps records organized 
+D. To randomly rename log files without archiving 
+ 
+Automata and Complexity Theory 
+94. When will an input be accepted by a Turing Machine? 
+A. If it reaches any state and has no possible move for an input symbol 
+B. If the machine consumes all the input symbols in one of the states 
+C. If the machine halts in a final state 
+D. If the machine enters into an infinite loop 
+95. Which one of the following could be modeled using Turing Machine? 
+A. Non-Recursively Enumerable Languages 
+B. Non-Deterministic Finite Automata 
+C. Push Down Automata 
+D. Deterministic Finite Automata 
+96. Which of the following is an incorrect statement? 
+A. All recursive languages are recursively enumerable 
+B. All recognizable languages are decidable 
+C. All recursively enumerable languages are recursive 
+D. Decidable problems can’t be modeled by a Turing Machine 
+ 
+
+97. Which one of the following statements is correct? 
+A. Nondeterministic FSA have memory 
+B. Turing Machine have an infinite memory 
+C. Deterministic FSA have memory 
+D. Push-down Automata have unrestricted memory 
+98. When can we say two grammars are equivalent? 
+A. When the languages represented by both grammars are the same 
+B. When the language derived from one of the grammars become the subset of 
+the other 
+C. When the alphabets of the two grammars are the same 
+D. When a single string is member of the language represented by both grammars 
+99. Which one of the following is a regular language? 
+A. Strings whose length is a sequence of prime numbers  
+B. Strings with substring wwr in between 
+C. Palindrome strings 
+D. Strings with even number of Zero’s 
+100. What is the notation used to describe the sequence of states of a given automata for a given 
+input? 
+A. Automaton  
+B. Instantaneous description 
+C. Computation  
+D. Transition function 
+ 
+Computer Security 
+101. Which type of firewall is considered most secure but potentially slower? 
+A. Packet-filtering 
+B. Proxy firewall 
+C. Stateful inspection 
+D. NAT firewall 
+102. Which access control model is based on the user’s identity? 
+A. Mandatory Access Control (MAC) 
+B. Role-Based Access Control (RBAC) 
+C. Discretionary Access Control (DAC) 
+D. Rule-Based Access Control 
+103. A brute-force attack in cryptography tries to: 
+A. Guess the encryption key by trying all possible combinations 
+B. Guess the encryption algorithm 
+C. Overload the CPU 
+D. Crack passwords by social engineering 
+104. Which of the following uses the same key for both encryption and decryption? 
+A. Public-key cryptography 
+B. Asymmetric encryption 
+C. Symmetric encryption 
+D. Hashing 
+ 
+
+105. Which of these can help mitigate the risk of Cross-Site Scripting (XSS)? 
+A. Disabling cookies 
+B. Sanitizing user input 
+C. Compressing data 
+D. Using weak encryption 
+106. Which of the following is a common software vulnerability ? 
+A. SQL injection 
+B. Firewall misconfiguration 
+C. IP spoofing 
+D. Packet sniffing 
+107. Which is an example of multi-factor authentication in network security? 
+a. Password and CAPTCHA 
+b. Password and username 
+c. Password and fingerprint 
+d. Security question 
+Compiler Design 
+108. In a grammar with productions A → aB | bA | bBa , B → bB | cA | b ; which terminal will 
+belong to the first of B? 
+A. a 
+B. b 
+C. c 
+D. B and C 
+109. Which action of the bottom-up parsing moves terminals from input buffer to the 
+stack? 
+A. Shift  
+B. Accept  
+C. Reduce  
+D. augment 
+110. What is the name of a grammar in which all attributes of the grammar symbols are 
+synthesized attributes and some form of inherited attributes? 
+A. S-attributed grammar 
+B. L-attributed grammar 
+C. M-attributed grammar 
+D. None 
+111. Which attribute’s value is computed from the values of attributes at the children of 
+that node in the parse tree? 
+A. Inherited attributes 
+B. Dependency attributes 
+C. Synthesized attributes 
+D. None 
+ 
+ 
+
+112. Which one of the following is used to determine a serious of characters as a token? 
+A. Lexeme  
+B. Alphabet  
+C. Grammar 
+D. None 
+113. What is the other name given to the bottom-up parsing? 
+A. Shift-reduce parsing 
+B. Predictive parsing 
+C. Recursive descent parsing 
+D. Non-recursive parsing 
+114. What we call a grammar that produces more than one parse tree for a particular 
+string? 
+A. Regular  
+B. Ambiguous  
+C. Unambiguous  
+D. Non-regular 
+115. Which one of the following is not an approach for parsing? 
+A. Top-down approach 
+B. Bottom-up approach 
+C. Left-to-right approach 
+D. None 
+ 

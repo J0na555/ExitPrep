@@ -1,0 +1,838 @@
+ADDIS ABABA UNIVERSITY 
+College of Natural and Computational Science
+Department of Computer Science
+Exit Exam Model
+Date: April, 07/2023
+Time Allowed:_ ___
+Full Name__________________________________________        
+                        
+ID No._____________________________                                             
+                                                                                                                
+Directions:
+1. Make sure this exam booklet contains 16 pages including this cover page and the answer sheet 
+on the back. 
+2. Please give your answers on the answer sheet provided. 
+3. Write your name and you ID on the answer sheet. 
+4. Don’t forget to switch off your mobile phones and store them away for the duration of the 
+exam. 
+5. Please don’t turn this page until you’re told to do so. 
+ 
+
+
+1
+1. How many times is the phrase ″In the loop″ printed when the following code is executed?
+1. int i, j=8;
+2. for(i=0; i<j; i++, j--)
+3. {
+4. if(i%2!=0) continue;     
+5. cout << "In the loop " << endl;
+6. }
+A. 20 B. 10 C. 3 D. 2
+2. What is the output of the following code snippet?
+1. int main ()
+2. {
+3.    int a= 5, x = 1, y = 0, z = 4;  
+4.     a = (x && y) || ++z;  
+5.     std::cout<<z<<endl<<a;  
+6.     return 0;
+7. }
+A. 5
+1
+B. 5
+2
+C. 4
+1
+D. 4
+2
+3. ______ is a function that invokes itself?
+A. Recursive function                   
+B. Inline function       
+C. Built in function
+D. User defined function
+4. Which control flow statement is represented by the flowchart shown in the figure below?
+A) while loop
+B) do…while loop
+C) if…else statement
+D) for loop
+5. What is the output of the following code snippet?
+1. double ph=15.3;
+2. if(ph<0 || ph>15)
+3. {
+4.      cout<< “Invalid PH value. ”;
+5. }
+6. if(ph<=6.5)
+7.   cout<< “Acidic”;
+8. else if(ph>6.5 && ph<7.5)
+9.   cout<< “Neutral”;
+10. else
+11.   cout<< “Alkaline”;
+A) Invalid PH Value
+B) Neutral
+C) Alkaline
+D) Invalid PH Value. Alkaline
+6.What will be the result after executing the following program?
+1. int func (int a, int b) {
+2. a *= 5;
+3. b +=5;
+4. return (a + b);
+5. }
+
+2
+6. void main() {
+7. int x = 9, y = 3;
+8. cout << "Result = " <<func(x, y)<<", "<<x<<", "<<y<<endl;
+9. }
+A. 12, 9, 3  
+B. 50, 9, 3
+C. 53, 9, 3
+D. 53, 45, 8
+7. What do arrays do?
+A. Hold address of a single value
+B. Hold one value
+C. Hold values of the same type under a single name
+D. Hold addresses of values under a single name
+8. Which of the following statement best describe relational data model?
+A. It is a database model that allows multiple records to be linked to the same owner 
+file.
+B. It structures data in a tree like structure using parent to child relationship.
+C. It is a database model to manage data as tuples grouped into relations
+D. It is a model that use concepts such as entities, attributes, and relationships
+E. Describe how data is stored in the computer, representing information such as 
+record structures, record ordering, and access paths.
+9. Consider the following record of an employee database and answer the question that 
+follows
+Employee
+Emp_ID First_Name Last_Name Salary  Department
+101 Lula Getachew 35,000 Accounting 
+102 Natnael Abera 18,000 IT
+103 Henok Teshome 45,000 Accounting 
+104 Selamawit Tadesse 120,000 IT 
+105 Solomon Nigusse 32,000 Sales 
+Department 
+Dept_Nam
+e
+Manager 
+Accountin
+g 
+101
+IT 102
+Sales 105
+
+3
+Which of the following constraint will violate when a data base administrator try to 
+execute the following SQL statement?
+               INSERT INTO Department (Dept_Name, Manager) VALUES (null, 107);
+A. Domain constraint
+B. Key constraint
+C. Entity Integrity constraint
+D. Referential Integrity constraint
+10. Consider a relation R (A,B,C,D) with set of functional dependencies F={C￿D,C￿B,B￿C).
+Which of the following statement is true about R?
+A. The relation R is in second normal form
+B. The relation R is in third normal form
+C. The candidate key for R is BC
+D. The relation R is in second normal form
+E. None
+11. Which schema of the three-schema Architecture describe the structure of the whole 
+database?
+A. Internal schema
+B. Conceptual schema
+C. External schema
+D. schema
+12. Which of the following is the disadvantage of a database approach?
+A. Data consistency
+B. Sharing of data
+C. Improved data integrity
+D. Increased concurrency
+E. Enforcement of standards
+F. Complexity
+G. None
+13. Which of the following is a correct statement about relation? (Choose all that applies)
+A. Values of each columns is a repeating group/array
+B. Values in a column can be from different domain
+C. A relation is in the 1NF
+D. Two rows in a relational table can be identical
+E. The sequence of columns and rows is insignificant
+F. None
+14. Which of the following statement is correct about executing the following SQL query on 
+the employee database given in question 2? (Choose all that applies)
+A. the query will execute successfully and will obtain all departments with an average 
+salary higher than 35,000
+
+
+4
+B. the query will not execute because Department attribute in Group by statement was 
+not included in the select statement list
+C. the query will not execute because we can’t include aggregate function in the where 
+statement
+D. the query will execute successfully and will obtain employees of all departments with 
+an average salary higher than 35,000
+15. In which database security measure is aggregate data are accessible to users by hiding 
+details from users:
+A. Inference control 
+B. Access control                        
+C. Integrity control   
+D. Encryption   
+E. None of the above
+16. Which of the following query optimization technique used to modify the internal 
+representation of query?
+A. Systematically estimation
+B. Semantic query optimization
+C. Cost Estimation
+D. Heuristic rules
+E. A and C
+17. Which of the following is not true about locks?
+A. Locks with large granularity are easier for the DBMS to administer.
+B. Locks with small granularity cause more conflicts.
+C. Locks with large granularity produce fewer details for the DBMS to track.
+D. Locks may have a table-level granularity.
+E. Locks may have a database-level granularity.
+18. For every transaction T participating in the schedule, if all the operations of T are 
+executed consecutively in the schedule. The schedule is 
+A. Cascaded schedule
+B. Serial schedule
+C. Cascadeless schedule
+D. Recoverable schedule
+E. None 
+19. A transaction property state about changes applied to the database by a committed    
+transaction must persist in the database?
+A. Isolation
+B. Durability or permanency
+C. Atomicity 
+D. Consistency preservation
+E. None
+20. If a transaction does not modify the database until it has committed, it is said to use the 
+___________ technique.
+A.   Undo                                                                C. Immediate-modification        
+
+5
+B. Late-modification                                              D. Deferred-modification  
+21. Which one of the following is false?
+A. In object-oriented database, data are stored as collections of rows and tables
+B. In relational database, data are perceived by users as tables
+C. Object oriented database allows object identification and communication
+D. Object oriented database allows reusability of objects
+E. None of the above
+22. Which of the following is correct about software product in the context of software 
+engineering?
+A. Software product refers any software created to meet the client’s requirements.
+B. Software product includes design nd test documentation.
+C. Software product includes requirement specifications, and user manuals. 
+D. All of the above
+23. One of the followings is type of requirements associated with quality features of a 
+software.
+A. Business requirements 
+B. Functional requirements 
+C. Non-functional requirements 
+D. User requirements 
+24. A type of requirement that describes why the software project is needed and used to 
+define the objective of the software is                      .
+A. Business requirements 
+B. Functional requirements 
+C. Non-functional requirements 
+D. User requirements 
+25. Which of the following is used to model the functionality of software?
+A. Use case diagram 
+B. Class diagram
+C. E-R diagram 
+D. Deployment diagram 
+26. Which of the following refers to the deployment platform?
+A. Use case
+B. Tier
+C. Layer
+D. Component
+27. Which of the following process model is not suitable to accommodate changes?
+A. Waterfall 
+B. Scrum
+C. RAD
+D. Agile
+28. Which of the following aims to find errors?
+A. Requirement Analysis 
+B. Design
+C. Testing 
+D. None of the above 
+29. Which of the following will work if you want to create a table which looks like the 
+following?
+A. double[][] table = {12, -9, 8, 7, 14, -32, -1, 0};
+12 -9 8
+7 14
+-32 -1 0
+
+6
+B. double[][] table = {{12, -9, 8}, {7,14,0}, {-32,-1,0}};
+C. double[][] table = {{12,-9,8}{7,14}{-32,-1,0}};
+D. double[][] table = { {12, -9, 8},{7, 14},{-32, -1, 0} };
+30. Which of the following is a good candidate to be static?
+A. The PI field of a circle class
+B. A method that displays the salary of an Employee class
+C. A method that calculates the hypotenuse of a right-angle triangle class
+D. A name field of a Student class
+E. All except B 
+31. Here is the general syntax for method definition: 
+accessModifier returnType methodName(parameterList ){
+  Java statements
+  return returnValue;
+}
+What is true for the accessModifier? 
+A. It must always be private or public.
+B. It can be omitted, but if not omitted it must be private or public.
+C.It can be omitted, but if not omitted there are several choices, including private and 
+public
+D.The access modifier must agree with the type of the return value.
+E. All of the above
+32. What is the output of the following Java code?
+class FinalExam{
+int num1;
+public FinalExam() {
+num1 = 4;
+}
+void display() {
+System.out.println(num1);
+}
+}
+class Final1 extends FinalExam{
+int num=3;
+public Final1() {
+this(5);
+num1 = num;
+}
+public Final1(int num) {
+this.num = num * num;
+}
+}
+public class Main{
+public static void main(String[] args){
+Final1 f = new final1();
+f.display();
+}
+
+7
+}
+A. 4
+B. 25
+C. 12
+D. 20
+33. Which one of the following is important to implement dynamic Polymorphism? 
+A. Polymorphic variable
+B. Method overriding
+C. Inheritance
+D. All of the above
+34. What must a non-abstract child do about an abstract method in its parent class? 
+A. A child must override an abstract method inherited from its parent by defining a method 
+with the same signature and same return type
+B. A child must define an additional method similar to the one inherited from its parent by 
+defining a method with the same signature and different return type.
+C. A child must not define any method with the same signature as the parent's abstract method.
+D. A non-abstract child must define an abstract method with the same signature and same 
+return type as the parent's abstract method.
+E. All of the above
+35. Which of the following is true?
+A. A child class can extend a parent or implement an interface, but not do both.
+B. A child class can extend just one parent and can implement just one interface.
+C. A child class can extend just one parent and can implement zero or more interfaces.
+D. A child class can extend zero or more parents, and can implement zero or more interfaces.
+36. In computers, subtraction is carried out generally by____.
+A. 1's complement method
+B. 2's complement method
+C. signed magnitude method
+D. BCD subtraction method
+37. Pick the different
+A. Decoder
+B. Encoder
+C. Multiplexer
+D. Shift Register
+38. An operation performed on the contents of a register is known as
+A. Instruction code 
+B. Micro-operation
+C. Accumulator 
+D. Register
+39. Which one is true about RISC computers?
+A. RISC are with few numbers of registers when compared to CISC
+B. RISC use complex and efficient machine instructions when compared to CISC
+C. RISC is with hardwired control unit with pipelining processing 
+D. RISC uses extensive addressing capabilities for memory operations
+E. None
+40. Which of the following is not a basic element within the microprocessor? 
+A. Microcontroller B. Arithmetic logic unit (ALU) 
+
+8
+C. Register array D. Control unit 
+41. Which method bypasses the CPU for certain types of data transfer? 
+A. Software interrupts 
+B. Interrupt-driven I/O 
+C. Polled I/O 
+D. Direct memory access (DMA) 
+42. Which bus is bidirectional? 
+A. Address bus 
+B. Control bus 
+C. Data bus 
+D. None of the above
+43. Error detection, Error Correction and Flow Control tasks are performed on which layers of 
+the OSI reference model ___________________? (Choose all that applies)
+A. Application 
+B. Presentation 
+C. Network 
+D. Transport 
+E. Session 
+F. Data link
+G. Physical
+44. Which of the following statement(s) is/are WRONG? (Choose all that applies)
+A. Internet/Network layer is responsible for routing 
+B. Physical address can be assigned by the network administrator.
+C. Physical layer is concerned with specifying the characteristics of the transmission 
+medium, the nature of the signals and the data rate.
+D. Transport layer provides only unreliable data transmission.
+E. Network layer is responsible for host to host communication.
+F. None of the above
+45. Which one of the following Medium Access Control protocols is supported by WLAN 
+(802.11)?
+A. ALOHA
+B. CSMA/CA
+C. Token Passing 
+D. FDMA
+E. CSMA
+46. Which one of the following network devices operates on all the layers of the OSI reference 
+model_______________?
+A. Hub 
+B. Switch 
+C. Router 
+D. Gateway 
+E. Bridge 
+47. Which of the following is an IP address that can be assigned for a host in your LAN?
+A. 127.0.0.0
+B. 9.0.0.1
+C. 192.168.1.256
+D. 172.16.1.27
+E. All of the above 
+F. None of the above
+48. Which of the following statement(s) is/are correct? (Choose all that applies)
+A. Circuit Switching and Virtual Packet Switching methods reserve the required 
+resources for the duration of the session during communication between end 
+systems 
+
+9
+B. Circuit switching technique uses store and forward method. 
+C. In message switching technique, it is not required to create a dedicated path.
+D. In circuit switching techniques, resources are allocated on demand.
+E. Packet switching is used mainly for data transmission as the delay is not uniform.
+49. Which information is not correct about the IP address 172.16.35.72/27? 
+A. 172.16.35.64 is one of the subnet addresses.
+B. The default mask for the network is 255.255.0.0. 
+C. It is Class B address. 
+D.  The number of bits used for the host address is 5.
+E.  The broadcast address of the second subnet is 172.16.35.255
+50. Consider an implementation of unsorted singly linked list with a start pointer only.  
+Given the representation, which of the following operation can be implemented in O(1) 
+time? 
+A. Insertion at the front of the linked list
+B. Insertion at the end of the linked list
+C. Deletion of the front node of the linked list 
+D. Deletion of the last node of the linked list
+E. A & C
+51. Given the following C++ function, what is the Big O of code?
+int function( int n ) 
+{
+    int a,n;
+    cout<< “Enter a positive integer \n”;
+    
+    for ( int i = 1; i < n; i *= 2 ) 
+                     a = i;
+     return 0;
+}
+A. nlogn B. n 2 C. logn D. n
+52. Which of the following data structure is more appropriate to represent a heap tree?
+A. Two dimensional array
+B. Doubly linked list
+C. Linear array
+D. Single linked list
+53. Linear search is highly inefficient compare to binary search when dealing with_____?
+A. Small, unsorted arrays
+B. Large, sorted arrays
+C. Small, sorted arrays
+D. Large, unsorted arrays
+      For Question 54 -56(separately) by considering the array elements 
+     int a[6]={11,13,15,17,19,21}
+54. Implementing stack, the elements after pop(); push(9); are:
+A. 9, 11, 13, 15, 17, 19
+B. 13, 15, 17, 19, 21, 9
+C. 11, 13, 15, 17, 19, 9
+D. 9, 13, 15, 17, 19, 21
+
+10
+55. Implementing queue, the elements after dequeue(); and enqueu(9); are:
+A. 9, 11, 13, 15, 17, 19
+B. 13, 15, 17, 19, 21, 9
+C. 11, 13, 15, 17, 19, 9
+D. Queue overflow
+56. Implementing circular queue, the elements after dequeue(); and enqueue(9); are:
+A. 9, 11, 13, 15, 17, 19
+B. 13, 15, 17, 19, 21, 9
+C. 11, 13, 15, 17, 19, 9
+D. 9, 13, 15, 17, 19, 21
+57. Which one of the following is false?
+A. A web browser is a software that runs on a server
+B. A user agent renders resources for a user to view
+C. A website is a collection of resources in various forms
+D. A web page is the basic unit of information storage on the www
+58. Which one of the following is false about HTTP protocol?
+A. It is a stateless protocol
+B. An HTTP message body can be empty
+C. It is a protocol used for communication between a web browser and a web server
+D. None of the above
+59. Which one of the following is the correct syntax for document type declaration in 
+HTML5?
+A. <doctype html>
+B. <!doctype html>
+C. </doctype html>  
+D. All of the above
+60. In HTML, how do we create a link to another site?
+A. <a href="http://www.somedomain.com">click here</a>
+B. <a url="http://www.somedomain.com">click here</a>
+C. <a link="http://www.somedomain.com">click here</a>
+D. <a "http://www.somedomain.com">click here</a>
+61. Which one of the following form attribute is used to assign the server side script file that 
+processes the form data?
+A. method
+B. action
+C. target
+D. autocomplete
+62. What would be the output of the following javascript code?
+    <script type="text/javascript">
+       x=4+"4";
+       document.write(x);
+     </script>
+A. 44          B. 8         C. 4                   D. The code contains an error
+63. What will be the output of the following PHP code?     
+
+11
+ <?php
+    $color = "maroon";
+ $var = $color[2];
+ echo "$var";
+  ?>
+A. a
+B. Error
+C. var
+D. r
+64.  In PHP, which function initiates a session?
+A. start()
+B. s_start()
+C. session_start()
+D. session_str()
+65. In php, which one of the following is a super global varible?
+A. $_GET
+B. $_POST
+C. $_SERVER
+D. All of the above
+66. One is not the goal of I/O software
+A. Buffering
+B. Device independence
+C. Uniform naming
+D. Error handling 
+E. None of the above
+67. Hardware device that maps physical address to logical address is
+A. MMU
+B. IRQ
+C. DMA
+D. Cache
+E. Relocation Register
+68. In terms of speed and storage utilization, 
+A. First fit algorithm is better
+B. Best fit algorithm is better
+C. Worst fit algorithm is better
+D. All of the above
+69. Assuming process execution time is known in advance, for which of the following algorithm(s) 
+can the maximum wait time for a given process be computed at the time the job is submitted?
+A. Shortest job first
+B. Shortest remaining time 
+C. Priority based
+D. Round Robin
+E. All of the above 
+70. One is not a problem caused by concurrency of processes
+A. Race condition
+B. Starvation
+C. Deadlock
+D. Mutual exclusion
+E. None 
+71. Which of the following methods can be used to recover deadlock
+A. Kill the process
+B. Rollback
+C. Non-preempt the resource
+D. Lock the process
+72. One deadlock prevention method says, “if a process must wait for a needed resource, it drops 
+all of its previously held resources and tries to acquire all resources gain.” These attacks
+A. Circular wait condition
+B. No preemption conditions
+C. Mutual exclusion condition
+D. Hold and wait condition
+E. None of the above
+73. The data structure used in the standard implementation of Breadth First Search is_____?
+A. Stack
+B. Array
+C. Linked List
+D. Queue 
+
+12
+74. The data structure used in the standard implementation of Depth First Search is_____?
+A. Stack
+B. Array
+C. Linked List
+D. Queue 
+75. Recursion is a method in which the solution of a problem depends on ____________.
+A. Larger instances of different problems
+B. Larger instances of the same problem
+C. Smaller instances of the same problem
+D. Smaller instances of different problems
+76. In recursion, the condition for which the function will stop calling itself is ___________.
+A. Best case
+B. Worst case
+C. Base case
+D. There is no such condition
+77. If an optimal solution can be created for a problem by constructing optimal solutions for 
+its subproblems, the problem possesses ____________ property.
+A. Overlapping subproblems
+B. Optimal substructure
+C. Memoization
+D. Greedy
+78. If a problem can be broken into subproblems that are reused several times, the problem 
+possesses ____________ property.
+A. Overlapping subproblems
+B. Optimal substructure
+C. Memoization
+D. Greedy
+79. If a problem can be solved by combining optimal solutions to non-overlapping problems, 
+the strategy is called _____________.
+A. Dynamic programming
+B. Greedy
+C. Divide and conquer
+D. Recursion
+80. Among the following which kind of algorithm is used in the Game tree to make decisions 
+of win/Lose?
+A. Depth First Search
+B. Breadth First Search Algorithm
+C. Heuristic Search Algorithm
+D. Min/Max Algorithm
+E. Greedy Search Algorithm
+81. Agents’ behavior can be best described by ____________
+A. Perception sequence
+B. Agent function
+C. Sensors and Actuators
+D. Environment in which agent 
+is performing
+82. Which type of agent deals with happy and unhappy states?
+A. Simple reflex agent
+B. Model based agent
+C. Utility based agent
+D. Learning agent
+83. What is the purpose of “Agent” in Artificial Intelligence?
+A. Mapping of goal sequence to an action
+B.  Work without the direct interference of the people
+C. Mapping of environment sequence to an action
+D. Mapping of precept sequence to an action
+84. Which of the following is also called as exploratory learning?
+
+13
+A. Supervised learning
+B. Active learning
+C. Unsupervised learning
+D. Reinforcement learning
+E. None of the Above
+85. Suppose the predicate F(x, y, t) is used to represent the statement that person x can fool 
+person y at time t. which one of the statements below expresses best the meaning of the 
+formula ∀x∃y∃t(¬F(x, y, t))?
+A. Everyone can fool some person at some time
+B. Everyone cannot fool some person all the time
+C. No one can fool some person at some time
+D. No one can fool everyone all the time
+86. What one is the main challenge/s of NLP?
+A. Handling Tokenization
+B. Handling Ambiguity of Sentences
+C. Handling POS-Tagging
+D. Handling Semantics of Sentences
+E. All of the mentioned
+87. Based on the predefined policy of Network management, controlling access to the 
+network is the task of
+A. Fault Management
+B. Performance Management
+C. Security Management
+D. Configuration Management
+E. None 
+88. A Unix utility which used for checking and repairing file system inconsistencies.
+A. init B. halt C. inittab D. fsck
+89. Which one of the following authentication procedures is bounded to user’s body?
+A. One-factor authentication
+B. Two-factor authentication
+C. Three-factor authentication
+D. Forth-factor authentication
+90. A PC obtains its IP address from a DHCP server. If the PC is taken off the network for 
+repair, what happens to the IP address configuration?
+A. The configuration is permanent and nothing changes.
+B. The address lease is automatically renewed until the PC is returned.
+C. The address is returned to the pool for reuse when the lease expires
+D. The configuration is held by the server to be reissued when the PC is returned.
+E. None of the above
+91. Which command in Microsoft Windows will allow you to verify your IP address, subnet 
+mask, default gateway, and MAC address?
+A)C:\>ipconfigB) C:\>ipstatusC)  C:\>ipconfig /all
+D)  C:\>pingE) None of the above
+
+14
+92. A system that monitors traffic into and out of a network and automatically alerts 
+personnel when suspicious traffic patterns occur, indicating a possible unauthorized 
+intrusion attempt is called a (n) __________________.
+A) IDS         B)  Firewall      C) Router    D) Anti-Virus Software    E) None of the above
+93. You are the administrator of an active directory domain. A user complains to you that he 
+is unable to change his password. No other users have this issue. What is the most likely 
+cause of the problem?
+A. Insufficient login credentials
+B. He is a member of the Administrators group
+C. He is not a member of the domain
+D. The property “User cannot change password” has been enabled when it was created
+94. Which one of the following languages over alphabet {0, 1} is described by the regular 
+expression (0+1)*0(0+1)*0(0+1)*
+A. Strings with substring 00
+B. Strings with at least two 0’s
+C. Strings with at most two 0’s
+D. Strings with postfix 1.
+95. Transition function in FSA maps which pair?
+A. Q and Σ to Σ
+B. Q and Q to Σ
+C.Σ and Σ to Q 
+D. Q and Σ to Q
+96. A grammar has the following productions: 
+A → aB | bA | bBa
+B → bB | cA | b
+Which one of the following strings is in the language generated by the grammar?
+A. abbcabbcbbbcbbaca
+B. bcbbbcabbcbaa
+C. acbcbbbbcaba
+D. bbbbcbbbbcab
+97. When we can say two grammars are equivalent?
+A. When the languages represented by both grammars are the same
+B. When the language derived from one of the grammars become the subset of the other
+C. When the alphabets of the two grammars are the same
+D. When a single string is member of the language represented by both grammars
+98. If L1 and L2 are two regular languages, which one of the following is true
+A. L 1U L2 is a regular language only if empty string is not a member
+B. L 1* is the same with L2* and are both regular languages
+C. L 1L2 is also a regular language
+D. L 1R is a regular language and is equivalent to L1
+99. Let G = {N, T, P, S} be a grammar where:
+       N={S, A}, T={ 0, 1}, S={S}   and  P = {S￿ 11S | 0A | 1A, A￿ 0 | 1 | 0S}.
+Which one of the following is a sentential form?
+A. 111011110S
+B. 11111101
+C. 0000111001AS
+D. 00001110A
+
+15
+100. Which one of the following properties of a graph represents the derivation steps performed 
+to generate a valid string?
+A. Root of the graph
+B. Degree of the vertex
+C. Path of a vertex from the root
+D. Parent vertex
+
+16
+Answer Sheet
+Full Name: ___________________________  ID:_________________
+1) __________
+2) __________
+3) __________
+4) __________
+5) __________
+6) __________
+7) __________
+8) __________
+9) __________
+10) __________
+11) __________
+12) __________
+13) __________
+14) __________
+15) __________
+16) __________
+17) __________
+18) __________
+19) __________
+20) __________
+21) __________
+22) __________
+23) __________
+24) __________
+25) __________
+26) __________
+27) __________
+28) __________
+29) __________
+30) __________
+31) __________
+32) __________
+33) __________
+34) __________
+35) __________
+36) __________
+37) __________
+38) __________
+39) __________
+40) __________
+41) __________
+42) __________
+43) __________
+44) __________
+45) __________
+46) __________
+47) __________
+48) __________
+49) __________
+50) __________
+51) __________
+52) __________
+53) __________
+54) __________
+55) __________
+56) __________
+57) __________
+58) __________
+59) __________
+60) __________
+61) __________
+62) __________
+63) __________
+64) __________
+65) __________
+66) __________
+67) __________
+68) __________
+69) __________
+70) __________
+71) __________
+72) __________
+73) __________
+74) __________
+75) __________
+76) __________
+77) __________
+78) __________
+79) __________
+80) __________
+81) __________
+82) __________
+83) __________
+84) __________
+85) __________
+86) __________
+87) __________
+88) __________
+89) __________
+90) __________
+91) __________
+92) __________
+93) __________
+94) __________
+95) __________
+96) __________
+97) __________
+98) __________
+99) __________
+100)__________

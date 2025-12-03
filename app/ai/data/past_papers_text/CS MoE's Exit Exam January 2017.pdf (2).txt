@@ -1,0 +1,2032 @@
+You are the administrator of an active directory domain. A user complains to you that he is unable to 
+change he password. No other users have this issue. What is the most likely cause of the problem? 
+a. Insufficient login credentials 
+Ob. The property "User cannot change password has been enabled when it was created 
+He is a member of the Administrators group 
+ 
+ 
+Assistant 
+ 
+Poe 
+The most likely cause of the problem is: 
+b. The property "User cannot change password" has been enabled when it was created. 
+Since the user is a member of the Administrators group, insufficient login credentials is unlikely. If this 
+property is enabled, it would prevent the user from changing their password, even if they have the 
+necessary permissions. 
+How does Al contribute to gaining insight into human intelligence? 
+a. By replicating human cognitive processes exactly 
+b. By relying solely on predetermined rules and algorithms 
+c. By analyzing large datasets to uncover patterns and correlations 
+d. By disregarding the complexities of human cognition. 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. By analyzing large datasets to uncover patterns and correlations. 
+AI contributes to gaining insight into human intelligence by processing vast amounts of data, identifying 
+trends, and revealing underlying patterns that can inform our understanding of human cognition. 
+
+
+If a problem can be broken into sub-problems that are reused several times, the problem possesses 
+property. 
+a. Memoization 
+b. Optimal substructure 
+c. Greedy 
+d. Overlapping sub-problems 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Overlapping sub-problems. 
+This property indicates that a problem can be divided into smaller sub-problems that recur multiple 
+times, making it suitable for optimization techniques like dynamic programming. 
+In knowledge Representation (KR) how we do represent "how to drive a car"? 
+a. Declarative knowledge 
+b. Transition knowledge 
+c. Procedural knowledge 
+Od. Information Knowledge 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Procedural knowledge. 
+Procedural knowledge refers to knowing how to perform tasks and actions, such as driving a car, which 
+involves a series of steps and skills. 
+
+
+What is the difference between OLTP and OLAP databases? 
+Oa. OLTP databases store historical data, while OLAP databases store real-time data 
+Ob. OLTP databases are optimized for read-heavy workloads, while OLAP databases are optimized for 
+write heavy workloads 
+Oc OLTP databases are used for online transaction processing, while OLAP databases are used for online 
+analytical processing. 
+Od. OLTP databases are used for online analytical processing, while OLAP databases are used for online 
+transaction processing 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. OLTP databases are used for online transaction processing, while OLAP databases are used for 
+online analytical processing. 
+OLTP systems are designed for managing transactional data, while OLAP systems are optimized for 
+complex queries and data analysis. 
+Which ACID property ensures that a transaction either completes in its entirety or has no effect at all? 
+a. Atomicity 
+b. Durability 
+Oc. Consistency 
+d. Isolation 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+a. Atomicity. 
+Atomicity ensures that a transaction is treated as a single, indivisible unit, meaning it either completes 
+fully or has no effect at all. 
+What is the postfix expression for the given infix (2 + 3) ^ * (4+5) notation? 
+O a. 2 +34^ * + 
+b. 23 + 45 +^ + 
+c. 234 ^ * +5+ 
+Od. 2+3^ * 4 + 5 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct postfix expression for the given infix expression (2+3)∗(4+5)(2 + 3) * (4 + 5)(2+3)∗(4+5) is: 
+**b. 23 + 45 + *** 
+This converts the infix expression to postfix (also known as Reverse Polish Notation). 
+What is the primary objective of reinforcement learning in artificial intelligence? 
+Oa. To mimic human decision-making processes 
+Ob. To categorize data into predefined classes or clusters 
+Oc. To identify patterns and correlations in data 
+Od. To maximize cumulative reward through sequential decision-making 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. To maximize cumulative reward through sequential decision-making. 
+
+
+Reinforcement learning focuses on training agents to make decisions that maximize their long-term 
+rewards through interactions with an environment. 
+If an optimal solution can be created for a problem by constructing optimal solutions for its sub-
+problems, the problem possesses property. 
+O a. Greedy 
+Ob. Optimal substructure 
+Oc. Memoization 
+Od. Overlapping sub-problems 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Optimal substructure. 
+This property indicates that an optimal solution to a problem can be formed from optimal solutions of its 
+sub-problems. 
+One of the following is not the main advantage of multiprogramming? 
+a. Copying one's programs or data; using system resources (CPU, memory, disk space, peripherals) 
+without proper accounting. 
+b. The CPU switches from program to program, running each for tens or hundreds of milliseconds. This 
+provides economical interactive use of a system. 
+c. Attempts to increase CPU utilization by always having something for the CPU to execute. 
+d. Makes efficient use of the CPU by overlapping the demands for the CPU and its VO devices from 
+various users 
+Next 
+ 
+ 
+Assistant 
+
+
+ 
+Poe 
+The correct option is: 
+a. Copying one's programs or data; using system resources (CPU, memory, disk space, peripherals) 
+without proper accounting. 
+This option does not represent an advantage of multiprogramming; instead, it suggests a lack of proper 
+resource management. 
+Which one of the following is not a method of an expression for algorithms? 
+a. Natural language 
+Ob. Programming language 
+c. Pseudo-code 
+Od. Flowchart 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Programming language. 
+While programming languages are used to implement algorithms, they are not typically considered a 
+method for expressing algorithms in a high-level, abstract manner like natural language, pseudo-code, or 
+flowcharts. 
+In a healthcare database system, which concept is crucial for ensuring patient data privacy and security? 
+Oa. Data Warehousing 
+b. Data Mining 
+Oc. Data Encryption 
+Od. Data Replication 
+ 
+ 
+Assistant 
+
+
+ 
+Poe 
+The correct option is: 
+c. Data Encryption. 
+Data encryption is crucial for ensuring patient data privacy and security, as it protects sensitive 
+information from unauthorized access and breaches. 
+What is a foreign key in a relational database? 
+Oa. A field in one table that refers to the primary key in another table 
+Ob. A key used for accessing external data sources 
+Oc. A key used for indexing primary keys 
+Od. A key used for encryption purposes 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. A field in one table that refers to the primary key in another table. 
+A foreign key establishes a relationship between two tables by linking one table's field to the primary key 
+of another table. 
+Which programming paradigm emphasizes breaking down problems into smaller, reusable components 
+known as functions or procedures? 
+Oa Procedural programming 
+b. Imperative programming 
+Oc Object-oriented programming 
+Od. Functional programming 
+Next 
+ 
+ 
+
+
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Procedural programming. 
+Procedural programming emphasizes breaking down problems into smaller, reusable components called 
+procedures or functions. 
+Which one of the following is a passive attack? 
+a. Masquerade 
+Ob. DoS 
+c. Traffic analysis 
+Od. Reply 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Traffic analysis. 
+Traffic analysis is considered a passive attack because it involves monitoring and analyzing data traffic 
+without altering or disrupting the communication. 
+Which one of the following is not a step in merge sort algorithm? 
+a. Combine 
+O b. Conquer 
+Oc. Divide 
+Od. Analyze 
+ 
+ 
+Assistant 
+
+
+ 
+Poe 
+The correct option is: 
+d. Analyze. 
+The steps in the merge sort algorithm are typically "Divide," "Conquer," and "Combine." "Analyze" is not 
+one of those steps. 
+What does the term "algorithm" refer to in the context of computer programming? 
+a. A set of rules or instructions for solving a problem 
+Ob. A variable that holds a single piece of data 
+c. A function that performs a specific task 
+Od. A programming language syntax 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. A set of rules or instructions for solving a problem. 
+In computer programming, an algorithm refers to a systematic procedure or set of rules for solving a 
+specific problem. 
+Which objective of modern operating systems involves protecting the system and its resources from 
+unauthorized access and malicious attacks? 
+a. Enhancing system performance 
+b. Ensuring security and protection 
+Oc. Maximizing hardware utilization 
+Od. Providing a user-friendly interface 
+Next 
+ 
+ 
+
+
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Ensuring security and protection. 
+This objective involves protecting the system and its resources from unauthorized access and malicious 
+attacks. 
+Which one is correct about RISC computers? 
+Oa. RISC are with few numbers of registers when compared to CISC 
+Ob. RISC uses extensive addressing capabilities for memory operations 
+Oc. RISC use complex and efficient machine instructions when compared to CISC 
+Od. RISC is with hardwired control unit with pipelining processing 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. RISC is with hardwired control unit with pipelining processing. 
+RISC (Reduced Instruction Set Computer) architectures typically use a hardwired control unit and 
+support pipelining for efficient instruction execution. 
+Which of the following is not a characteristic of NoSQL databases? 
+Oa. Flexibility in data models 
+b. High availability 
+Oc. Scalability 
+Od. Strict schema enforcement 
+ 
+ 
+Assistant 
+
+
+ 
+Poe 
+The correct option is: 
+d. Strict schema enforcement. 
+NoSQL databases are known for their flexibility in data models, high availability, and scalability, but they 
+typically do not enforce a strict schema. 
+What is the name of a grammar in which all attributes of the grammar symbols are synthesized 
+attributes and se form of inherited attributes? 
+a. M-attributed grammar 
+b. L-attributed grammar 
+c attributed grammar 
+d. Stattributed grammar 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. L-attributed grammar. 
+In an L-attributed grammar, all attributes are synthesized attributes, and it allows for some inherited 
+attributes as well. 
+What is the minimum number of stacks required by a FSA? 
+O a. 1 
+Ob. 2 
+O c. 3 
+Od. 0 
+ 
+ 
+Assistant 
+
+
+ 
+Poe 
+The correct option is: 
+d. 0. 
+A Finite State Automaton (FSA) does not require any stacks; it operates using a finite number of states 
+without the need for additional memory structures like stacks. 
+What is the purpose of the switch statement in C++? 
+Oa. To declare and define functions 
+Ob. To select one of many code blocks to be executed 
+Oc. To execute a block of code repeatedly 
+Od. To define a loop that repeats until a condition is false 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. To select one of many code blocks to be executed. 
+The switch statement in C++ is used to execute one block of code among many based on the value of a 
+variable. 
+Which of the following is Uninformed (Blind) Search? 
+a. Breadth-first search (BFS) 
+b. Hill dimbing 
+Oc. Heuristic Functions 
+d. Greedy search 
+ 
+ 
+Assistant 
+ 
+
+
+Poe 
+The correct option is: 
+a. Breadth-first search (BFS). 
+Breadth-first search (BFS) is an uninformed (blind) search algorithm, as it does not use any domain-
+specific knowledge or heuristics to guide its search. 
+Which among the following measures how strongly the elements within a module are related? 
+a. cohesion 
+b. aggregation 
+Oc. inheritance 
+Od. coupling 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. cohesion. 
+Cohesion measures how strongly the elements within a module are related to one another. High 
+cohesion is desirable in software design. 
+What is the term used to describe the collection of information stored in the database at a particular 
+moment? 
+O a. foreign key 
+b. an instance 
+Oc primary key 
+Od. schema 
+ 
+ 
+Assistant 
+ 
+
+
+Poe 
+The correct option is: 
+b. an instance. 
+In the context of databases, an "instance" refers to the collection of information stored in the database 
+at a particular moment. 
+Which data structure allows deleting data elements from front and inserting at rear? 
+Oa. Binary search tree 
+Ob. Deques 
+Oc. Stacks 
+Od. Queues 
+e 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Queues. 
+A queue allows deleting data elements from the front and inserting at the rear, following the First In, 
+First Out (FIFO) principle. 
+Which one of the following commands is used to test reachability of hosts? 
+Oa. Netstat 
+Ob. Ping 
+c. Traceroute 
+Od. Tcpdump 
+ 
+ 
+Assistant 
+ 
+
+
+Poe 
+The correct option is: 
+b. Ping. 
+The ping command is used to test the reachability of hosts on a network by sending ICMP echo request 
+packets and waiting for responses. 
+Which of the following is true statement? 
+a. A module having low cohesion and high coupling is said to be functionally independent of other 
+modules. 
+b. A functionally dependent module has minimal interaction with other modules 
+OC. A module having high cohesion and low coupling is said to be functionally dependent of other 
+modules 
+d. Cohesion is a measure of functional strength of a module 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Cohesion is a measure of functional strength of a module. 
+Cohesion refers to how closely related and focused the responsibilities of a module are, making it a 
+measure of the functional strength of that module. 
+Which of the following is true statement? 
+a. A module having low cohesion and high coupling is said to be functionally independent of other 
+modules. 
+b. A functionally dependent module has minimal interaction with other modules 
+OC. A module having high cohesion and low coupling is said to be functionally dependent of other 
+modules 
+d. Cohesion is a measure of functional strength of a module 
+NextWhich class of grammar is used for syntax analysis? 
+a. Context free grammars 
+
+
+Ob. Regular grammars 
+Oc. Non-recursive grammars 
+Od. Recursive grammars 
+ 
+ 
+Assistant 
+ 
+Poe 
+For the first question, the correct option is: 
+d. Cohesion is a measure of functional strength of a module. 
+For the second question, the correct option is: 
+a. Context free grammars. 
+Context-free grammars are commonly used for syntax analysis in programming languages. 
+Which class of grammar is used for syntax analysis? 
+a. Context free grammars 
+Ob. Regular grammars 
+Oc. Non-recursive grammars 
+Od. Recursive grammars 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Context free grammars. 
+Context-free grammars are primarily used for syntax analysis in programming languages. 
+Brute-force attacks are used most often against which types of access control? 
+Oa. Biometrics and smart cards 
+
+
+b. Passwords and Smart Cards 
+c. Passwords and Personal Identification Number 
+Od. Biometrics and Passwords 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Passwords and Personal Identification Number. 
+Brute-force attacks are most commonly targeted at passwords and PINs, as these can be systematically 
+guessed by trying various combinations. 
+One of the following describes the static structure of a system? 
+Oa. Sequence diagram 
+Ob. Use case diagram 
+Oc. Activity diagram 
+Od. Class diagram 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Class diagram. 
+A class diagram describes the static structure of a system by showing the system's classes, their 
+attributes, methods, and the relationships between them. 
+Which scheduling algorithm ensures that each process gets an equal share of the CPU time? 
+a. Round Robin (RR) 
+b. First-Come, First-Served (FCFS) 
+
+
+c. Shortest Job Next (SJN) 
+d. Priority Scheduling 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Round Robin (RR). 
+The Round Robin scheduling algorithm ensures that each process gets an equal share of CPU time by 
+allocating a fixed time slice to each process in a cyclic manner. 
+The data structure required for breadth first traversal on a graph is: 
+Oa. Stack 
+b. Tree 
+Oc. Queue 
+Od. Array 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Queue. 
+A queue is the data structure required for breadth-first traversal on a graph, as it follows the First In First 
+Out (FIFO) principle, allowing for the exploration of nodes level by level. 
+In PHP , which function initiates a session? 
+O 
+a. s_start() 
+Ob. session_start() 
+
+
+O c. start() 
+Od. session_str() 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. session_start(). 
+In PHP , the session_start() function is used to initiate a session. 
+EP 
+Time left 2:41:35 
+B-bica / b Which one of the following strin 
+A grammar has the following productions: Aas 
+| b | ba 
+is in the language generated by the grammar? 
+Ob bcbbbcabbchaa 
+cacbcbbbbcabe 
+Od abbocabbcbbbcbbaca 
+ 
+ 
+Assistant 
+ 
+Poe 
+To determine which string is in the language generated by the grammar with the productions: 
+• A → aA 
+• A → b 
+• A → ba 
+
+
+Let's analyze each string: 
+1. bcbbbcabbchaa: 
+o Does not start with 'a' or 'b', so it cannot be generated. 
+2. cacbcbbbbcabe: 
+o Does not start with 'a' or 'b', so it cannot be generated. 
+3. abbocabbcbbbcbbaca: 
+o Does not start with 'a' or 'b', so it cannot be generated. 
+None of the strings match the productions based on the provided grammar. Thus, none of the options 
+are valid strings in the language generated by the grammar. 
+If you need further clarification or a different example, feel free to ask! 
+Which one of the following places we cannot place our java script code? 
+Oa. In any tag as an attribute 
+Ob. In the <body> tag 
+Oc. In external files 
+Od. In the <head> tag 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. In any tag as an attribute. 
+JavaScript code cannot be placed as an attribute in any tag. It should be placed in <script> tags within the 
+<head> or <body>, or in external files. 
+Which one of the following is not a component of the computer system? 
+a. The data unit 
+b. The input unit 
+Oc. The control unit 
+Od. The storage unit 
+
+
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. The data unit. 
+The data unit is not typically considered a separate component of a computer system, while the input 
+unit, control unit, and storage unit are all essential components. 
+In signal communication, the absolute value of the highest intensity of the signal proportional to the 
+energy it came is referred as 
+a. Pernod 
+b. Frequency 
+Attenuation 
+Od. Peak-amplitude 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Peak-amplitude. 
+In signal communication, the absolute value of the highest intensity of the signal is referred to as peak 
+amplitude. 
+What is encapsulation in OOP? 
+a. Inheritance 
+b. Composition 
+c. Data hiding and abstraction 
+d. Polymorphism 
+
+
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Data hiding and abstraction. 
+Encapsulation in Object-Oriented Programming (OOP) refers to the bundling of data and methods that 
+operate on that data, along with restricting access to some of the object's components, which is 
+primarily about data hiding and abstraction. 
+Which one of the following is a correct statement? 
+a. Turing machine is the least powerful automata 
+b. Pushdown automata and FSA have the same power 
+Oc. Regular expression is more powerful that FSA 
+Od. Deterministic FSA and Nondeterministic FSA are equivalent 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Deterministic FSA and Nondeterministic FSA are equivalent. 
+Both deterministic finite state automata (DFA) and nondeterministic finite state automata (NFA) 
+recognize the same class of languages (regular languages), meaning they are equivalent in terms of the 
+languages they can recognize. 
+Which one of the following statements is true? 
+Oa. The transport layer in OSI model is connection oriented and connectionless 
+b. The transport layer in TCP/IP model is connection oriented only 
+Oc. TCP/IP model has seven layers while OSi model has four. 
+Od. OSI model provides clear distinction between services, interfaces and protocols while TCP/IP model 
+
+
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. The transport layer in OSI model is connection oriented and connectionless. 
+The transport layer in the OSI model can support both connection-oriented (e.g., TCP) and 
+connectionless (e.g., UDP) communication. 
+How does Al contribute to the study of human behavior and cognition? 
+a. By disregarding human behavior as irrelevant to Al research. 
+Ob. By relying solely on philosophical theories of consciousness. 
+Oc. By providing insights through analyzing vast amounts of behavioral data. 
+Od. By limiting its scope to deterministic algorithms. 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. By providing insights through analyzing vast amounts of behavioral data. 
+AI contributes to the study of human behavior and cognition by analyzing large datasets, allowing 
+researchers to identify patterns and gain insights into human behavior. 
+Which backup strategy tries to backup only the modified files? 
+a. Full backup 
+b. Partial backup 
+Oc. Full dump 
+Od. Incremental backup 
+ 
+
+
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Incremental backup. 
+An incremental backup strategy only backs up the files that have changed since the last backup, making 
+it efficient in terms of time and storage space. 
+Which of the following is not Software Characteristics? 
+Oa. Maintenance is without spare part 
+Ob. software is complex 
+Oc. Software is manufactured 
+Od. Software is intangible 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Maintenance is without spare part. 
+This statement does not describe a characteristic of software. The other options correctly describe 
+characteristics of software, such as its complexity, manufacturing process, and intangibility. 
+Which action of the bottom-up parsing moves terminals from input buffer to the stack? 
+Oa. Accept 
+b. Shift 
+Oc. Augment 
+Od. Reduce 
+ 
+ 
+
+
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Shift. 
+In bottom-up parsing, the "shift" action moves terminals from the input buffer onto the stack. 
+Is the process of arranging the elements of a particular data structure in some logical orde 
+Oa. Insertion 
+Ob. Traversing 
+Oc. Merging 
+Od. Sorting 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Sorting. 
+Sorting is the process of arranging the elements of a data structure in a specific logical order. 
+What would be the output of the following JavaScript code? 
+<script type="text/javascript"> 
+x=4+"4"; 
+document.write(x); 
+</script> 
+a. 4 
+b. 8 
+c. 44 
+Od. The code contains an error 
+ 
+
+
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. 44. 
+In the code, 4 + "4" results in string concatenation, so the output will be "44". 
+When an input will be accepted by a Turing Machine? 
+Oa. If the machine halts in a final state 
+b. If the machine enters into an infinite loop 
+Oc. If it reaches any state and has no possible move for an input symbol 
+d. If the machine consumes all the input symbols in one of the states 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. If the machine halts in a final state. 
+A Turing Machine accepts an input if it halts in a designated final (accepting) state. 
+What is the regular expression for the set of strings that start with ab and end with bba over the 
+alphabet set (a, b)? 
+a. ab(ab)*bba 
+b. aba"b"bba 
+Oc ab(a+b)*bba 
+d. ab(a+b*)bba 
+ 
+ 
+
+
+Assistant 
+ 
+Poe 
+The correct option is: 
+*a. ab(ab)bba. 
+This regular expression matches strings that start with "ab" and end with "bba," allowing for any number 
+of "ab" repetitions in between. 
+Which one of the following is false about HTTP protocol? 
+Oa. An HTTP message body can be empty 
+b. It is a protocol used for communication between a web browser and a web server 
+Oc. It is a stateless protocol 
+Od. An HTTP message has specified minimum size 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. An HTTP message has specified minimum size. 
+This statement is false; HTTP messages do not have a specified minimum size. An HTTP message body 
+can indeed be empty, and the protocol is stateless. 
+Which condition in a resource allocation system refers to a situation where a set of processes are waiting 
+for resources held by each other, forming a circular chain? 
+a. Hold and wait 
+Ob. No preemption 
+Oc. Mutual exclusion 
+Od. Circular wait 
+ 
+ 
+
+
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Circular wait. 
+This condition refers to a situation where a set of processes are waiting for resources held by each other, 
+forming a circular chain. 
+What does DOM stand for in HTML? 
+Oa. Document Oriented Management 
+Ob. Document OnLoad Model 
+Oc. Document Object Model 
+Od. Document Oriented Model 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Document Object Model. 
+DOM stands for Document Object Model, which is a programming interface for HTML and XML 
+documents. 
+Select incorrect statement about Database languages? 
+Oa. Data-manipulation language (DML) Retrieval of information stored in the database. 
+Ob. Data-definition language (DDL) to specify the database schema. 
+Oc. Data-definition languages (DDL) specify Modification of information stored in the database 
+Od. Data-manipulation language (DML) is a language that enables users to access or manipulate data as 
+organized by the appropriate data model 
+ 
+ 
+
+
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Data-definition languages (DDL) specify Modification of information stored in the database. 
+This statement is incorrect because DDL is used for defining the database schema, not for modifying 
+data. Data Manipulation Language (DML) is used for modifying information stored in the database. 
+Everything is a/an in HTML DOM? 
+Oa. Element 
+Ob. Array 
+Oc. Node 
+Od. Attribute 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Node. 
+In the HTML DOM, everything is represented as a node. This includes elements, attributes, and text. 
+An operation performed on the contents of a register is known as 
+Oa. Instruction code 
+Ob. Micro-operation 
+Oc. Registration 
+Od. Accumulation 
+ 
+ 
+Assistant 
+ 
+
+
+Poe 
+The correct option is: 
+b. Micro-operation. 
+An operation performed on the contents of a register is known as a micro-operation. 
+Which one of the following is not unique for every computer in the network? 
+Oa. MAC address 
+Ob. IP-v4 address 
+Oc. IP-v6 address 
+Od. Subnet mask 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Subnet mask. 
+The subnet mask is not unique for every computer in the network; it can be the same for multiple 
+devices on the same subnet. In contrast, MAC addresses, IPv4 addresses, and IPv6 addresses are unique 
+to each device. 
+In PHP , are predefined variables that are accessible throughout your script. 
+Oa. Predefined variables 
+b. Reserved variables 
+c. Superglobals 
+Od. Global variables 
+ 
+ 
+Assistant 
+ 
+Poe 
+
+
+The correct option is: 
+c. Superglobals. 
+In PHP , superglobals are predefined variables that are accessible throughout your script. 
+Polynomial addition is implemented using which data structure? 
+Oa. Stack 
+b. Linked List 
+Oc. Queue 
+Od. Trees 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Linked List. 
+Polynomial addition is commonly implemented using linked lists, where each node represents a term of 
+the polynomial. 
+Which of the following access control services determines what a subject can dor 
+a. Accountability 
+Ob. Audit 
+Oc. Authorization 
+Od. Authentication 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Authorization. 
+
+
+Authorization determines what a subject can do in terms of access control services. 
+Which one of the following is not used to determine the CPU state at the end of the execute cycle? 
+Oa. The content of certain status conditions 
+b. The content of all processor registers 
+Oc. The content of the data bus 
+Od. The content of the program counter 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. The content of the data bus. 
+The content of the data bus is not used to determine the CPU state at the end of the execute cycle. The 
+other options are relevant for assessing the CPU state. 
+Which of the following best describes a database? 
+Oa. A collection of data organized in a specific structure 
+Ob. A collection of random data 
+Oc. A collection of related files 
+Od. A collection of unrelated files 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. A collection of data organized in a specific structure. 
+This definition best describes a database, as it emphasizes the organization of data in a structured 
+manner. 
+
+
+Which one of the following property of a graph represents the number of derivation steps needed to 
+generate a valid string? 
+a. Degree of the vertex 
+Ob. Parent vertex 
+Oc Root of the graph 
+d. Path of a vertex from the root 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Path of a vertex from the root. 
+The path of a vertex from the root represents the number of derivation steps needed to generate a valid 
+string in a graph. 
+Which function of a contemporary operating system focuses on providing users with easy access to 
+applica resources? 
+a. Device management 
+b. File management 
+c. Process management 
+Od. User interface management 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. User interface management. 
+User interface management focuses on providing users with easy access to application resources. 
+
+
+Which SQL command is used to retrieve data from a database? 
+O a. UPDATE 
+Ob. INSERT 
+Oc. SELECT 
+Od. DELETE 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. SELECT. 
+The SELECT command is used to retrieve data from a database. 
+Which one of the following is not an attack on passwords? 
+a. Brute-force Attack 
+Ob. Trojan Login 
+Oc. Logic Bomb 
+Od. Eavesdropping 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Logic Bomb. 
+A logic bomb is not specifically an attack on passwords; it is a piece of malicious code designed to trigger 
+under specific conditions. The other options directly relate to password attacks. 
+One of the following is an example of Deduction Reasoning? 
+a. The grass has been wet every time it has rained. Thus, when it rains, the grass gets wet. 
+
+
+b. When it rains, the grass gets wet. It rains. Thus the grass is wet. 
+c. When it rains, the grass gets wet. The grass is wet. It rains. 
+Od. When it rains, the grass gets wet. The grass is wet, it must have rained 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. When it rains, the grass gets wet. It rains. Thus the grass is wet. 
+This is an example of deductive reasoning, where a general rule is applied to a specific case to reach a 
+conclusion. 
+What is the command used to change permissions of a file for different users? 
+Oa. Permission 
+b. Perm 
+Oc. Modify 
+Od. Chmod 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Chmod. 
+The chmod command is used to change permissions of a file for different users in Unix and Linux 
+systems. 
+One of the following is not Properties of an algorithm? 
+Oa. Finite 
+b. Input and Output 
+
+
+Oc. Correct 
+Od. Ambiguity 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Ambiguity. 
+Ambiguity is not a property of an algorithm; in fact, algorithms should be unambiguous. The other 
+options (finite, input and output, correct) are properties of an algorithm. 
+What are the factors to be considered when planning a software development effort? 
+a. people, problem, productivity, performance 
+b. people, problem, product, portability 
+Oc. people, problem, product, process 
+d. performance, problem, product, planning 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. people, problem, product, process. 
+These factors are essential to consider when planning a software development effort. 
+What is the term used to describe a blueprint for creating objects in OOP? 
+Oa. Method 
+Ob. Class 
+Oc. Instance 
+Od. Object 
+
+
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Class. 
+In Object-Oriented Programming (OOP), a class is a blueprint for creating objects. 
+Which OOP principle emphasizes the separation of concerns by dividing a program into smaller, 
+manageable parts? 
+Oa Inheritance 
+b. Modularity 
+c. Abstraction 
+Od Encapsulation 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Modularity. 
+Modularity emphasizes the separation of concerns by dividing a program into smaller, manageable parts. 
+Which data structure is used to represent the grammatical structure of the source program constructs?" 
+a. Stack 
+Ob. Queue 
+Oc Tree 
+O d. 2d-array 
+ 
+
+
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Tree. 
+A tree data structure is commonly used to represent the grammatical structure of source program 
+constructs, particularly in compilers and interpreters. 
+What is the main advantage of using references (&) in C++ compared to pointers? 
+a. References can be dynamically allocated 
+Ob. References are more memory-efficient 
+Oc. References cannot be null 
+Od. References can access arbitrary memory locations 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. References cannot be null. 
+This is a main advantage of using references in C++ compared to pointers, as references must always 
+refer to a valid object and cannot be null. 
+Which one of the following class of running time functions is the best? 
+Oa. Exponential 
+b. Logarithmic 
+Oc. Linear 
+Od. Polynomial 
+ 
+ 
+
+
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Logarithmic. 
+Logarithmic time complexity is the best among the options listed, as it grows the slowest relative to the 
+size of the input. 
+Which one of the following tags is used to represent paragraphs? 
+O a. < p > 
+Ob. < ph > 
+Oc. < par > 
+Od. < pg > 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. <p> 
+The <p> tag is used to represent paragraphs in HTML. 
+Which one of the following is the lowest level in computer architecture? 
+Oa. Hardware 
+b. Machine language 
+c. High-level language 
+Od. Assembly language 
+ 
+ 
+Assistant 
+ 
+
+
+Poe 
+The correct option is: 
+a. Hardware. 
+Hardware is the lowest level in computer architecture, as it refers to the physical components of a 
+computer system. 
+Which of the following is a correct statement? 
+a. System threat is a state which exposes the system for possible attacks 
+b. System attack is set of activities that may expose the system for possible dangers 
+Oc. Vulnerability is a flaw in the system's design that may be exploited by attackers 
+Od. System protection is a process of disconnecting the system from any communication 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Vulnerability is a flaw in the system's design that may be exploited by attackers. 
+This statement accurately describes what a vulnerability is in the context of computer security. 
+Which one of the following is not a principle of system administration? 
+Oa. Request-based 
+Ob. Communication 
+c. Automation 
+Od. Simplicity 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+a. Request-based. 
+While communication, automation, and simplicity are principles of effective system administration, 
+"request-based" is not recognized as a core principle. 
+What is the name given to built-in functions in assembly code? 
+O a. Cache 
+Ob. Func 
+Oc. Mnemonics 
+Od. Register 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Mnemonics. 
+Mnemonics are the symbolic names given to machine-level instructions in assembly language, making 
+them easier for programmers to read and write. 
+Which one of the following is a correct statement? 
+a. Code optimization can only be done before the actual code is generated 
+b. Code optimization can only be done after the actual code is generated 
+Oc. Code optimization can be done on the intermediate code 
+Od. Code optimization cannot be done before the actual code is generated 
+e 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+c. Code optimization can be done on the intermediate code. 
+Code optimization can occur at various stages, including on intermediate representations of the code, 
+not just before or after code generation. 
+What is the purpose of a loop in computer programming? 
+Oa. To declare variables 
+Ob. To create user interfaces 
+Oc. To define conditional statements 
+Od. To execute a block of code repeatedly 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. To execute a block of code repeatedly. 
+Loops are used in programming to repeatedly execute a section of code based on a specified condition. 
+What is the primary purpose of a variable in computer programming? 
+Oa. To define functions 
+Ob. To store and manipulate data 
+Oc. To create graphical user interfaces (GUIs) 
+Od. To execute conditional statements 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. To store and manipulate data. 
+
+
+Variables are used in programming to hold data that can be modified and manipulated throughout the 
+program. 
+The data structure used in the standard implementation of Depth First Search is 
+a. Stack 
+b. Linked List 
+c. Queue 
+Od. Array 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Stack. 
+Depth First Search (DFS) typically uses a stack data structure for its implementation, either explicitly or 
+through recursive function calls. 
+Which cable type is the best for transmission of data? 
+Oa. Coaxial 
+b. Fiber Optic 
+Oc. RJ-45 
+Od. Twisted pair 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Fiber Optic. 
+
+
+Fiber optic cables are the best for data transmission as they offer higher bandwidth, faster speeds, and 
+greater distance capabilities compared to other cable types. 
+The set of rules that govern all aspect of data communication between computers on a network are 
+referred as 
+Oa. Language 
+b. Syntax 
+c. Access methods 
+Od. Protocol 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Protocol. 
+Protocols are sets of rules that govern data communication between computers on a network, ensuring 
+proper data exchange and communication. 
+Which type of database replication offers the highest level of data consistency but may introduce higher 
+later distributed systems? 
+a. Multi-master replication 
+b. Asynchronous replication 
+OcSynchronous replication 
+d. Semi-synchronous replication 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+c. Synchronous replication. 
+Synchronous replication offers the highest level of data consistency because data is written to all replicas 
+at the same time. However, it can introduce higher latency in distributed systems due to the need for all 
+replicas to acknowledge the write before proceeding. 
+is a special-purpose program or command line interpreter that read commands typed by a user and 
+execute programs in response to entered commands. 
+Oa. Kernel 
+b. Terminal 
+Oc. Process 
+Od. Shell 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Shell. 
+A shell is a special-purpose program or command line interpreter that reads commands typed by a user 
+and executes programs in response to those commands. 
+Which SQL command is used to delete a table from a database? 
+Oa. REMOVE TABLE 
+Ob. DROP TABLE 
+Oc. ERASE TABLE 
+Od. DELETE TABLE 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+b. DROP TABLE. 
+The DROP TABLE command is used to delete a table from a database. 
+Which way to define Scope of Software Project? 
+a. Define Error and Functional dependence of the project. 
+b. Define non- Deliverables and, Non Functionality. 
+Oc. Define Deliverables, Functionality, Data and, Technical Structure. 
+d. Complexity and risk of the project 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Define Deliverables, Functionality, Data and, Technical Structure. 
+Defining the scope of a software project involves outlining the deliverables, functionality, data 
+requirements, and technical structure to ensure clarity and direction throughout the project. 
+would be more suitable to store items in a shopping cart to be available when the user revisits the site in 
+a couple of days. 
+a. Cache 
+b. Cookies 
+c. Basket 
+Od. Session 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+b. Cookies. 
+Cookies are more suitable for storing items in a shopping cart, as they can persist data across sessions, 
+allowing items to remain available when the user revisits the site later. 
+is an operation of in which each letter of a plaintext changes its position but retains its identity in 
+cryptographic algorithms. 
+a. Transposition 
+b. Substitution 
+c. Block cipher 
+d. Mono-alphabetic 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Transposition. 
+Transposition is an operation in which each letter of a plaintext changes its position while retaining its 
+identity in cryptographic algorithms. 
+In asymmetric cryptography, the message is encrypted using 
+a. Sender's public key 
+b. Receiver's public key 
+c. Receiver's private key 
+d. Sender's private key 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+b. Receiver's public key. 
+In asymmetric cryptography, the message is encrypted using the receiver's public key, ensuring that only 
+the receiver can decrypt it with their private key. 
+What does ACID stand for in database transactions? 
+Oa. Atomicity, Consistency, Integrity, Durability 
+b. All Columns Indexed and Defined 
+Oc. Automated Control of Inconsistent Data 
+Od. Advanced Constraints for Improved Data 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Atomicity, Consistency, Integrity, Durability. 
+ACID stands for Atomicity, Consistency, Isolation, and Durability, which are the key properties that ensure 
+reliable processing of database transactions. 
+One of the following Key ideas wrongly matched in object-oriented? 
+Oa. Method an action performed by an object. 
+b. Class-does hold any values of the object's attributes. 
+Oc. Object- usually a person, place or thing. 
+Od. Attribute-description of objects in a class. 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Class - does hold any values of the object's attributes. 
+
+
+This statement is misleading because a class defines the blueprint for objects but does not hold values 
+itself; the values are held by instances (objects) of the class. 
+One of the following describes the static structure of a system? 
+Oa. Sequence diagram 
+b. Class diagram 
+Oc. Use case diagram 
+d. Activity diagram 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Class diagram. 
+A class diagram describes the static structure of a system by showing the classes, their attributes, 
+methods, and the relationships between them. 
+Is the process of arranging the elements of a particular data structure in some logical order? 
+O a. Insertion 
+Ob. Merging 
+c. Traversing 
+d. Sorting 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Sorting. 
+Sorting is the process of arranging the elements of a particular data structure in some logical order. 
+
+
+Which ACID property ensures that a transaction either completes in its entirety or has no effect at all? 
+a. Durability 
+b. Consistency 
+Oc. Isolation 
+Od. Atomicity 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Atomicity. 
+The Atomicity property ensures that a transaction either completes in its entirety or has no effect at all, 
+meaning it is treated as a single, indivisible unit. 
+In signal communication, the absolute value of the highest intensity of the signal proportional to the 
+energy it camies is referred as 
+a. Peak-amplitude 
+b. Period 
+Oc. Frequency 
+d. Attenuation 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Peak-amplitude. 
+Peak amplitude refers to the absolute value of the highest intensity of a signal, which is proportional to 
+the energy it carries. 
+
+
+Which of the following is a correct statement? 
+Oa. System protection is a process of disconnecting the system from any communication 
+Ob. Vulnerability is a flaw in the system's design that may be exploited by attackers 
+c. System threat is a state which exposes the system for possible attacks 
+Od. System attack is set of activities that may expose the system for possible dangers 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+Ob. Vulnerability is a flaw in the system's design that may be exploited by attackers. 
+This statement accurately describes what a vulnerability is in the context of system security. 
+What is the purpose of the switch statement in C++? 
+Oa. To select one of many code blocks to be executed 
+b. To declare and define functions 
+Oc. To execute a block of code repeatedly 
+Od. To define a loop that repeats until a condition is false 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+Oa. To select one of many code blocks to be executed. 
+The switch statement in C++ is used to select one of many code blocks to be executed based on the value 
+of a variable. 
+One of the following is not the main advantage of multiprogramming? 
+
+
+Oa. Copying one's programs or data; using system resources (CPU, memory, disk space, peripherall) 
+without proper accounting. 
+Ob. Attempts to increase CPU utilization by always having something for the CPU to execute 
+c. Makes efficient use of the CPU by overlapping the demands for the CPU and its I/O devices from 
+various users 
+d. The CPU switches from program to program, running each for tens or hundreds of milliseconds. Thes 
+provides economical interactive use of a system 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+Oa. Copying one's programs or data; using system resources (CPU, memory, disk space, peripheral) 
+without proper accounting. 
+This statement does not represent an advantage of multiprogramming; rather, it suggests a misuse of 
+system resources. 
+You are the administrator of an active directory domain. A user complains to you that he is unable to 
+change his password. No other users have this issue. What is the most likely cause of the problem? 
+a. He is not a member of the domain 
+b. He is a member of the Administrators group 
+c. Insufficient login credentials 
+Od. The property User cannot change password has been enabled when it was created 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+
+
+Od. The property User cannot change password has been enabled when it was created. 
+This setting would prevent the user from changing their password, which aligns with the complaint. 
+What is a foreign key in a relational database? 
+Oa. A key used for accessing external data sources 
+Ob. A key used for encryption purposes 
+Oc. A key used for indexing primary keys 
+Od. A field in one table that refers to the primary key in another table 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+Od. A field in one table that refers to the primary key in another table. 
+A foreign key establishes a relationship between two tables by linking a field in one table to the primary 
+key of another table. 
+In a healthcare database system, which concept is crucial for ensuring patient data privacy and security? 
+a. Data Replication 
+b. Data Mining 
+O Data Encryption 
+Od Data Warehousing 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+O. Data Encryption. 
+
+
+Data encryption is crucial for ensuring patient data privacy and security in a healthcare database system, 
+as it protects sensitive information from unauthorized access. 
+In knowledge Representation (KR) how we do represent "how to drive a car"? 
+a. Information Knowledge 
+b. Transition knowledge 
+c. Procedural knowledge 
+d. Declarative knowledge 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Procedural knowledge. 
+Procedural knowledge represents the "how-to" aspect of tasks, such as driving a car, as it involves the 
+processes and procedures required to perform actions. 
+How does Al contribute to the study of human behavior and cognition? 
+Oa. By relying solely on philosophical theories of consciousness. 
+Ob. By limiting its scope to deterministic algorithms. 
+c. By disregarding human behavior as irrelevant to Al research. 
+Od. By providing insights through analyzing vast amounts of behavioral data. 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+Od. By providing insights through analyzing vast amounts of behavioral data. 
+
+
+AI contributes to the study of human behavior and cognition by analyzing large datasets to identify 
+patterns and insights related to human actions and thought processes. 
+When an input will be accepted by a Turing Machine? 
+a. If the machine consumes all the input symbols in one of the states 
+b. If the machine halts in a final state 
+c. If the machine enters into an infinite loop 
+Od. If it reaches any state and has no possible move for an input symbol 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. If the machine halts in a final state. 
+A Turing Machine accepts an input when it reaches a final (or accepting) state after processing the input. 
+Which class of grammar is used for syntax analysis? 
+Oa. Regular grammars 
+Ob. Non-recursive grammars 
+Oc. Recursive grammars 
+Od. Context free grammars 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+Od. Context free grammars. 
+Context-free grammars are commonly used in syntax analysis for programming languages, as they can 
+effectively describe the structure of expressions and statements. 
+
+
+Which function of a contemporary operating system focuses on providing users with easy access to 
+applications and resources? 
+User interface management 
+b. File management 
+Device management 
+d. Process management 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. User interface management. 
+User interface management focuses on providing users with easy access to applications and resources, 
+enabling them to interact with the operating system effectively. 
+Which of the following is not a characteristic of NoSQL databases? 
+a. Strict schema enforcement 
+b. High availability 
+c. Scalability 
+Od. Flexibility in data models 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Strict schema enforcement. 
+NoSQL databases typically do not enforce a strict schema, allowing for more flexibility in data models. 
+
+
+One of the following Key ideas wrongly matched in object-oriented? 
+O 
+a. Class - does hold any values of the object's attributes. 
+Ob. Attribute- description of objects in a class. 
+Oc. Object - usually a person, place or thing. 
+d. Method an action performed by an object. 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Class - does hold any values of the object's attributes. 
+This statement is misleading because a class itself does not hold values; it defines the structure and 
+behavior of objects, while the actual values are held by instances (objects) of the class. 
+The data structure required for breadth first traversal on a graph is: 
+O a. Queue 
+Ob. Tree 
+stion 
+c. Stack 
+Od. Array 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Queue. 
+Breadth-first traversal on a graph uses a queue to keep track of the nodes to be explored next. 
+
+
+What is the main advantage of using references (&) in C++ compared to pointers? 
+a. References are more memory-efficient 
+Ob. References can be dynamically allocated 
+Oc. References cannot be null 
+Od. References can access arbitrary memory locations 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. References cannot be null. 
+One of the main advantages of using references in C++ is that they cannot be null, which adds a level of 
+safety compared to pointers, which can point to null or arbitrary memory locations. 
+Which action of the bottom-up parsing moves terminals from input buffer to the stack? 
+Oa. Accept 
+Ob. Reduce 
+Oc. Augment 
+Od. Shift 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Shift. 
+In bottom-up parsing, the "shift" action moves terminals from the input buffer onto the stack. 
+Which one is correct about RISC computers? 
+a. RISC are with few numbers of registers when compared to CISC 
+
+
+b. RISC is with hardwired control unit with pipelining processing 
+○ c. RISC uses extensive addressing capabilities for memory operations 
+Od. RISC use complex and efficient machine instructions when compared to CISC 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. RISC is with hardwired control unit with pipelining processing. 
+RISC (Reduced Instruction Set Computer) architectures typically feature a hardwired control unit and are 
+designed to support pipelining, which enhances instruction throughput. 
+Which one of the following is a correct statement? 
+Oa. Pushdown automata and FSA have the same power 
+Ob. Turing machine is the least powerful automata 
+Oc. Deterministic FSA and Nondeterministic FSA are equivalent 
+Od. Regular expression is more powerful that FSA 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Deterministic FSA and Nondeterministic FSA are equivalent. 
+Both deterministic finite automata (DFA) and nondeterministic finite automata (NFA) recognize the same 
+class of languages (regular languages) and can be converted into each other. 
+If a problem can be broken into sub-problems that are reused several times, the problem property. 
+a. Greedy 
+b. Optimal substructure 
+
+
+Oc. Memoization 
+Od. Overlapping sub-problems 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. Overlapping sub-problems. 
+This property describes problems that can be divided into sub-problems which are reused multiple 
+times, making them suitable for techniques like dynamic programming. 
+What is the name of a grammar in which all attributes of the grammar symbols are synthesized attribute 
+form of inherited attributes? 
+a. S-attributed grammar 
+b. M-attributed grammar 
+L-attributed grammar 
+Od. I-attributed grammar 
+Ne 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. S-attributed grammar. 
+In an S-attributed grammar, all attributes are synthesized attributes, meaning they are computed from 
+the attributes of the children nodes in the parse tree. 
+Which one of the following is false about HTTP protocol? 
+a. An HTTP message body can be empty 
+
+
+b. It is a stateless protocol 
+Oc. An HTTP message has specified minimum size 
+Od. It is a protocol used for communication between a web browser and a web server 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. An HTTP message has specified minimum size. 
+This statement is false because HTTP messages do not have a specified minimum size; they can be empty 
+or very small, depending on the context. 
+What is the term used to describe the collection of information stored in the database at a particular 
+moment? 
+Oa primary key 
+Ob. schema 
+C. an instance 
+Od. foreign key 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. an instance. 
+An instance refers to the collection of information stored in the database at a particular moment, 
+representing the current state of the data. 
+An operation performed on the contents of a register is known as 
+
+
+Oa. Instruction code 
+Ob. Registration 
+Oc. Micro-operation 
+Od. Accumulation 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Micro-operation. 
+A micro-operation is an operation that is performed on the contents of a register. 
+Which backup strategy tries to backup only the modified files? 
+a. Partial backup 
+Ob. Full dump 
+c. Incremental backup 
+Od. Full backup 
+Clear my choice 
+n 
+age 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Incremental backup. 
+An incremental backup strategy backs up only the files that have been modified since the last backup, 
+whether that was a full backup or another incremental backup. 
+
+
+Which way to define Scope of Software Project? 
+Oa. Define Deliverables, Functionality, Data and, Technical Structure. 
+Ob. Define Error and Functional dependence of the project. 
+Oc. Define non- Deliverables and, Non Functionality. 
+Od. Complexity and risk of the project 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Define Deliverables, Functionality, Data and, Technical Structure. 
+This approach effectively outlines the scope of a software project by specifying what will be delivered, 
+the required functionalities, the data involved, and the technical structure. 
+Which among the following measures how strongly the elements within a module are related? 
+O a. inheritance 
+b. aggregation 
+Oc. coupling 
+Od. cohesion 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+d. cohesion. 
+Cohesion measures how strongly the elements within a module are related to each other. Higher 
+cohesion indicates that the elements are closely related in terms of functionality. 
+Polynomial addition is implemented using which data structure? 
+
+
+a. Stack 
+b. Linked List 
+Oc. Queue 
+Od. Trees 
+n 
+ge 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+b. Linked List. 
+Polynomial addition is typically implemented using linked lists, as they can efficiently represent the 
+terms of a polynomial and allow for easy manipulation of the terms during addition. 
+Which one of the following is a passive attack? 
+O a. Reply 
+Ob. DoS 
+c. Traffic analysis 
+d. Masquerade 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+c. Traffic analysis. 
+Traffic analysis is considered a passive attack because it involves monitoring and analyzing the traffic 
+patterns without altering the data being transmitted. 
+
+
+Which one of the following property of a graph represents the number of derivation steps needed to 
+generate a v string? 
+a. Path of a vertex from the root 
+b. Degree of the vertex 
+Oc Parent vertex 
+d. Root of the graph 
+Next 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Path of a vertex from the root. 
+The path of a vertex from the root in a graph represents the number of derivation steps needed to 
+generate a string, as it reflects the sequence of steps taken to reach that vertex from the root. 
+Which one of the following is not used to determine the CPU state at the end of the execute cycle? 
+a. The content of the data bus 
+b. The content of certain status conditions 
+c. The content of all processor registers 
+Od. The content of the program counter 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. The content of the data bus. 
+
+
+The content of the data bus is not used to determine the CPU state at the end of the execute cycle. The 
+CPU state is typically determined by the contents of the processor registers, status conditions, and the 
+program counter. 
+Which one of the following is not a principle of system administration? 
+Oa. Request-based 
+Ob. Automation 
+c. Communication 
+Od. Simplicity 
+ 
+ 
+Assistant 
+ 
+Poe 
+The correct option is: 
+a. Request-based. 
+"Request-based" is not typically considered a principle of system administration. The principles usually 
+focus on automation, communication, and simplicity to enhance efficiency and effectiveness in managing 
+systems. 
+ 
