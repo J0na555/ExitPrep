@@ -1,953 +1,960 @@
 
 [
+  
+    {
+      "course_name": "Network and System Administration",
+      "question_text": "You are the administrator of an active directory domain. A user complains to you that he is unable to change his password. No other users have this issue. What is the most likely cause of the problem?",
+      "options": [
+        { "text": "He is not a member of the domain", "is_correct": false },
+        { "text": "He is a member of the Administrators group", "is_correct": false },
+        { "text": "Insufficient login credentials", "is_correct": false },
+        { "text": "The property User cannot change password has been enabled when it was created", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Introduction to Artificial Intelligence",
+      "question_text": "How does Al contribute to gaining insight into human intelligence?",
+      "options": [
+        { "text": "By replicating human cognitive processes exactly", "is_correct": false },
+        { "text": "By relying solely on predetermined rules and algorithms", "is_correct": false },
+        { "text": "By analyzing large datasets to uncover patterns and correlations", "is_correct": true },
+        { "text": "By disregarding the complexities of human cognition.", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Design and Analysis of Algorithms",
+      "question_text": "If a problem can be broken into sub-problems that are reused several times, the problem possesses property.",
+      "options": [
+        { "text": "Memoization", "is_correct": false },
+        { "text": "Optimal substructure", "is_correct": false },
+        { "text": "Greedy", "is_correct": false },
+        { "text": "Overlapping sub-problems", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Introduction to Artificial Intelligence",
+      "question_text": "In knowledge Representation (KR) how we do represent \"how to drive a car\"?",
+      "options": [
+        { "text": "Declarative knowledge", "is_correct": false },
+        { "text": "Transition knowledge", "is_correct": false },
+        { "text": "Procedural knowledge", "is_correct": true },
+        { "text": "Information Knowledge", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "What is the difference between OLTP and OLAP databases?",
+      "options": [
+        { "text": "OLTP databases store historical data, while OLAP databases store real-time data", "is_correct": false },
+        { "text": "OLTP databases are optimized for read-heavy workloads, while OLAP databases are optimized for write heavy workloads", "is_correct": false },
+        { "text": "OLTP databases are used for online transaction processing, while OLAP databases are used for online analytical processing.", "is_correct": true },
+        { "text": "OLTP databases are used for online analytical processing, while OLAP databases are used for online transaction processing", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "Which ACID property ensures that a transaction either completes in its entirety or has no effect at all?",
+      "options": [
+        { "text": "Atomicity", "is_correct": true },
+        { "text": "Durability", "is_correct": false },
+        { "text": "Consistency", "is_correct": false },
+        { "text": "Isolation", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Data Structures and Algorithms",
+      "question_text": "What is the postfix expression for the given infix (2 + 3) ^ * (4+5) notation?",
+      "options": [
+        { "text": "2 +34^ * +", "is_correct": false },
+        { "text": "23 + 45 +^ +", "is_correct": true },
+        { "text": "234 ^ * +5+", "is_correct": false },
+        { "text": "2+3^ * 4 + 5", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Introduction to Artificial Intelligence",
+      "question_text": "What is the primary objective of reinforcement learning in artificial intelligence?",
+      "options": [
+        { "text": "To mimic human decision-making processes", "is_correct": false },
+        { "text": "To categorize data into predefined classes or clusters", "is_correct": false },
+        { "text": "To identify patterns and correlations in data", "is_correct": false },
+        { "text": "To maximize cumulative reward through sequential decision-making", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Design and Analysis of Algorithms",
+      "question_text": "If an optimal solution can be created for a problem by constructing optimal solutions for its sub-problems, the problem possesses property.",
+      "options": [
+        { "text": "Greedy", "is_correct": false },
+        { "text": "Optimal substructure", "is_correct": true },
+        { "text": "Memoization", "is_correct": false },
+        { "text": "Overlapping sub-problems", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Operating System",
+      "question_text": "One of the following is not the main advantage of multiprogramming?",
+      "options": [
+        { "text": "Copying one's programs or data; using system resources (CPU, memory, disk space, peripherals) without proper accounting.", "is_correct": true },
+        { "text": "The CPU switches from program to program, running each for tens or hundreds of milliseconds. This provides economical interactive use of a system.", "is_correct": false },
+        { "text": "Attempts to increase CPU utilization by always having something for the CPU to execute.", "is_correct": false },
+        { "text": "Makes efficient use of the CPU by overlapping the demands for the CPU and its VO devices from various users", "is_correct": false }
+      ]
+    },
     {
-        "question": "How does Al contribute to gaining insight into human intelligence?",
-        "choices": [
-            "By replicating human cognitive processes exactly",
-            "By relying solely on predetermined rules and algorithms",
-            "By analyzing large datasets to uncover patterns and correlations",
-            "By disregarding the complexities of human cognition."
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "If a problem can be broken into sub-problems that are reused several times, the problem possesses property.",
-        "choices": [
-            "Memoization",
-            "Optimal substructure",
-            "Greedy",
-            "Overlapping sub-problems"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "In knowledge Representation (KR) how we do represent \"how to drive a car\"?",
-        "choices": [
-            "Declarative knowledge",
-            "Transition knowledge",
-            "Procedural knowledge",
-            "Information Knowledge"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "What is the difference between OLTP and OLAP databases?",
-        "choices": [
-            "OLTP databases store historical data, while OLAP databases store real-time data",
-            "OLTP databases are optimized for read-heavy workloads, while OLAP databases are optimized for write heavy workloads",
-            "OLTP databases are used for online transaction processing, while OLAP databases are used for online analytical processing.",
-            "OLTP databases are used for online analytical processing, while OLAP databases are used for online transaction processing"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which ACID property ensures that a transaction either completes in its entirety or has no effect at all?",
-        "choices": [
-            "Atomicity",
-            "Durability",
-            "Consistency",
-            "Isolation"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "What is the postfix expression for the given infix (2 + 3) ^ * (4+5) notation?",
-        "choices": [
-            "2 +34^ * +",
-            "23 + 45 +^ +",
-            "234 ^ * +5+",
-            "2+3^ * 4 + 5"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "What is the primary objective of reinforcement learning in artificial intelligence?",
-        "choices": [
-            "To mimic human decision-making processes",
-            "To categorize data into predefined classes or clusters",
-            "To identify patterns and correlations in data",
-            "To maximize cumulative reward through sequential decision-making"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "If an optimal solution can be created for a problem by constructing optimal solutions for its sub-problems, the problem possesses property.",
-        "choices": [
-            "Greedy",
-            "Optimal substructure",
-            "Memoization",
-            "Overlapping sub-problems"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "One of the following is not the main advantage of multiprogramming?",
-        "choices": [
-            "Copying one's programs or data; using system resources (CPU, memory, disk space, peripherals) without proper accounting.",
-            "The CPU switches from program to program, running each for tens or hundreds of milliseconds. This provides economical interactive use of a system.",
-            "Attempts to increase CPU utilization by always having something for the CPU to execute.",
-            "Makes efficient use of the CPU by overlapping the demands for the CPU and its VO devices from various users"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which one of the following is not a method of an expression for algorithms?",
-        "choices": [
-            "Natural language",
-            "Programming language",
-            "Pseudo-code",
-            "Flowchart"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "In a healthcare database system, which concept is crucial for ensuring patient data privacy and security?",
-        "choices": [
-            "Data Warehousing",
-            "Data Mining",
-            "Data Encryption",
-            "Data Replication"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "What is a foreign key in a relational database?",
-        "choices": [
-            "A field in one table that refers to the primary key in another table",
-            "A key used for accessing external data sources",
-            "A key used for indexing primary keys",
-            "A key used for encryption purposes"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which programming paradigm emphasizes breaking down problems into smaller, reusable components known as functions or procedures?",
-        "choices": [
-            "Procedural programming",
-            "Imperative programming",
-            "Object-oriented programming",
-            "Functional programming"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which one of the following is a passive attack?",
-        "choices": [
-            "Masquerade",
-            "DoS",
-            "Traffic analysis",
-            "Reply"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which one of the following is not a step in merge sort algorithm?",
-        "choices": [
-            "Combine",
-            "Conquer",
-            "Divide",
-            "Analyze"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What does the term \"algorithm\" refer to in the context of computer programming?",
-        "choices": [
-            "A set of rules or instructions for solving a problem",
-            "A variable that holds a single piece of data",
-            "A function that performs a specific task",
-            "A programming language syntax"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which objective of modern operating systems involves protecting the system and its resources from unauthorized access and malicious attacks?",
-        "choices": [
-            "Enhancing system performance",
-            "Ensuring security and protection",
-            "Maximizing hardware utilization",
-            "Providing a user-friendly interface"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which one is correct about RISC computers?",
-        "choices": [
-            "RISC are with few numbers of registers when compared to CISC",
-            "RISC uses extensive addressing capabilities for memory operations",
-            "RISC use complex and efficient machine instructions when compared to CISC",
-            "RISC is with hardwired control unit with pipelining processing"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which of the following is not a characteristic of NoSQL databases?",
-        "choices": [
-            "Flexibility in data models",
-            "High availability",
-            "Scalability",
-            "Strict schema enforcement"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What is the name of a grammar in which all attributes of the grammar symbols are synthesized attributes and se form of inherited attributes?",
-        "choices": [
-            "M-attributed grammar",
-            "L-attributed grammar",
-            "c attributed grammar",
-            "Stattributed grammar"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "What is the minimum number of stacks required by a FSA?",
-        "choices": [
-            "1",
-            "2",
-            "3",
-            "0"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What is the purpose of the switch statement in C++?",
-        "choices": [
-            "To declare and define functions",
-            "To select one of many code blocks to be executed",
-            "To execute a block of code repeatedly",
-            "To define a loop that repeats until a condition is false"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which of the following is Uninformed (Blind) Search?",
-        "choices": [
-            "Breadth-first search (BFS)",
-            "Hill dimbing",
-            "Heuristic Functions",
-            "Greedy search"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which among the following measures how strongly the elements within a module are related?",
-        "choices": [
-            "cohesion",
-            "aggregation",
-            "inheritance",
-            "coupling"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "What is the term used to describe the collection of information stored in the database at a particular moment?",
-        "choices": [
-            "foreign key",
-            "an instance",
-            "primary key",
-            "schema"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which data structure allows deleting data elements from front and inserting at rear?",
-        "choices": [
-            "Binary search tree",
-            "Deques",
-            "Stacks",
-            "Queues"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which one of the following commands is used to test reachability of hosts?",
-        "choices": [
-            "Netstat",
-            "Ping",
-            "Traceroute",
-            "Tcpdump"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which of the following is true statement?",
-        "choices": [
-            "A module having low cohesion and high coupling is said to be functionally independent of other modules.",
-            "A functionally dependent module has minimal interaction with other modules",
-            "A module having high cohesion and low coupling is said to be functionally dependent of other modules",
-            "Cohesion is a measure of functional strength of a module"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which class of grammar is used for syntax analysis?",
-        "choices": [
-            "Context free grammars",
-            "Regular grammars",
-            "Non-recursive grammars",
-            "Recursive grammars"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Brute-force attacks are used most often against which types of access control?",
-        "choices": [
-            "Biometrics and smart cards",
-            "Passwords and Smart Cards",
-            "Passwords and Personal Identification Number",
-            "Biometrics and Passwords"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "One of the following describes the static structure of a system?",
-        "choices": [
-            "Sequence diagram",
-            "Use case diagram",
-            "Activity diagram",
-            "Class diagram"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which scheduling algorithm ensures that each process gets an equal share of the CPU time?",
-        "choices": [
-            "Round Robin (RR)",
-            "First-Come, First-Served (FCFS)",
-            "Shortest Job Next (SJN)",
-            "Priority Scheduling"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "The data structure required for breadth first traversal on a graph is:",
-        "choices": [
-            "Stack",
-            "Tree",
-            "Queue",
-            "Array"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "In PHP , which function initiates a session?",
-        "choices": [
-            "s_start()",
-            "session_start()",
-            "start()",
-            "session_str()"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which one of the following places we cannot place our java script code?",
-        "choices": [
-            "In any tag as an attribute",
-            "In the <body> tag",
-            "In external files",
-            "In the <head> tag"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which one of the following is not a component of the computer system?",
-        "choices": [
-            "The data unit",
-            "The input unit",
-            "The control unit",
-            "The storage unit"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "In signal communication, the absolute value of the highest intensity of the signal proportional to the energy it came is referred as",
-        "choices": [
-            "Pernod",
-            "Frequency",
-            "Attenuation",
-            "Peak-amplitude"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What is encapsulation in OOP?",
-        "choices": [
-            "Inheritance",
-            "Composition",
-            "Data hiding and abstraction",
-            "Polymorphism"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which one of the following is a correct statement?",
-        "choices": [
-            "Turing machine is the least powerful automata",
-            "Pushdown automata and FSA have the same power",
-            "Regular expression is more powerful that FSA",
-            "Deterministic FSA and Nondeterministic FSA are equivalent"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which one of the following statements is true?",
-        "choices": [
-            "The transport layer in OSI model is connection oriented and connectionless",
-            "The transport layer in TCP/IP model is connection oriented only",
-            "TCP/IP model has seven layers while OSi model has four.",
-            "OSI model provides clear distinction between services, interfaces and protocols while TCP/IP model"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "How does Al contribute to the study of human behavior and cognition?",
-        "choices": [
-            "By disregarding human behavior as irrelevant to Al research.",
-            "By relying solely on philosophical theories of consciousness.",
-            "By providing insights through analyzing vast amounts of behavioral data.",
-            "By limiting its scope to deterministic algorithms."
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which backup strategy tries to backup only the modified files?",
-        "choices": [
-            "Full backup",
-            "Partial backup",
-            "Full dump",
-            "Incremental backup"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which of the following is not Software Characteristics?",
-        "choices": [
-            "Maintenance is without spare part",
-            "software is complex",
-            "Software is manufactured",
-            "Software is intangible"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which action of the bottom-up parsing moves terminals from input buffer to the stack?",
-        "choices": [
-            "Accept",
-            "Shift",
-            "Augment",
-            "Reduce"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Is the process of arranging the elements of a particular data structure in some logical orde",
-        "choices": [
-            "Insertion",
-            "Traversing",
-            "Merging",
-            "Sorting"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What would be the output of the following JavaScript code? <script type=\"text/javascript\"> x=4+\"4\"; document.write(x); </script>",
-        "choices": [
-            "4",
-            "8",
-            "44",
-            "The code contains an error"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "When an input will be accepted by a Turing Machine?",
-        "choices": [
-            "If the machine halts in a final state",
-            "If the machine enters into an infinite loop",
-            "If it reaches any state and has no possible move for an input symbol",
-            "If the machine consumes all the input symbols in one of the states"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "What is the regular expression for the set of strings that start with ab and end with bba over the alphabet set (a, b)?",
-        "choices": [
-            "ab(ab)*bba",
-            "aba\"b\"bba",
-            "ab(a+b)*bba",
-            "ab(a+b*)bba"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which one of the following is false about HTTP protocol?",
-        "choices": [
-            "An HTTP message body can be empty",
-            "It is a protocol used for communication between a web browser and a web server",
-            "It is a stateless protocol",
-            "An HTTP message has specified minimum size"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which condition in a resource allocation system refers to a situation where a set of processes are waiting for resources held by each other, forming a circular chain?",
-        "choices": [
-            "Hold and wait",
-            "No preemption",
-            "Mutual exclusion",
-            "Circular wait"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What does DOM stand for in HTML?",
-        "choices": [
-            "Document Oriented Management",
-            "Document OnLoad Model",
-            "Document Object Model",
-            "Document Oriented Model"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Select incorrect statement about Database languages?",
-        "choices": [
-            "Data-manipulation language (DML) Retrieval of information stored in the database.",
-            "Data-definition language (DDL) to specify the database schema.",
-            "Data-definition languages (DDL) specify Modification of information stored in the database",
-            "Data-manipulation language (DML) is a language that enables users to access or manipulate data as organized by the appropriate data model"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Everything is a/an in HTML DOM?",
-        "choices": [
-            "Element",
-            "Array",
-            "Node",
-            "Attribute"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "An operation performed on the contents of a register is known as",
-        "choices": [
-            "Instruction code",
-            "Micro-operation",
-            "Registration",
-            "Accumulation"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which one of the following is not unique for every computer in the network?",
-        "choices": [
-            "MAC address",
-            "IP-v4 address",
-            "IP-v6 address",
-            "Subnet mask"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "In PHP , are predefined variables that are accessible throughout your script.",
-        "choices": [
-            "Predefined variables",
-            "Reserved variables",
-            "Superglobals",
-            "Global variables"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Polynomial addition is implemented using which data structure?",
-        "choices": [
-            "Stack",
-            "Linked List",
-            "Queue",
-            "Trees"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which of the following access control services determines what a subject can dor",
-        "choices": [
-            "Accountability",
-            "Audit",
-            "Authorization",
-            "Authentication"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which one of the following is not used to determine the CPU state at the end of the execute cycle?",
-        "choices": [
-            "The content of certain status conditions",
-            "The content of all processor registers",
-            "The content of the data bus",
-            "The content of the program counter"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which of the following best describes a database?",
-        "choices": [
-            "A collection of data organized in a specific structure",
-            "A collection of random data",
-            "A collection of related files",
-            "A collection of unrelated files"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which one of the following property of a graph represents the number of derivation steps needed to generate a valid string?",
-        "choices": [
-            "Degree of the vertex",
-            "Parent vertex",
-            "Root of the graph",
-            "Path of a vertex from the root"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which function of a contemporary operating system focuses on providing users with easy access to applica resources?",
-        "choices": [
-            "Device management",
-            "File management",
-            "Process management",
-            "User interface management"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which SQL command is used to retrieve data from a database?",
-        "choices": [
-            "UPDATE",
-            "INSERT",
-            "SELECT",
-            "DELETE"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which one of the following is not an attack on passwords?",
-        "choices": [
-            "Brute-force Attack",
-            "Trojan Login",
-            "Logic Bomb",
-            "Eavesdropping"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "One of the following is an example of Deduction Reasoning?",
-        "choices": [
-            "The grass has been wet every time it has rained. Thus, when it rains, the grass gets wet.",
-            "When it rains, the grass gets wet. It rains. Thus the grass is wet.",
-            "When it rains, the grass gets wet. The grass is wet. It rains.",
-            "When it rains, the grass gets wet. The grass is wet, it must have rained"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "What is the command used to change permissions of a file for different users?",
-        "choices": [
-            "Permission",
-            "Perm",
-            "Modify",
-            "Chmod"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "One of the following is not Properties of an algorithm?",
-        "choices": [
-            "Finite",
-            "Input and Output",
-            "Correct",
-            "Ambiguity"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What are the factors to be considered when planning a software development effort?",
-        "choices": [
-            "people, problem, productivity, performance",
-            "people, problem, product, portability",
-            "people, problem, product, process",
-            "performance, problem, product, planning"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "What is the term used to describe a blueprint for creating objects in OOP?",
-        "choices": [
-            "Method",
-            "Class",
-            "Instance",
-            "Object"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which OOP principle emphasizes the separation of concerns by dividing a program into smaller, manageable parts?",
-        "choices": [
-            "Inheritance",
-            "Modularity",
-            "Abstraction",
-            "Encapsulation"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which data structure is used to represent the grammatical structure of the source program constructs?\"",
-        "choices": [
-            "Stack",
-            "Queue",
-            "Tree",
-            "2d-array"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "What is the main advantage of using references (&) in C++ compared to pointers?",
-        "choices": [
-            "References can be dynamically allocated",
-            "References are more memory-efficient",
-            "References cannot be null",
-            "References can access arbitrary memory locations"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which one of the following class of running time functions is the best?",
-        "choices": [
-            "Exponential",
-            "Logarithmic",
-            "Linear",
-            "Polynomial"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which one of the following tags is used to represent paragraphs?",
-        "choices": [
-            "< p >",
-            "< ph >",
-            "< par >",
-            "< pg >"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which one of the following is the lowest level in computer architecture?",
-        "choices": [
-            "Hardware",
-            "Machine language",
-            "High-level language",
-            "Assembly language"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which of the following is a correct statement?",
-        "choices": [
-            "System threat is a state which exposes the system for possible attacks",
-            "System attack is set of activities that may expose the system for possible dangers",
-            "Vulnerability is a flaw in the system's design that may be exploited by attackers",
-            "System protection is a process of disconnecting the system from any communication"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which one of the following is not a principle of system administration?",
-        "choices": [
-            "Request-based",
-            "Communication",
-            "Automation",
-            "Simplicity"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "What is the name given to built-in functions in assembly code?",
-        "choices": [
-            "Cache",
-            "Func",
-            "Mnemonics",
-            "Register"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "Which one of the following is a correct statement?",
-        "choices": [
-            "Code optimization can only be done before the actual code is generated",
-            "Code optimization can only be done after the actual code is generated",
-            "Code optimization can be done on the intermediate code",
-            "Code optimization cannot be done before the actual code is generated"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "What is the purpose of a loop in computer programming?",
-        "choices": [
-            "To declare variables",
-            "To create user interfaces",
-            "To define conditional statements",
-            "To execute a block of code repeatedly"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "What is the primary purpose of a variable in computer programming?",
-        "choices": [
-            "To define functions",
-            "To store and manipulate data",
-            "To create graphical user interfaces (GUIs)",
-            "To execute conditional statements"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "The data structure used in the standard implementation of Depth First Search is",
-        "choices": [
-            "Stack",
-            "Linked List",
-            "Queue",
-            "Array"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "Which cable type is the best for transmission of data?",
-        "choices": [
-            "Coaxial",
-            "Fiber Optic",
-            "RJ-45",
-            "Twisted pair"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "The set of rules that govern all aspect of data communication between computers on a network are referred as",
-        "choices": [
-            "Language",
-            "Syntax",
-            "Access methods",
-            "Protocol"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which type of database replication offers the highest level of data consistency but may introduce higher later distributed systems?",
-        "choices": [
-            "Multi-master replication",
-            "Asynchronous replication",
-            "Synchronous replication",
-            "Semi-synchronous replication"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "is a special-purpose program or command line interpreter that read commands typed by a user and execute programs in response to entered commands.",
-        "choices": [
-            "Kernel",
-            "Terminal",
-            "Process",
-            "Shell"
-        ],
-        "answer": "D"
-    },
-    {
-        "question": "Which SQL command is used to delete a table from a database?",
-        "choices": [
-            "REMOVE TABLE",
-            "DROP TABLE",
-            "ERASE TABLE",
-            "DELETE TABLE"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "Which way to define Scope of Software Project?",
-        "choices": [
-            "Define Error and Functional dependence of the project.",
-            "Define non- Deliverables and, Non Functionality.",
-            "Define Deliverables, Functionality, Data and, Technical Structure.",
-            "Complexity and risk of the project"
-        ],
-        "answer": "C"
-    },
-    {
-        "question": "would be more suitable to store items in a shopping cart to be available when the user revisits the site in a couple of days.",
-        "choices": [
-            "Cache",
-            "Cookies",
-            "Basket",
-            "Session"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "is an operation of in which each letter of a plaintext changes its position but retains its identity in cryptographic algorithms.",
-        "choices": [
-            "Transposition",
-            "Substitution",
-            "Block cipher",
-            "Mono-alphabetic"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "In asymmetric cryptography, the message is encrypted using",
-        "choices": [
-            "Sender's public key",
-            "Receiver's public key",
-            "Receiver's private key",
-            "Sender's private key"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "What does ACID stand for in database transactions?",
-        "choices": [
-            "Atomicity, Consistency, Integrity, Durability",
-            "All Columns Indexed and Defined",
-            "Automated Control of Inconsistent Data",
-            "Advanced Constraints for Improved Data"
-        ],
-        "answer": "A"
-    },
-    {
-        "question": "One of the following Key ideas wrongly matched in object-oriented?",
-        "choices": [
-            "Method an action performed by an object.",
-            "Class-does hold any values of the object's attributes.",
-            "Object- usually a person, place or thing.",
-            "Attribute-description of objects in a class."
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "One of the following describes the static structure of a system?",
-        "choices": [
-            "Sequence diagram",
-            "Class diagram",
-            "Use case diagram",
-            "Activity diagram"
-        ],
-        "answer": "B"
-    },
-    {
-        "question": "You are the administrator of an active directory domain. A user complains to you that he is unable to change his password. No other users have this issue. What is the most likely cause of the problem?",
-        "choices": [
-            "He is not a member of the domain",
-            "He is a member of the Administrators group",
-            "Insufficient login credentials",
-            "The property User cannot change password has been enabled when it was created"
-        ],
-        "answer": "D"
+      "course_name": "Design and Analysis of Algorithms",
+      "question_text": "Which one of the following is not a method of an expression for algorithms?",
+      "options": [
+        { "text": "Natural language", "is_correct": false },
+        { "text": "Programming language", "is_correct": true },
+        { "text": "Pseudo-code", "is_correct": false },
+        { "text": "Flowchart", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "In a healthcare database system, which concept is crucial for ensuring patient data privacy and security?",
+      "options": [
+        { "text": "Data Warehousing", "is_correct": false },
+        { "text": "Data Mining", "is_correct": false },
+        { "text": "Data Encryption", "is_correct": true },
+        { "text": "Data Replication", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "What is a foreign key in a relational database?",
+      "options": [
+        { "text": "A field in one table that refers to the primary key in another table", "is_correct": true },
+        { "text": "A key used for accessing external data sources", "is_correct": false },
+        { "text": "A key used for indexing primary keys", "is_correct": false },
+        { "text": "A key used for encryption purposes", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer Programming",
+      "question_text": "Which programming paradigm emphasizes breaking down problems into smaller, reusable components known as functions or procedures?",
+      "options": [
+        { "text": "Procedural programming", "is_correct": true },
+        { "text": "Imperative programming", "is_correct": false },
+        { "text": "Object-oriented programming", "is_correct": false },
+        { "text": "Functional programming", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer Security",
+      "question_text": "Which one of the following is a passive attack?",
+      "options": [
+        { "text": "Masquerade", "is_correct": false },
+        { "text": "DoS", "is_correct": false },
+        { "text": "Traffic analysis", "is_correct": true },
+        { "text": "Reply", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Design and Analysis of Algorithms",
+      "question_text": "Which one of the following is not a step in merge sort algorithm?",
+      "options": [
+        { "text": "Combine", "is_correct": false },
+        { "text": "Conquer", "is_correct": false },
+        { "text": "Divide", "is_correct": false },
+        { "text": "Analyze", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Computer Programming",
+      "question_text": "What does the term \"algorithm\" refer to in the context of computer programming?",
+      "options": [
+        { "text": "A set of rules or instructions for solving a problem", "is_correct": true },
+        { "text": "A variable that holds a single piece of data", "is_correct": false },
+        { "text": "A function that performs a specific task", "is_correct": false },
+        { "text": "A programming language syntax", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Operating System",
+      "question_text": "Which objective of modern operating systems involves protecting the system and its resources from unauthorized access and malicious attacks?",
+      "options": [
+        { "text": "Enhancing system performance", "is_correct": false },
+        { "text": "Ensuring security and protection", "is_correct": true },
+        { "text": "Maximizing hardware utilization", "is_correct": false },
+        { "text": "Providing a user-friendly interface", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer organization and Architecture",
+      "question_text": "Which one is correct about RISC computers?",
+      "options": [
+        { "text": "RISC are with few numbers of registers when compared to CISC", "is_correct": false },
+        { "text": "RISC uses extensive addressing capabilities for memory operations", "is_correct": false },
+        { "text": "RISC use complex and efficient machine instructions when compared to CISC", "is_correct": false },
+        { "text": "RISC is with hardwired control unit with pipelining processing", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "Which of the following is not a characteristic of NoSQL databases?",
+      "options": [
+        { "text": "Flexibility in data models", "is_correct": false },
+        { "text": "High availability", "is_correct": false },
+        { "text": "Scalability", "is_correct": false },
+        { "text": "Strict schema enforcement", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Compiler Design",
+      "question_text": "What is the name of a grammar in which all attributes of the grammar symbols are synthesized attributes and se form of inherited attributes?",
+      "options": [
+        { "text": "M-attributed grammar", "is_correct": false },
+        { "text": "L-attributed grammar", "is_correct": true },
+        { "text": "c attributed grammar", "is_correct": false },
+        { "text": "Stattributed grammar", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Automata and Complexity Theory",
+      "question_text": "What is the minimum number of stacks required by a FSA?",
+      "options": [
+        { "text": "1", "is_correct": false },
+        { "text": "2", "is_correct": false },
+        { "text": "3", "is_correct": false },
+        { "text": "0", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Computer Programming",
+      "question_text": "What is the purpose of the switch statement in C++?",
+      "options": [
+        { "text": "To declare and define functions", "is_correct": false },
+        { "text": "To select one of many code blocks to be executed", "is_correct": true },
+        { "text": "To execute a block of code repeatedly", "is_correct": false },
+        { "text": "To define a loop that repeats until a condition is false", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Introduction to Artificial Intelligence",
+      "question_text": "Which of the following is Uninformed (Blind) Search?",
+      "options": [
+        { "text": "Breadth-first search (BFS)", "is_correct": true },
+        { "text": "Hill dimbing", "is_correct": false },
+        { "text": "Heuristic Functions", "is_correct": false },
+        { "text": "Greedy search", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Software Engineering",
+      "question_text": "Which among the following measures how strongly the elements within a module are related?",
+      "options": [
+        { "text": "cohesion", "is_correct": true },
+        { "text": "aggregation", "is_correct": false },
+        { "text": "inheritance", "is_correct": false },
+        { "text": "coupling", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "What is the term used to describe the collection of information stored in the database at a particular moment?",
+      "options": [
+        { "text": "foreign key", "is_correct": false },
+        { "text": "an instance", "is_correct": true },
+        { "text": "primary key", "is_correct": false },
+        { "text": "schema", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Data Structures and Algorithms",
+      "question_text": "Which data structure allows deleting data elements from front and inserting at rear?",
+      "options": [
+        { "text": "Binary search tree", "is_correct": false },
+        { "text": "Deques", "is_correct": false },
+        { "text": "Stacks", "is_correct": false },
+        { "text": "Queues", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Network and System Administration",
+      "question_text": "Which one of the following commands is used to test reachability of hosts?",
+      "options": [
+        { "text": "Netstat", "is_correct": false },
+        { "text": "Ping", "is_correct": true },
+        { "text": "Traceroute", "is_correct": false },
+        { "text": "Tcpdump", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Software Engineering",
+      "question_text": "Which of the following is true statement?",
+      "options": [
+        { "text": "A module having low cohesion and high coupling is said to be functionally independent of other modules.", "is_correct": false },
+        { "text": "A functionally dependent module has minimal interaction with other modules", "is_correct": false },
+        { "text": "A module having high cohesion and low coupling is said to be functionally dependent of other modules", "is_correct": false },
+        { "text": "Cohesion is a measure of functional strength of a module", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Compiler Design",
+      "question_text": "Which class of grammar is used for syntax analysis?",
+      "options": [
+        { "text": "Context free grammars", "is_correct": true },
+        { "text": "Regular grammars", "is_correct": false },
+        { "text": "Non-recursive grammars", "is_correct": false },
+        { "text": "Recursive grammars", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer Security",
+      "question_text": "Brute-force attacks are used most often against which types of access control?",
+      "options": [
+        { "text": "Biometrics and smart cards", "is_correct": false },
+        { "text": "Passwords and Smart Cards", "is_correct": false },
+        { "text": "Passwords and Personal Identification Number", "is_correct": true },
+        { "text": "Biometrics and Passwords", "is_correct": false }
+      ]
     }
-]
+  
+,
+    {
+      "course_name": "Software Engineering",
+      "question_text": "One of the following describes the static structure of a system?",
+      "options": [
+        { "text": "Sequence diagram", "is_correct": false },
+        { "text": "Use case diagram", "is_correct": false },
+        { "text": "Activity diagram", "is_correct": false },
+        { "text": "Class diagram", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Operating System",
+      "question_text": "Which scheduling algorithm ensures that each process gets an equal share of the CPU time?",
+      "options": [
+        { "text": "Round Robin (RR)", "is_correct": true },
+        { "text": "First-Come, First-Served (FCFS)", "is_correct": false },
+        { "text": "Shortest Job Next (SJN)", "is_correct": false },
+        { "text": "Priority Scheduling", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Design and Analysis of Algorithms",
+      "question_text": "The data structure required for breadth first traversal on a graph is:",
+      "options": [
+        { "text": "Stack", "is_correct": false },
+        { "text": "Tree", "is_correct": false },
+        { "text": "Queue", "is_correct": true },
+        { "text": "Array", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Web programming",
+      "question_text": "In PHP , which function initiates a session?",
+      "options": [
+        { "text": "s_start()", "is_correct": false },
+        { "text": "session_start()", "is_correct": true },
+        { "text": "start()", "is_correct": false },
+        { "text": "session_str()", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Web programming",
+      "question_text": "Which one of the following places we cannot place our java script code?",
+      "options": [
+        { "text": "In any tag as an attribute", "is_correct": true },
+        { "text": "In the <body> tag", "is_correct": false },
+        { "text": "In external files", "is_correct": false },
+        { "text": "In the <head> tag", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer organization and Architecture",
+      "question_text": "Which one of the following is not a component of the computer system?",
+      "options": [
+        { "text": "The data unit", "is_correct": true },
+        { "text": "The input unit", "is_correct": false },
+        { "text": "The control unit", "is_correct": false },
+        { "text": "The storage unit", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Data Communication and Computer Networking",
+      "question_text": "In signal communication, the absolute value of the highest intensity of the signal proportional to the energy it came is referred as",
+      "options": [
+        { "text": "Pernod", "is_correct": false },
+        { "text": "Frequency", "is_correct": false },
+        { "text": "Attenuation", "is_correct": false },
+        { "text": "Peak-amplitude", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Object Oriented Programming",
+      "question_text": "What is encapsulation in OOP?",
+      "options": [
+        { "text": "Inheritance", "is_correct": false },
+        { "text": "Composition", "is_correct": false },
+        { "text": "Data hiding and abstraction", "is_correct": true },
+        { "text": "Polymorphism", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Automata and Complexity Theory",
+      "question_text": "Which one of the following is a correct statement?",
+      "options": [
+        { "text": "Turing machine is the least powerful automata", "is_correct": false },
+        { "text": "Pushdown automata and FSA have the same power", "is_correct": false },
+        { "text": "Regular expression is more powerful that FSA", "is_correct": false },
+        { "text": "Deterministic FSA and Nondeterministic FSA are equivalent", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Data Communication and Computer Networking",
+      "question_text": "Which one of the following statements is true?",
+      "options": [
+        { "text": "The transport layer in OSI model is connection oriented and connectionless", "is_correct": true },
+        { "text": "The transport layer in TCP/IP model is connection oriented only", "is_correct": false },
+        { "text": "TCP/IP model has seven layers while OSi model has four.", "is_correct": false },
+        { "text": "OSI model provides clear distinction between services, interfaces and protocols while TCP/IP model", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Introduction to Artificial Intelligence",
+      "question_text": "How does Al contribute to the study of human behavior and cognition?",
+      "options": [
+        { "text": "By disregarding human behavior as irrelevant to Al research.", "is_correct": false },
+        { "text": "By relying solely on philosophical theories of consciousness.", "is_correct": false },
+        { "text": "By providing insights through analyzing vast amounts of behavioral data.", "is_correct": true },
+        { "text": "By limiting its scope to deterministic algorithms.", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Network and System Administration",
+      "question_text": "Which backup strategy tries to backup only the modified files?",
+      "options": [
+        { "text": "Full backup", "is_correct": false },
+        { "text": "Partial backup", "is_correct": false },
+        { "text": "Full dump", "is_correct": false },
+        { "text": "Incremental backup", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Software Engineering",
+      "question_text": "Which of the following is not Software Characteristics?",
+      "options": [
+        { "text": "Maintenance is without spare part", "is_correct": true },
+        { "text": "software is complex", "is_correct": false },
+        { "text": "Software is manufactured", "is_correct": false },
+        { "text": "Software is intangible", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Compiler Design",
+      "question_text": "Which action of the bottom-up parsing moves terminals from input buffer to the stack?",
+      "options": [
+        { "text": "Accept", "is_correct": false },
+        { "text": "Shift", "is_correct": true },
+        { "text": "Augment", "is_correct": false },
+        { "text": "Reduce", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Data Structures and Algorithms",
+      "question_text": "Is the process of arranging the elements of a particular data structure in some logical orde",
+      "options": [
+        { "text": "Insertion", "is_correct": false },
+        { "text": "Traversing", "is_correct": false },
+        { "text": "Merging", "is_correct": false },
+        { "text": "Sorting", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Web programming",
+      "question_text": "What would be the output of the following JavaScript code?\n<script type=\"text/javascript\">\nx=4+\"4\";\ndocument.write(x);\n</script>",
+      "options": [
+        { "text": "4", "is_correct": false },
+        { "text": "8", "is_correct": false },
+        { "text": "44", "is_correct": true },
+        { "text": "The code contains an error", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Automata and Complexity Theory",
+      "question_text": "When an input will be accepted by a Turing Machine?",
+      "options": [
+        { "text": "If the machine halts in a final state", "is_correct": true },
+        { "text": "If the machine enters into an infinite loop", "is_correct": false },
+        { "text": "If it reaches any state and has no possible move for an input symbol", "is_correct": false },
+        { "text": "If the machine consumes all the input symbols in one of the states", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Automata and Complexity Theory",
+      "question_text": "What is the regular expression for the set of strings that start with ab and end with bba over the alphabet set (a, b)?",
+      "options": [
+        { "text": "ab(ab)*bba", "is_correct": true },
+        { "text": "aba\"b\"bba", "is_correct": false },
+        { "text": "ab(a+b)*bba", "is_correct": false },
+        { "text": "ab(a+b*)bba", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Web programming",
+      "question_text": "Which one of the following is false about HTTP protocol?",
+      "options": [
+        { "text": "An HTTP message body can be empty", "is_correct": false },
+        { "text": "It is a protocol used for communication between a web browser and a web server", "is_correct": false },
+        { "text": "It is a stateless protocol", "is_correct": false },
+        { "text": "An HTTP message has specified minimum size", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Operating System",
+      "question_text": "Which condition in a resource allocation system refers to a situation where a set of processes are waiting for resources held by each other, forming a circular chain?",
+      "options": [
+        { "text": "Hold and wait", "is_correct": false },
+        { "text": "No preemption", "is_correct": false },
+        { "text": "Mutual exclusion", "is_correct": false },
+        { "text": "Circular wait", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Web programming",
+      "question_text": "What does DOM stand for in HTML?",
+      "options": [
+        { "text": "Document Oriented Management", "is_correct": false },
+        { "text": "Document OnLoad Model", "is_correct": false },
+        { "text": "Document Object Model", "is_correct": true },
+        { "text": "Document Oriented Model", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "Select incorrect statement about Database languages?",
+      "options": [
+        { "text": "Data-manipulation language (DML) Retrieval of information stored in the database.", "is_correct": false },
+        { "text": "Data-definition language (DDL) to specify the database schema.", "is_correct": false },
+        { "text": "Data-definition languages (DDL) specify Modification of information stored in the database", "is_correct": true },
+        { "text": "Data-manipulation language (DML) is a language that enables users to access or manipulate data as organized by the appropriate data model", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Web programming",
+      "question_text": "Everything is a/an in HTML DOM?",
+      "options": [
+        { "text": "Element", "is_correct": false },
+        { "text": "Array", "is_correct": false },
+        { "text": "Node", "is_correct": true },
+        { "text": "Attribute", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer organization and Architecture",
+      "question_text": "An operation performed on the contents of a register is known as",
+      "options": [
+        { "text": "Instruction code", "is_correct": false },
+        { "text": "Micro-operation", "is_correct": true },
+        { "text": "Registration", "is_correct": false },
+        { "text": "Accumulation", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Data Communication and Computer Networking",
+      "question_text": "Which one of the following is not unique for every computer in the network?",
+      "options": [
+        { "text": "MAC address", "is_correct": false },
+        { "text": "IP-v4 address", "is_correct": false },
+        { "text": "IP-v6 address", "is_correct": false },
+        { "text": "Subnet mask", "is_correct": true }
+      ]
+    },
+    {
+      "course_name": "Web programming",
+      "question_text": "In PHP , are predefined variables that are accessible throughout your script.",
+      "options": [
+        { "text": "Predefined variables", "is_correct": false },
+        { "text": "Reserved variables", "is_correct": false },
+        { "text": "Superglobals", "is_correct": true },
+        { "text": "Global variables", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Data Structures and Algorithms",
+      "question_text": "Polynomial addition is implemented using which data structure?",
+      "options": [
+        { "text": "Stack", "is_correct": false },
+        { "text": "Linked List", "is_correct": true },
+        { "text": "Queue", "is_correct": false },
+        { "text": "Trees", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer Security",
+      "question_text": "Which of the following access control services determines what a subject can dor",
+      "options": [
+        { "text": "Accountability", "is_correct": false },
+        { "text": "Audit", "is_correct": false },
+        { "text": "Authorization", "is_correct": true },
+        { "text": "Authentication", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Computer organization and Architecture",
+      "question_text": "Which one of the following is not used to determine the CPU state at the end of the execute cycle?",
+      "options": [
+        { "text": "The content of certain status conditions", "is_correct": false },
+        { "text": "The content of all processor registers", "is_correct": false },
+        { "text": "The content of the data bus", "is_correct": true },
+        { "text": "The content of the program counter", "is_correct": false }
+      ]
+    },
+    {
+      "course_name": "Database Systems",
+      "question_text": "Which of the following best describes a database?",
+      "options": [
+        { "text": "A collection of data organized in a specific structure", "is_correct": true },
+        { "text": "A collection of random data", "is_correct": false },
+        { "text": "A collection of related files", "is_correct": false },
+        { "text": "A collection of unrelated files", "is_correct": false }
+      ]
+    },
+      {
+        "course_name": "Automata and Complexity Theory",
+        "question_text": "Which one of the following property of a graph represents the number of derivation steps needed to generate a valid string?",
+        "options": [
+          { "text": "Degree of the vertex", "is_correct": false },
+          { "text": "Parent vertex", "is_correct": false },
+          { "text": "Root of the graph", "is_correct": false },
+          { "text": "Path of a vertex from the root", "is_correct": true }
+        ]
+      },
+      {
+        "course_name": "Operating System",
+        "question_text": "Which function of a contemporary operating system focuses on providing users with easy access to applica resources?",
+        "options": [
+          { "text": "Device management", "is_correct": false },
+          { "text": "File management", "is_correct": false },
+          { "text": "Process management", "is_correct": false },
+          { "text": "User interface management", "is_correct": true }
+        ]
+      },
+      {
+        "course_name": "Database Systems",
+        "question_text": "Which SQL command is used to retrieve data from a database?",
+        "options": [
+          { "text": "UPDATE", "is_correct": false },
+          { "text": "INSERT", "is_correct": false },
+          { "text": "SELECT", "is_correct": true },
+          { "text": "DELETE", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer Security",
+        "question_text": "Which one of the following is not an attack on passwords?",
+        "options": [
+          { "text": "Brute-force Attack", "is_correct": false },
+          { "text": "Trojan Login", "is_correct": false },
+          { "text": "Logic Bomb", "is_correct": true },
+          { "text": "Eavesdropping", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Introduction to Artificial Intelligence",
+        "question_text": "One of the following is an example of Deduction Reasoning?",
+        "options": [
+          { "text": "The grass has been wet every time it has rained. Thus, when it rains, the grass gets wet.", "is_correct": false },
+          { "text": "When it rains, the grass gets wet. It rains. Thus the grass is wet.", "is_correct": true },
+          { "text": "When it rains, the grass gets wet. The grass is wet. It rains.", "is_correct": false },
+          { "text": "When it rains, the grass gets wet. The grass is wet, it must have rained", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Network and System Administration",
+        "question_text": "What is the command used to change permissions of a file for different users?",
+        "options": [
+          { "text": "Permission", "is_correct": false },
+          { "text": "Perm", "is_correct": false },
+          { "text": "Modify", "is_correct": false },
+          { "text": "Chmod", "is_correct": true }
+        ]
+      },
+      {
+        "course_name": "Design and Analysis of Algorithms",
+        "question_text": "One of the following is not Properties of an algorithm?",
+        "options": [
+          { "text": "Finite", "is_correct": false },
+          { "text": "Input and Output", "is_correct": false },
+          { "text": "Correct", "is_correct": false },
+          { "text": "Ambiguity", "is_correct": true }
+        ]
+      },
+      {
+        "course_name": "Software Engineering",
+        "question_text": "What are the factors to be considered when planning a software development effort?",
+        "options": [
+          { "text": "people, problem, productivity, performance", "is_correct": false },
+          { "text": "people, problem, product, portability", "is_correct": false },
+          { "text": "people, problem, product, process", "is_correct": true },
+          { "text": "performance, problem, product, planning", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Object Oriented Programming",
+        "question_text": "What is the term used to describe a blueprint for creating objects in OOP?",
+        "options": [
+          { "text": "Method", "is_correct": false },
+          { "text": "Class", "is_correct": true },
+          { "text": "Instance", "is_correct": false },
+          { "text": "Object", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Object Oriented Programming",
+        "question_text": "Which OOP principle emphasizes the separation of concerns by dividing a program into smaller, manageable parts?",
+        "options": [
+          { "text": "Inheritance", "is_correct": false },
+          { "text": "Modularity", "is_correct": true },
+          { "text": "Abstraction", "is_correct": false },
+          { "text": "Encapsulation", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Compiler Design",
+        "question_text": "Which data structure is used to represent the grammatical structure of the source program constructs?",
+        "options": [
+          { "text": "Stack", "is_correct": false },
+          { "text": "Queue", "is_correct": false },
+          { "text": "Tree", "is_correct": true },
+          { "text": "2d-array", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer Programming",
+        "question_text": "What is the main advantage of using references (&) in C++ compared to pointers?",
+        "options": [
+          { "text": "References can be dynamically allocated", "is_correct": false },
+          { "text": "References are more memory-efficient", "is_correct": false },
+          { "text": "References cannot be null", "is_correct": true },
+          { "text": "References can access arbitrary memory locations", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Design and Analysis of Algorithms",
+        "question_text": "Which one of the following class of running time functions is the best?",
+        "options": [
+          { "text": "Exponential", "is_correct": false },
+          { "text": "Logarithmic", "is_correct": true },
+          { "text": "Linear", "is_correct": false },
+          { "text": "Polynomial", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Web programming",
+        "question_text": "Which one of the following tags is used to represent paragraphs?",
+        "options": [
+          { "text": "< p >", "is_correct": true },
+          { "text": "< ph >", "is_correct": false },
+          { "text": "< par >", "is_correct": false },
+          { "text": "< pg >", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer organization and Architecture",
+        "question_text": "Which one of the following is the lowest level in computer architecture?",
+        "options": [
+          { "text": "Hardware", "is_correct": true },
+          { "text": "Machine language", "is_correct": false },
+          { "text": "High-level language", "is_correct": false },
+          { "text": "Assembly language", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer Security",
+        "question_text": "Which of the following is a correct statement?",
+        "options": [
+          { "text": "System threat is a state which exposes the system for possible attacks", "is_correct": false },
+          { "text": "System attack is set of activities that may expose the system for possible dangers", "is_correct": false },
+          { "text": "Vulnerability is a flaw in the system's design that may be exploited by attackers", "is_correct": true },
+          { "text": "System protection is a process of disconnecting the system from any communication", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Network and System Administration",
+        "question_text": "Which one of the following is not a principle of system administration?",
+        "options": [
+          { "text": "Request-based", "is_correct": true },
+          { "text": "Communication", "is_correct": false },
+          { "text": "Automation", "is_correct": false },
+          { "text": "Simplicity", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer organization and Architecture",
+        "question_text": "What is the name given to built-in functions in assembly code?",
+        "options": [
+          { "text": "Cache", "is_correct": false },
+          { "text": "Func", "is_correct": false },
+          { "text": "Mnemonics", "is_correct": true },
+          { "text": "Register", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Compiler Design",
+        "question_text": "Which one of the following is a correct statement?",
+        "options": [
+          { "text": "Code optimization can only be done before the actual code is generated", "is_correct": false },
+          { "text": "Code optimization can only be done after the actual code is generated", "is_correct": false },
+          { "text": "Code optimization can be done on the intermediate code", "is_correct": true },
+          { "text": "Code optimization cannot be done before the actual code is generated", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer Programming",
+        "question_text": "What is the purpose of a loop in computer programming?",
+        "options": [
+          { "text": "To declare variables", "is_correct": false },
+          { "text": "To create user interfaces", "is_correct": false },
+          { "text": "To define conditional statements", "is_correct": false },
+          { "text": "To execute a block of code repeatedly", "is_correct": true }
+        ]
+      },
+      {
+        "course_name": "Computer Programming",
+        "question_text": "What is the primary purpose of a variable in computer programming?",
+        "options": [
+          { "text": "To define functions", "is_correct": false },
+          { "text": "To store and manipulate data", "is_correct": true },
+          { "text": "To create graphical user interfaces (GUIs)", "is_correct": false },
+          { "text": "To execute conditional statements", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Design and Analysis of Algorithms",
+        "question_text": "The data structure used in the standard implementation of Depth First Search is",
+        "options": [
+          { "text": "Stack", "is_correct": true },
+          { "text": "Linked List", "is_correct": false },
+          { "text": "Queue", "is_correct": false },
+          { "text": "Array", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Data Communication and Computer Networking",
+        "question_text": "Which cable type is the best for transmission of data?",
+        "options": [
+          { "text": "Coaxial", "is_correct": false },
+          { "text": "Fiber Optic", "is_correct": true },
+          { "text": "RJ-45", "is_correct": false },
+          { "text": "Twisted pair", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Data Communication and Computer Networking",
+        "question_text": "The set of rules that govern all aspect of data communication between computers on a network are referred as",
+        "options": [
+          { "text": "Language", "is_correct": false },
+          { "text": "Syntax", "is_correct": false },
+          { "text": "Access methods", "is_correct": false },
+          { "text": "Protocol", "is_correct": true }
+        ]
+      },
+      {
+        "course_name": "Database Systems",
+        "question_text": "Which type of database replication offers the highest level of data consistency but may introduce higher later distributed systems?",
+        "options": [
+          { "text": "Multi-master replication", "is_correct": false },
+          { "text": "Asynchronous replication", "is_correct": false },
+          { "text": "Synchronous replication", "is_correct": true },
+          { "text": "Semi-synchronous replication", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Operating System",
+        "question_text": "is a special-purpose program or command line interpreter that read commands typed by a user and execute programs in response to entered commands.",
+        "options": [
+          { "text": "Kernel", "is_correct": false },
+          { "text": "Terminal", "is_correct": false },
+          { "text": "Process", "is_correct": false },
+          { "text": "Shell", "is_correct": true }
+        ]
+      },
+      {
+        "course_name": "Database Systems",
+        "question_text": "Which SQL command is used to delete a table from a database?",
+        "options": [
+          { "text": "REMOVE TABLE", "is_correct": false },
+          { "text": "DROP TABLE", "is_correct": true },
+          { "text": "ERASE TABLE", "is_correct": false },
+          { "text": "DELETE TABLE", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Software Engineering",
+        "question_text": "Which way to define Scope of Software Project?",
+        "options": [
+          { "text": "Define Error and Functional dependence of the project.", "is_correct": false },
+          { "text": "Define non- Deliverables and, Non Functionality.", "is_correct": false },
+          { "text": "Define Deliverables, Functionality, Data and, Technical Structure.", "is_correct": true },
+          { "text": "Complexity and risk of the project", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Web programming",
+        "question_text": "would be more suitable to store items in a shopping cart to be available when the user revisits the site in a couple of days.",
+        "options": [
+          { "text": "Cache", "is_correct": false },
+          { "text": "Cookies", "is_correct": true },
+          { "text": "Basket", "is_correct": false },
+          { "text": "Session", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer Security",
+        "question_text": "is an operation of in which each letter of a plaintext changes its position but retains its identity in cryptographic algorithms.",
+        "options": [
+          { "text": "Transposition", "is_correct": true },
+          { "text": "Substitution", "is_correct": false },
+          { "text": "Block cipher", "is_correct": false },
+          { "text": "Mono-alphabetic", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Computer Security",
+        "question_text": "In asymmetric cryptography, the message is encrypted using",
+        "options": [
+          { "text": "Sender's public key", "is_correct": false },
+          { "text": "Receiver's public key", "is_correct": true },
+          { "text": "Receiver's private key", "is_correct": false },
+          { "text": "Sender's private key", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Database Systems",
+        "question_text": "What does ACID stand for in database transactions?",
+        "options": [
+          { "text": "Atomicity, Consistency, Integrity, Durability", "is_correct": true },
+          { "text": "All Columns Indexed and Defined", "is_correct": false },
+          { "text": "Automated Control of Inconsistent Data", "is_correct": false },
+          { "text": "Advanced Constraints for Improved Data", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Object Oriented Programming",
+        "question_text": "One of the following Key ideas wrongly matched in object-oriented?",
+        "options": [
+          { "text": "Method an action performed by an object.", "is_correct": false },
+          { "text": "Class-does hold any values of the object's attributes.", "is_correct": true },
+          { "text": "Object- usually a person, place or thing.", "is_correct": false },
+          { "text": "Attribute-description of objects in a class.", "is_correct": false }
+        ]
+      },
+      {
+        "course_name": "Compiler Design",
+        "question_text": "What is the name of a grammar in which all attributes of the grammar symbols are synthesized attribute form of inherited attributes?",
+        "options": [
+          { "text": "S-attributed grammar", "is_correct": true },
+          { "text": "M-attributed grammar", "is_correct": false },
+          { "text": "L-attributed grammar", "is_correct": false },
+          { "text": "I-attributed grammar", "is_correct": false }
+        ]
+      }
+    ]
+  
+  
+  
+ 

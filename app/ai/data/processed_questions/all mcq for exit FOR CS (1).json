@@ -1,0 +1,370 @@
+
+[
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which phase of the software development life cycle is responsible for gathering and analyzing user requirements?",
+    "options": [
+      {
+        "text": "a. Analysis",
+        "is_correct": true
+      },
+      {
+        "text": "b. Design",
+        "is_correct": false
+      },
+      {
+        "text": "c. Development",
+        "is_correct": false
+      },
+      {
+        "text": "d. Testing",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which design principle suggests that software components should have a single, well-defined responsibility?",
+    "options": [
+      {
+        "text": "a. DRY (Don't Repeat Yourself) principle",
+        "is_correct": false
+      },
+      {
+        "text": "b. SOLID principle",
+        "is_correct": true
+      },
+      {
+        "text": "c. KISS (Keep It Simple, Stupid) principle",
+        "is_correct": false
+      },
+      {
+        "text": "d. YAGNI (You Ain't Gonna Need It) principle",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which of the following is an agile development methodology?",
+    "options": [
+      {
+        "text": "a. Waterfall model",
+        "is_correct": false
+      },
+      {
+        "text": "b. Scrum",
+        "is_correct": true
+      },
+      {
+        "text": "c. V-model",
+        "is_correct": false
+      },
+      {
+        "text": "d. Spiral model",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which software development approach involves breaking down a project into small, deliverable increments?",
+    "options": [
+      {
+        "text": "a. Waterfall model",
+        "is_correct": false
+      },
+      {
+        "text": "b. Agile methodology",
+        "is_correct": true
+      },
+      {
+        "text": "c. Prototype model",
+        "is_correct": false
+      },
+      {
+        "text": "d. Spiral model",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which software testing technique focuses on finding defects by executing the software without knowledge of its internal structure?",
+    "options": [
+      {
+        "text": "a. White-box testing",
+        "is_correct": false
+      },
+      {
+        "text": "b. Black-box testing",
+        "is_correct": true
+      },
+      {
+        "text": "c. Integration testing",
+        "is_correct": false
+      },
+      {
+        "text": "d. System testing",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which diagramming technique is used to visualize the behavior of a software system over time?",
+    "options": [
+      {
+        "text": "a. Use case diagrams",
+        "is_correct": false
+      },
+      {
+        "text": "b. Class diagrams",
+        "is_correct": false
+      },
+      {
+        "text": "c. Sequence diagrams",
+        "is_correct": true
+      },
+      {
+        "text": "d. State machine diagrams",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which software development methodology promotes adaptive planning, evolutionary development, and continuous improvement?",
+    "options": [
+      {
+        "text": "a. Waterfall model",
+        "is_correct": false
+      },
+      {
+        "text": "b. Agile methodology",
+        "is_correct": true
+      },
+      {
+        "text": "c. V-model",
+        "is_correct": false
+      },
+      {
+        "text": "d. Spiral model",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which technique is used to represent the flow of activities and decisions in a software system?",
+    "options": [
+      {
+        "text": "a. Use case modeling",
+        "is_correct": false
+      },
+      {
+        "text": "b. Activity diagrams",
+        "is_correct": true
+      },
+      {
+        "text": "c. State machine diagrams",
+        "is_correct": false
+      },
+      {
+        "text": "d. Component diagrams",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which software development approach involves building a working version of the software system early in the development process?",
+    "options": [
+      {
+        "text": "a. Waterfall model",
+        "is_correct": false
+      },
+      {
+        "text": "b. Agile methodology",
+        "is_correct": false
+      },
+      {
+        "text": "c. Prototype model",
+        "is_correct": true
+      },
+      {
+        "text": "d. Spiral model",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which testing technique focuses on testing the interaction between different components or modules of a software system?",
+    "options": [
+      {
+        "text": "a. Unit testing",
+        "is_correct": false
+      },
+      {
+        "text": "b. Integration testing",
+        "is_correct": true
+      },
+      {
+        "text": "c. System testing",
+        "is_correct": false
+      },
+      {
+        "text": "d. Regression testing",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which design principle suggests that software entities should depend on abstractions, not on concrete implementations?",
+    "options": [
+      {
+        "text": "a. DRY (Don't Repeat Yourself) principle",
+        "is_correct": false
+      },
+      {
+        "text": "b. SOLID principle",
+        "is_correct": true
+      },
+      {
+        "text": "c. KISS (Keep It Simple, Stupid) principle",
+        "is_correct": false
+      },
+      {
+        "text": "d. YAGNI (You Ain't Gonna Need It) principle",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which software development approach follows a linear, sequential flow from requirements gathering to testing and maintenance?",
+    "options": [
+      {
+        "text": "a. Waterfall model",
+        "is_correct": true
+      },
+      {
+        "text": "b. Agile methodology",
+        "is_correct": false
+      },
+      {
+        "text": "c. Prototype model",
+        "is_correct": false
+      },
+      {
+        "text": "d. Spiral model",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which technique is used to estimate the size and complexity of a software project?",
+    "options": [
+      {
+        "text": "a. Use case modeling",
+        "is_correct": false
+      },
+      {
+        "text": "b. Storyboarding",
+        "is_correct": false
+      },
+      {
+        "text": "c. Function point analysis",
+        "is_correct": true
+      },
+      {
+        "text": "d. Pair programming",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which tool is used to track and manage software issues, bugs, and tasks throughout the development process?",
+    "options": [
+      {
+        "text": "a. Git",
+        "is_correct": false
+      },
+      {
+        "text": "b. Jira",
+        "is_correct": true
+      },
+      {
+        "text": "c. Jenkins",
+        "is_correct": false
+      },
+      {
+        "text": "d. Docker",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which design principle suggests that software entities should be open for extension but closed for modification?",
+    "options": [
+      {
+        "text": "a. DRY (Don't Repeat Yourself) principle",
+        "is_correct": false
+      },
+      {
+        "text": "b. SOLID principle",
+        "is_correct": true
+      },
+      {
+        "text": "c. KISS (Keep It Simple, Stupid) principle",
+        "is_correct": false
+      },
+      {
+        "text": "d. YAGNI (You Ain't Gonna Need It) principle",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which technique is used to represent the static structure of a software system, including classes, relationships, and attributes?",
+    "options": [
+      {
+        "text": "a. Use case diagrams",
+        "is_correct": false
+      },
+      {
+        "text": "b. Class diagrams",
+        "is_correct": true
+      },
+      {
+        "text": "c. Sequence diagrams",
+        "is_correct": false
+      },
+      {
+        "text": "d. State machine diagrams",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "course_name": "SOFTWARE ENGINERING",
+    "question_text": "Which software development methodology involves regular and frequent communication between developers and stakeholders?",
+    "options": [
+      {
+        "text": "a. Waterfall model",
+        "is_correct": false
+      },
+      {
+        "text": "b. Agile methodology",
+        "is_correct": true
+      }
+    ]
+  }
+
+]

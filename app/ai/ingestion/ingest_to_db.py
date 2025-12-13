@@ -31,23 +31,13 @@ from sqlalchemy import select
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT))
 
-# Workaround: Import question.py before __init__.py imports question_model
-# We temporarily prevent question_model from being imported by mocking it in sys.modules
-import sys
-import types
+# Ensure the DB models are registered by importing the database module
+import app.utils.database  # noqa: F401
 
-# Create a dummy module for question_model to prevent the real one from loading
-dummy_question_model = types.ModuleType("app.models.question_model")
-sys.modules["app.models.question_model"] = dummy_question_model
-
-# Now import question.py - it will register the questions table
-from app.models.question import Question, QuestionDifficulty, QuestionSource
-
-# Remove the dummy so other imports work normally
-del sys.modules["app.models.question_model"]
-
-# Import other models normally
+# Import mapped models
+from app.models.question_model import Question, QuestionDifficulty
 from app.models.course_model import Course
+from app.models.chapter_model import Chapter
 from app.models.option import Option
 
 
@@ -86,15 +76,28 @@ async def get_or_create_course(session: Any, course_name: str) -> Course:
 
     Returns the Course instance (may be newly added but not necessarily committed).
     """
-    result = await session.execute(select(Course).where(Course.title == course_name))
+    result = await session.execute(select(Course).where(Course.name == course_name))
     course = result.scalar_one_or_none()
     if course:
         return course
 
-    course = Course(title=course_name)
+    course = Course(name=course_name)
     session.add(course)
     await session.flush()
     return course
+
+
+async def get_or_create_default_chapter(session: Any, course: Course, title: str = "Imported") -> Chapter:
+    """Ensure a chapter exists for the given course and return it."""
+    result = await session.execute(select(Chapter).where(Chapter.course_id == course.id, Chapter.title == title))
+    chapter = result.scalar_one_or_none()
+    if chapter:
+        return chapter
+
+    chapter = Chapter(course_id=course.id, title=title)
+    session.add(chapter)
+    await session.flush()
+    return chapter
 
 
 def _validate_question_item(item: Dict[str, Any]) -> None:
@@ -155,25 +158,27 @@ async def process_file(path: Path, async_session_maker: Any) -> None:
                     continue
 
                 course = await get_or_create_course(session, course_name)
+                chapter = await get_or_create_default_chapter(session, course)
+
+                # Determine correct answer (if any)
+                correct_answer = None
+                for opt in options:
+                    if opt.get("is_correct"):
+                        correct_answer = opt.get("text")
+                        break
 
                 question = Question(
-                    course_id=course.id,
+                    chapter_id=chapter.id,
                     question_text=question_text,
+                    options=options,
+                    correct_answer=correct_answer or (options[0].get("text") if options else ""),
                     difficulty=QuestionDifficulty.medium,
-                    source=QuestionSource.generated,
+                    explanation=None,
                 )
                 session.add(question)
-                for opt in options:
-                    option = Option(option_text=opt["text"], is_correct=opt["is_correct"])
-                    question.options.append(option)
-
                 await session.flush()
 
-                correct_opt = next((o for o in question.options if o.is_correct), None)
-                if correct_opt is not None:
-                    question.correct_option_id = correct_opt.id
-
-                print(f"  Inserted question: '{question_text[:60]}' (course: {course.title})")
+                print(f"  Inserted question: '{question_text[:60]}' (course: {course.name}, chapter: {chapter.title})")
 
 
 

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import time
 from typing import Any
 
 from app.utils.config import settings
@@ -104,54 +105,83 @@ def ask_gemini(prompt: str) -> str:
     """
     model = _get_available_model()
     last_exc: Exception | None = None
-    
-    # Try the standard generate_content method first (most common in recent versions)
-    try:
-        response = model.generate_content(prompt)
-        if hasattr(response, "text") and response.text:
-            return response.text
-        if hasattr(response, "candidates") and response.candidates:
-            first = response.candidates[0]
-            if hasattr(first, "content") and hasattr(first.content, "parts"):
-                parts = first.content.parts
-                if parts and hasattr(parts[0], "text"):
-                    return parts[0].text
-    except Exception as exc:
-        last_exc = exc
-    
-    # Fallback to trying other method names
-    for method_name in ("generate", "generate_text", "predict", "respond", "create"):
-        fn = getattr(model, method_name, None)
-        if not fn:
-            continue
+
+    # A small retry loop to handle transient errors like 504 Deadline Exceeded
+    max_attempts = 3
+    for attempt in range(1, max_attempts + 1):
+        # Try the standard generate_content method first (most common in recent versions)
         try:
-            try:
-                response = fn(prompt=prompt)
-            except TypeError:
-                response = fn(prompt)
+            response = model.generate_content(prompt)
+            if hasattr(response, "text") and response.text:
+                return response.text
+            if hasattr(response, "candidates") and response.candidates:
+                first = response.candidates[0]
+                if hasattr(first, "content") and hasattr(first.content, "parts"):
+                    parts = first.content.parts
+                    if parts and hasattr(parts[0], "text"):
+                        return parts[0].text
         except Exception as exc:
             last_exc = exc
-            continue
+            # For 5xx / Deadline Exceeded-like errors, retry with backoff
+            msg = str(exc)
+            if (attempt < max_attempts) and (
+                "504" in msg
+                or "deadline exceeded" in msg.lower()
+                or "internal" in msg.lower()
+                or "unavailable" in msg.lower()
+            ):
+                # Exponential backoff: 1s, 2s, 4s
+                time.sleep(2 ** (attempt - 1))
+                continue
+            # Otherwise, fall through to trying other methods
 
-        if hasattr(response, "text") and response.text:
-            return response.text
+        # Fallback to trying other method names
+        for method_name in ("generate", "generate_text", "predict", "respond", "create"):
+            fn = getattr(model, method_name, None)
+            if not fn:
+                continue
+            try:
+                try:
+                    response = fn(prompt=prompt)
+                except TypeError:
+                    response = fn(prompt)
+            except Exception as exc:
+                last_exc = exc
+                continue
 
-        if hasattr(response, "candidates") and response.candidates:
-            first = response.candidates[0]
-            for attr in ("output", "content", "text"):
-                if hasattr(first, attr) and getattr(first, attr):
-                    return getattr(first, attr)
-            return str(first)
+            if hasattr(response, "text") and response.text:
+                return response.text
 
-        if isinstance(response, dict):
-            for key in ("text", "output", "content", "response"):
-                if key in response and response[key]:
-                    val = response[key]
-                    if isinstance(val, (list, tuple)) and val:
-                        return str(val[0])
-                    return str(val)
+            if hasattr(response, "candidates") and response.candidates:
+                first = response.candidates[0]
+                for attr in ("output", "content", "text"):
+                    if hasattr(first, attr) and getattr(first, attr):
+                        return getattr(first, attr)
+                return str(first)
 
-        return str(response)
+            if isinstance(response, dict):
+                for key in ("text", "output", "content", "response"):
+                    if key in response and response[key]:
+                        val = response[key]
+                        if isinstance(val, (list, tuple)) and val:
+                            return str(val[0])
+                        return str(val)
+
+            return str(response)
+
+        # If we got here, and it's a retryable error, sleep and retry
+        if last_exc is not None and attempt < max_attempts:
+            msg = str(last_exc)
+            if (
+                "504" in msg
+                or "deadline exceeded" in msg.lower()
+                or "internal" in msg.lower()
+                or "unavailable" in msg.lower()
+            ):
+                time.sleep(2 ** (attempt - 1))
+                continue
+            # Non-retryable: break out and raise below
+            break
 
     raise RuntimeError(
         f"Could not call Gemini model '{_model_name}'; last error: {last_exc}. "
