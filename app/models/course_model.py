@@ -8,7 +8,7 @@ from sqlalchemy import String, Text, DateTime
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from . import Base
+from app.database import Base
 
 
 class Course(Base):

@@ -31,10 +31,21 @@ from sqlalchemy import select
 REPO_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO_ROOT))
 
-# Ensure the DB models are registered by importing the database module
-import app.utils.database  # noqa: F401
+from dotenv import load_dotenv
+from app.utils.config import settings, get_settings
 
-# Import mapped models
+# Load environment variables from .env file in the project root
+dotenv_path = REPO_ROOT / ".env"
+load_dotenv(dotenv_path=dotenv_path)
+
+# Override the DB_HOST to connect from outside Docker
+# The script runs on the host, but the DB is in a container. We connect via localhost.
+settings.DB_HOST = "localhost"
+# Re-initialize settings to reconstruct DATABASE_URL with the new host
+get_settings.cache_clear()
+settings = get_settings()
+
+# Now that environment is loaded and patched, import application modules
 from app.models.question_model import Question, QuestionDifficulty
 from app.models.course_model import Course
 from app.models.chapter_model import Chapter
@@ -42,12 +53,12 @@ from app.models.option import Option
 
 
 def _locate_async_session_maker() -> Any:
-    """Try to find the async session maker object in app.utils.database.
+    """Try to find the async session maker object in app.database.
 
     The project may name the variable differently (e.g. `async_session_maker`,
     `AsyncSessionLocal`). We try a few common names and raise if none found.
     """
-    dbmod = import_module("app.utils.database")
+    dbmod = import_module("app.database")
     for name in ("async_session_maker", "AsyncSessionLocal", "async_sessionmaker", "AsyncSessionMaker"):
         maker = getattr(dbmod, name, None)
         if maker is not None:
@@ -76,12 +87,12 @@ async def get_or_create_course(session: Any, course_name: str) -> Course:
 
     Returns the Course instance (may be newly added but not necessarily committed).
     """
-    result = await session.execute(select(Course).where(Course.name == course_name))
+    result = await session.execute(select(Course).where(Course.title == course_name))
     course = result.scalar_one_or_none()
     if course:
         return course
 
-    course = Course(name=course_name)
+    course = Course(title=course_name)
     session.add(course)
     await session.flush()
     return course

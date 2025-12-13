@@ -1,0 +1,25 @@
+# Ignore Python virtual environment
+pypy/
+venv/
+
+# Ignore Git directory
+.git
+
+# Ignore Python cache directories
+__pycache__/
+*/__pycache__/
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore environment variables file
+.env
+
+# Ignore logs
+*.log
+
+# Alembic specific ignored directories
+alembic/versions/__pycache__/

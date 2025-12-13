@@ -1,12 +1,11 @@
 from logging.config import fileConfig
 
 from sqlalchemy import create_engine, pool
-from sqlalchemy.engine import Connection
 
 from alembic import context
 
 # Import your models and Base
-from app.models import Base
+from app.database import Base
 from app.utils.config import settings
 
 # Import all models to ensure they're registered
@@ -31,11 +30,14 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# Set the SQLAlchemy URL from settings
-# Convert asyncpg URL to sync psycopg2 URL for Alembic
-# Alembic works with sync connections, so we use psycopg2
-database_url = settings.DATABASE_URL.replace("+asyncpg", "+psycopg2")
-config.set_main_option("sqlalchemy.url", database_url)
+# Set the SQLAlchemy URL from settings.
+# Alembic requires a synchronous database URL. The settings object
+# provides this in the correct format already.
+if not settings.DATABASE_URL:
+    raise ValueError("DATABASE_URL is not set, please check your .env file.")
+
+config.set_main_option("sqlalchemy.url", settings.DATABASE_URL)
+
 
 # add your model's MetaData object here
 # for 'autogenerate' support
@@ -71,13 +73,6 @@ def run_migrations_offline() -> None:
         context.run_migrations()
 
 
-def do_run_migrations(connection: Connection) -> None:
-    context.configure(connection=connection, target_metadata=target_metadata)
-
-    with context.begin_transaction():
-        context.run_migrations()
-
-
 def run_migrations_online() -> None:
     """Run migrations in 'online' mode.
 
@@ -86,7 +81,7 @@ def run_migrations_online() -> None:
 
     """
     connectable = create_engine(
-        database_url,
+        config.get_main_option("sqlalchemy.url"),
         poolclass=pool.NullPool,
     )
 
@@ -101,4 +96,3 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
-

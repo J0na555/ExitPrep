@@ -13,7 +13,7 @@ from pydantic import BaseModel
 from app.models.exam_answer import ExamAnswer
 from app.models.user import User
 
-from . import Base
+from app.database import Base
 
 
 class ExamSession(Base):
@@ -28,6 +28,12 @@ class ExamSession(Base):
     user_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True),
         ForeignKey("users.id", ondelete="CASCADE"),
+        nullable=False,
+    )
+
+    exam_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("exams.id", ondelete="CASCADE"),
         nullable=False,
     )
 
@@ -48,6 +54,7 @@ class ExamSession(Base):
 
     # relationships
     user: Mapped["User"] = relationship("User", back_populates="exam_sessions")
+    exam: Mapped["Exam"] = relationship("Exam", back_populates="exam_sessions")
     exam_answers: Mapped[List["ExamAnswer"]] = relationship(
         "ExamAnswer",
         back_populates="exam_session",

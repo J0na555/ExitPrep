@@ -5,14 +5,14 @@ from datetime import timedelta
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy import select
-from typing import Any
+from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.database import get_db
 from app.models.user import User
 from app.schemas.auth import Token, UserLogin
 from app.schemas.user import UserCreate, UserResponse
 from app.utils.auth import create_access_token, hash_password, verify_password
 from app.utils.config import settings
-from app.utils.database import get_db
 from app.utils.dependencies import get_current_user
 
 

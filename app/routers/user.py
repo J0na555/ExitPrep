@@ -4,11 +4,10 @@ import uuid
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
-from typing import Any
-
+from sqlalchemy.ext.asyncio import AsyncSession
+from app.database import get_db
 from app.models.user import User
 from app.schemas.user import UserResponse
-from app.utils.database import get_db
 from app.utils.dependencies import get_current_user
 
 
@@ -25,7 +24,7 @@ async def get_current_user_endpoint(
 @router.get("/{user_id}", response_model=UserResponse)
 async def get_user(
     user_id: str,
-    db: Any = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> UserResponse:
     try:

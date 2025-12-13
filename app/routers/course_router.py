@@ -5,12 +5,12 @@ from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy import select
-from typing import Any
+from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.database import get_db
 from app.models.course_model import Course
 from app.models.user import User
 from app.schemas.course_schema import CourseCreate, CourseRead, CourseUpdate
-from app.utils.database import get_db
 from app.utils.dependencies import get_current_user
 
 router = APIRouter(tags=["courses"])
@@ -19,7 +19,7 @@ router = APIRouter(tags=["courses"])
 @router.post("/", response_model=CourseRead, status_code=status.HTTP_201_CREATED)
 async def create_course(
     course_data: CourseCreate,
-    db: Any = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> CourseRead:
     """Create a new course."""
@@ -35,7 +35,7 @@ async def create_course(
 
 @router.get("/", response_model=List[CourseRead])
 async def get_all_courses(
-    db: Any = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> List[CourseRead]:
     """Get all courses."""
@@ -47,7 +47,7 @@ async def get_all_courses(
 @router.get("/{course_id}", response_model=CourseRead)
 async def get_course_by_id(
     course_id: uuid.UUID,
-    db: Any = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> CourseRead:
     """Get a course by ID."""
@@ -67,7 +67,7 @@ async def get_course_by_id(
 async def update_course(
     course_id: uuid.UUID,
     course_data: CourseUpdate,
-    db: Any = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> CourseRead:
     """Update a course."""
@@ -94,7 +94,7 @@ async def update_course(
 @router.delete("/{course_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_course(
     course_id: uuid.UUID,
-    db: Any = Depends(get_db),
+    db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ) -> None:
     """Delete a course."""
