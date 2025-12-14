@@ -34,13 +34,12 @@ sys.path.insert(0, str(REPO_ROOT))
 from dotenv import load_dotenv
 from app.utils.config import settings, get_settings
 
-# Load environment variables from .env file in the project root
 dotenv_path = REPO_ROOT / ".env"
 load_dotenv(dotenv_path=dotenv_path)
 
 # Override the DB_HOST to connect from outside Docker
 # The script runs on the host, but the DB is in a container. We connect via localhost.
-settings.DB_HOST = "localhost"
+settings.DB_HOST = "127.0.0.1"
 # Re-initialize settings to reconstruct DATABASE_URL with the new host
 get_settings.cache_clear()
 settings = get_settings()
@@ -189,7 +188,7 @@ async def process_file(path: Path, async_session_maker: Any) -> None:
                 session.add(question)
                 await session.flush()
 
-                print(f"  Inserted question: '{question_text[:60]}' (course: {course.name}, chapter: {chapter.title})")
+                print(f"  Inserted question: '{question_text[:60]}' (course: {course.title}, chapter: {chapter.title})")
 
 
 
